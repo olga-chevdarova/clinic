@@ -3,29 +3,41 @@ html(lang="en")
   head
     title Bourne Clinic
     meta(charset="UTF-8")
-    //build:css css/vendor.css
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+    //build:css css/main.css
     //bower:css
     link(rel='stylesheet', href='bower_components/normalize-css/normalize.css')
     link(rel='stylesheet', href='bower_components/animate.css/animate.css')
     link(rel='stylesheet', href='bower_components/tooltipster/dist/css/tooltipster.bundle.css')
+    link(rel='stylesheet', href='bower_components/bootstrap-4-grid/css/grid.css')
+    link(rel='stylesheet', href='bower_components/components-font-awesome/css/font-awesome.css')
     //endbower
-    //build:css css/main.css
     link(rel="stylesheet" href="css/fonts/fonts.css")
     link(rel="stylesheet" href="css/styles.css")
     //endbuild
   body
-
-    include jade/main
+    .darker
+    //
+        picture
+            source(media='(max-width: 580px)', srcset='img/welcome-mob-port@2x.jpg')
+            img(src='https://s-media-cache-ak0.pinimg.com/736x/6e/d6/1e/6ed61ee28ac6c5d0a547a04bc4a22b37.jpg')
+    header
+        include jade/header.jade
+    main
+        include jade/welcome.jade
+        include jade/toggle-menu.jade
+            
 
     //build:js js/vendor.js
     //bower:js
     script(src='bower_components/jquery/dist/jquery.js')
     script(src='bower_components/wow/dist/wow.js')
-    script(src='bower_components/tether/dist/js/tether.js')
-    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
     script(src='bower_components/tooltipster/dist/js/tooltipster.bundle.js')
-    script(src='bower_components/parallax.js/parallax.min.js')
+    script(src='bower_components/headjs/dist/1.0.0/head.min.js')
+    script(src='bower_components/gsap/src/uncompressed/TweenMax.js')
+    script(src='bower_components/jquery-drawsvg/public/jquery.drawsvg.js')
     //endbower
+    //endbuild
     //build:js js/main.js
     script(type="text/javascript" src="js/script.js")
     //endbuild

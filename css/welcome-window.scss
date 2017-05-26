@@ -1,0 +1,16 @@
+
+.welcome-window {
+	width:100%;
+	height:100vh;
+	 z-index: 1000;
+     position: fixed;
+     background: url('../img/mob-port-welcome-background.jpg') no-repeat;
+     background-size: 100% auto;
+
+
+}
+
+img {
+	width:100%;
+	height:auto;
+}

@@ -1,13 +1,38 @@
-/*@font-face {
-	font-family: 'Lora';
-	font-style: normal;
-	font-weight: 400;
-	src: url(../fonts/Lora-normal-400.woff) format('woff');
-	unicode-range: U+0-10FFFF;
-} */
-
-
+@import 'colors.scss';
 
 body {
-	font-family: 'Raleway';
+    font-family: Roboto;
+    font-size: 1em;
+    width: 100%;
+    min-width: 20em;
+    color: $text-color;
+
 }
+
+h1 {
+    font-family: League Gothic;
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.darker {
+    background-color:$text-color;
+    opacity:0;
+    position: fixed;
+    z-index: 150;
+    width: 100%;
+    height: 100vh;
+    display:none;
+}
+
+@import 'header.scss';
+@import 'welcome.scss';
+@import 'toggle-menu.scss';

@@ -1,0 +1,10 @@
+.toggle-menu
+            .l-toggle-menu.fixed-top
+                .l-toggle-menu__header.row.no-gutters.align-items-center.justify-content-around
+                    include ../img/logo.svg
+                    include ../img/toggle-menu-icon.svg
+                .l-toggle-content.row
+                    ul.fa-ul
+                        each item in ['about us', 'services', 'gallery', 'testimonials', 'videos', 'contacts']
+                            li= item
+                                i(class="fa-li fa fa-chevron-right chevron-icon--menu")

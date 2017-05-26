@@ -1,9 +1,98 @@
-/*@font-face {
-	font-family: 'Lora';
-	font-style: normal;
-	font-weight: 400;
-	src: url(../fonts/Lora-normal-400.woff) format('woff');
-	unicode-range: U+0-10FFFF;
-} */
 body {
-  font-family: 'Raleway'; }
+  font-family: Roboto;
+  font-size: 1em;
+  width: 100%;
+  min-width: 20em;
+  color: #292b2c; }
+
+h1 {
+  font-family: League Gothic;
+  font-size: 2.8em; }
+
+h2 {
+  font-size: 1.5em; }
+
+a {
+  text-decoration: none;
+  color: #292b2c; }
+
+.darker {
+  background-color: #292b2c;
+  opacity: 0;
+  position: fixed;
+  z-index: 150;
+  width: 100%;
+  height: 100vh;
+  display: none; }
+
+/*Mobile*/
+.l-navigation {
+  position: fixed;
+  padding: 0.1em;
+  width: 100%;
+  height: 5em;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.navigation__phone-icon {
+  color: #199ed8;
+  width: 1.3em;
+  padding: 0.3em; }
+
+/*Mobile*/
+.welcome-block-background {
+  background: url("../img/mob-port-background.jpg") no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto; }
+
+.l-welcome-block {
+  padding: 6.5em 0.5em 0; }
+
+.welcome-block__text--title {
+  max-width: 50%; }
+
+.welcome-block__text--motto {
+  font-family: Kaushan Script;
+  line-height: 0.5em;
+  color: #199ed8; }
+  .welcome-block__text--motto:nth-of-type(2) {
+    padding: 0em 0.5em; }
+
+.welcome-block__text--description {
+  font-size: 1.125em;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.l-appointment-button {
+  margin: 2.5em 0; }
+
+.button--appointment {
+  width: 100%;
+  color: white;
+  background-color: #199ed8;
+  border: 0;
+  padding: 1em 0;
+  text-transform: uppercase; }
+
+.l-toggle-menu {
+  width: 80%;
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: none; }
+
+.l-toggle-menu__header {
+  padding: 0.1em;
+  height: 5em; }
+
+.l-toggle-content {
+  padding: 0.2em 2em;
+  font-size: 1.125em;
+  line-height: 2.5em;
+  text-transform: uppercase; }
+
+.chevron-icon--menu {
+  padding: 0.6em;
+  color: #199ed8; }
