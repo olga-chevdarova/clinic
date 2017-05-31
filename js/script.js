@@ -1,11 +1,60 @@
 $(document).ready(function(){
-
+newA();
 
 $('#toggle-menu-icon').click(function() {
 	$('.l-toggle-menu').css('display','block')
+
 });
 
 });
+var toolTimeline = new TimelineMax();
+function newA() {
+		
+	logoAnimation();
+  toolTimeline.to('.welcome-window', 1, {display:'none', y:'-100%', alpha:0});
+    toolTimeline.from('.welcome-block', 0.5, {display:'none', alpha:0, x:'100%', ease:Linear.easeOut});
+     toolTimeline.from(".l-navigation", 1, { alpha:0, top: "-100%", ease:Linear.easeNone});
+  toolTimeline.from('#logo-main', 1, {transformOrigin:'50% 50%'}, 0.2);
+  toolTimeline.to('.welcome-window', 1, {display:'none', y:'-100%', alpha:0});
+    toolTimeline.from('#logo_main', 1, {alpha:0, x:'-100%'});
+/* toolTimeline.to(".welcome-window", 1, {display:'none', alpha:0, delay:0.5});
+toolTimeline.to(".welcome-block", 2, {display:'block', bottom: "100%", ase:Linear.easeOut});
+ */
+     toolTimeline.from('#toggle-menu-icon', 1, {alpha:0, x:'100%'});
+    toolTimeline.from('.navigation-phone-numbers', 1, {alpha:0, y:'-100%'});
+    
+   toolTimeline.from('.welcome-block__text--motto', 1.5, {rotation:360, alpha:0});
+}
+
+function logoAnimation() {
+    toolTimeline.from('#logo-text-fl', 1, {delay:1, scale:0, transformOrigin:'50% 50%', ease:Linear.easeOut});
+      
+          toolTimeline.to("#black-center", 1, {delay:0.7, alpha:1});
+          dr();
+   toolTimeline.to('#logo-text-fl', 2, { fill:'#FFF',  ease:Linear.easeOut},0.2);
+ toolTimeline.to('#gradient-b', 1.5, { alpha:1, delay:0.5, ease:Bounce.easeOut});
+}
+
+
+function rio() {
+  var toolTimeline = new TimelineMax();
+  toolTimeline.from('#logo-text-fl', 2, {delay:0.5, scale:0, transformOrigin:'50% 50%', ease:Linear.easeOut, onComplete:dr});
+
+};
+
+function welcomeLogo() {
+	var toolTimeline = new TimelineMax();
+    var duration = 2;
+    toolTimeline.from('#logo-text-fl', duration, {scale:0, transformOrigin:'50% 50%', ease:Linear.easeOut});
+    toolTimeline.to('#logo-text-fl', 1, { fill:'#FFF'});
+    toolTimeline.from('#black', 1, {scale:0, alpha:0, transformOrigin:'50% 50%', ease:Linear.easeOut,  delay:0.2});
+    toolTimeline.to('#gradient', duration, {strokeWidth:5});
+    dr();
+
+    /*TweenMax.from('#Background', 1, {delay:1, scale:0, transformOrigin:'50% 50%', ease:Linear.easeInOut});*/
+    // TweenMax.from('#gradient--colors', 1, {x:-100, ease: Power2.easeOut , opacity:0,});
+    /*TweenMax.to('#gradientBox' ,2 , {'-webkit-mask-image': '-webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 105%, rgba(0,0,0,1) 100%)'});*/
+};
 
 function buttonChange() {
 	 TweenLite.to('.l-toggle-menu', 2, {x:20, display:'block'});
@@ -16,6 +65,18 @@ function buttonChange() {
 	 TweenLite.to('.darker', 0.2, {display:'block', alpha:0.8});
 	
 }
+  function dr() {
+var $svg = $('svg').drawsvg({
+      duration: 1000,
+      stagger:3500
+    });
+
+$svg.drawsvg('animate');
+// toolTimeline.to('#gradient-box', duration, {fill: "url(#gradient_1_)"});
+// toolTimeline.from('#black-stroke', duration, {delay:3, scale:0, transformOrigin:'50% 50%', ease:Bounce.easeOut});
+};
+   
+
 
 function first(){
 		var menu = $('.l-navigation');
@@ -26,14 +87,7 @@ function first(){
 		});
 	};
 
-function dr() {
-var $svg = $('svg').drawsvg({
-      duration: 5000,
-      easing: 'linear'
-    });
 
-$svg.drawsvg('animate');
-}
 
 function hj() {
 	TweenLite.from('#text-t', 3, {fill:"#000000", scale:0.25});

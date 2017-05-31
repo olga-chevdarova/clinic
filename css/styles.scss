@@ -32,7 +32,7 @@ a {
     height: 100vh;
     display:none;
 }
-
+@import 'welcome-window.scss';
 @import 'header.scss';
 @import 'welcome.scss';
 @import 'toggle-menu.scss';

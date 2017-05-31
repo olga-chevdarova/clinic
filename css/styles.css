@@ -25,13 +25,35 @@ a {
   height: 100vh;
   display: none; }
 
+.welcome-window {
+  background: url("../img/logo6.svg");
+  height: 100vh;
+  z-index: 1000;
+  padding-top: 7em; }
+
+#black {
+  opacity: 1; }
+
+#gradient {
+  opacity: 0; }
+
+#logo-text-fl {
+  fill: #000; }
+
+#gradient-b {
+  opacity: 0; }
+
+#black-center {
+  opacity: 0; }
+
 /*Mobile*/
 .l-navigation {
   position: fixed;
   padding: 0.1em;
   width: 100%;
   height: 5em;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2500; }
 
 .navigation__phone-icon {
   color: #199ed8;
@@ -63,7 +85,8 @@ a {
   background-color: rgba(255, 255, 255, 0.5); }
 
 .l-appointment-button {
-  margin: 2.5em 0; }
+  margin: 2.5em 0;
+  opacity: 0; }
 
 .button--appointment {
   width: 100%;

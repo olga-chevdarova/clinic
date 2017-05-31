@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 493.3 362" style="enable-background:new 0 0 493.3 362;" width="auto" height="100%" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height='100%' id="logo_main"
+	 viewBox="0 0 493.3 362" style="enable-background:new 0 0 493.3 362;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:url(#gradient_1_);}
+	#grd{fill:url(#SVGID_10_);}
 	.st2{fill:#FCFCFC;}
 </style>
-<g id="logo-background">
-	<ellipse id="black-border" cx="245" cy="181.5" rx="239" ry="176.5"/>
-	<ellipse id="white-border" class="st0" cx="244.7" cy="182.3" rx="234.7" ry="172.3"/>
-	<linearGradient id="gradient_1_" gradientUnits="userSpaceOnUse" x1="164.4384" y1="87.7493" x2="412.4955" y2="373.1063">
+<g id="Слой_2">
+	<ellipse cx="245" cy="181.5" rx="239" ry="176.5"/>
+	<ellipse class="st0" cx="244.7" cy="182.3" rx="234.7" ry="172.3"/>
+	<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="164.4384" y1="87.7493" x2="412.4955" y2="373.1063">
 		<stop  offset="0" style="stop-color:#000000"/>
 		<stop  offset="0.1042" style="stop-color:#050505"/>
 		<stop  offset="0.2279" style="stop-color:#131313"/>
@@ -21,9 +21,9 @@
 		<stop  offset="0.9506" style="stop-color:#E9E9E9"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
-	<ellipse id="gradient" class="st1" cx="245.5" cy="181" rx="227.5" ry="165"/>
+	<ellipse id="grd" cx="245.5" cy="181" rx="227.5" ry="165"/>
 </g>
-<g id="logo-text">
+<g id="TEXT">
 	<g>
 		<path class="st0" d="M148.1,82.9c6.9,0,10.6,4,10.6,9.3c0,3.6-1.9,6.1-5.2,7.6c5.1,1,8.2,4.7,8.2,9.2c0,7.2-6.4,9.8-12.5,9.8
 			h-10.9V82.9H148.1z M143.1,98.4h3.5c5.2,0,7.1-2.8,7.1-5.7c0-3.6-1.9-5.2-6.3-5.2h-4.2V98.4z M148.3,114.3c5.7,0,8.3-1.8,8.3-5.7
