@@ -1,5 +1,5 @@
 $(document).ready(function(){
-newA();
+  logoAnimation();
 
 $('#toggle-menu-icon').click(function() {
 	$('.l-toggle-menu').css('display','block')
@@ -9,30 +9,52 @@ $('#toggle-menu-icon').click(function() {
 });
 var toolTimeline = new TimelineMax();
 function newA() {
-		
+		 toolTimeline.add("end", 5)
 	logoAnimation();
-  toolTimeline.to('.welcome-window', 1, {display:'none', y:'-100%', alpha:0});
-    toolTimeline.from('.welcome-block', 0.5, {display:'none', alpha:0, x:'100%', ease:Linear.easeOut});
-     toolTimeline.from(".l-navigation", 1, { alpha:0, top: "-100%", ease:Linear.easeNone});
-  toolTimeline.from('#logo-main', 1, {transformOrigin:'50% 50%'}, 0.2);
-  toolTimeline.to('.welcome-window', 1, {display:'none', y:'-100%', alpha:0});
-    toolTimeline.from('#logo_main', 1, {alpha:0, x:'-100%'});
-/* toolTimeline.to(".welcome-window", 1, {display:'none', alpha:0, delay:0.5});
-toolTimeline.to(".welcome-block", 2, {display:'block', bottom: "100%", ase:Linear.easeOut});
- */
-     toolTimeline.from('#toggle-menu-icon', 1, {alpha:0, x:'100%'});
-    toolTimeline.from('.navigation-phone-numbers', 1, {alpha:0, y:'-100%'});
-    
-   toolTimeline.from('.welcome-block__text--motto', 1.5, {rotation:360, alpha:0});
+welcomeDel();
+  
+  }
+
+
+function welcomeDel() {
+
+
+if ($(window).width() <= 500 ) {
+      toolTimeline.to('.welcome-window', 0.5, {display:'none',  alpha:0});
+
+    toolTimeline.from('.welcome-block', 1, {display:'none', alpha:0, ease:Linear.easeOut, delay:0.2});
+  toolTimeline.from('#logo_main', 1, {alpha:0, x:'-100%'});
+   toolTimeline.from('.navigation-phone-numbers', 0.7, {alpha:0, y:'-100%',  ease:Linear.easeOut, delay:0.5});
+
+  }
+    else {
+    var windowPc = true;
+    if(windowPc) {
+      $(window).scroll(function() {
+        toolTimeline.to('.welcome-window', 0.3, {display:'none',  alpha:0, ease:Linear.easeOut});
+
+  windowPc = false;
+      })
+    }
+  }
+
 }
+ /* toolTimeline.from('#logo-main', 1, {transformOrigin:'50% 50%'}, 0.2);
+  toolTimeline.to('.welcome-window', 1, {display:'none', y:'-100%', alpha:0});
+    
+ toolTimeline.to(".welcome-window", 1, {display:'none', alpha:0, delay:0.5});
+toolTimeline.to(".welcome-block", 2, {display:'block', bottom: "100%", ase:Linear.easeOut});
+ 
+     toolTimeline.from('#toggle-menu-icon', 1, {alpha:0, x:'100%'});*/
+    
+   // toolTimeline.from('.welcome-block__text--motto', 1.5, {y:'100%', alpha:0});
+
 
 function logoAnimation() {
-    toolTimeline.from('#logo-text-fl', 1, {delay:1, scale:0, transformOrigin:'50% 50%', ease:Linear.easeOut});
-      
-          toolTimeline.to("#black-center", 1, {delay:0.7, alpha:1});
+
           dr();
-   toolTimeline.to('#logo-text-fl', 2, { fill:'#FFF',  ease:Linear.easeOut},0.2);
- toolTimeline.to('#gradient-b', 1.5, { alpha:1, delay:0.5, ease:Bounce.easeOut});
+
+ toolTimeline.to('#gradient-bet', 1.5, { alpha:1, ease:Bounce.easeOut, delay:1});
 }
 
 
@@ -68,7 +90,7 @@ function buttonChange() {
   function dr() {
 var $svg = $('svg').drawsvg({
       duration: 1000,
-      stagger:3500
+      stagger:3000
     });
 
 $svg.drawsvg('animate');

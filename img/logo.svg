@@ -4,13 +4,13 @@
 	 viewBox="0 0 493.3 362" style="enable-background:new 0 0 493.3 362;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	#grd{fill:url(#SVGID_10_);}
+	#grdd{fill:url(#SVGID_100);}
 	.st2{fill:#FCFCFC;}
 </style>
 <g id="Слой_2">
 	<ellipse cx="245" cy="181.5" rx="239" ry="176.5"/>
 	<ellipse class="st0" cx="244.7" cy="182.3" rx="234.7" ry="172.3"/>
-	<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="164.4384" y1="87.7493" x2="412.4955" y2="373.1063">
+	<linearGradient id="SVGID_100" gradientUnits="userSpaceOnUse" x1="164.4384" y1="87.7493" x2="412.4955" y2="373.1063">
 		<stop  offset="0" style="stop-color:#000000"/>
 		<stop  offset="0.1042" style="stop-color:#050505"/>
 		<stop  offset="0.2279" style="stop-color:#131313"/>
@@ -21,7 +21,7 @@
 		<stop  offset="0.9506" style="stop-color:#E9E9E9"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
-	<ellipse id="grd" cx="245.5" cy="181" rx="227.5" ry="165"/>
+	<ellipse id="grdd" cx="245.5" cy="181" rx="227.5" ry="165"/>
 </g>
 <g id="TEXT">
 	<g>

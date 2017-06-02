@@ -9,8 +9,24 @@
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
+	font-weight: 300;
+	src: url(Lato-normal-300.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
 	font-weight: 400;
 	src: url(Lato-normal-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: url(Roboto-normal-300.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
