@@ -16,6 +16,10 @@ a {
   text-decoration: none;
   color: #292b2c; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 .darker {
   background-color: #292b2c;
   opacity: 0;
@@ -26,17 +30,16 @@ a {
   display: none; }
 
 .welcome-window {
-  height: 100vh;
+  height: 100%;
+  width: auto;
   z-index: 1000; }
+
+.alt-logo {
+  display: none; }
 
 .welcome-window__logo {
   width: 100%;
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
   margin: auto; }
 
 .welcome-window__logo-blue {
@@ -69,6 +72,12 @@ a {
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 100; } }
+
+svg {
+  display: none; }
+
+.alt-logo.no-csstransforms {
+  display: block; }
 
 #black {
   opacity: 1; }

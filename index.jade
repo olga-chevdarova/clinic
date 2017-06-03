@@ -22,10 +22,10 @@ html(lang="en")
             source(media='(max-width: 580px)', srcset='img/welcome-mob-port@2x.jpg')
             img(src='https://s-media-cache-ak0.pinimg.com/736x/6e/d6/1e/6ed61ee28ac6c5d0a547a04bc4a22b37.jpg')
     header
-        include jade/header.jade
+ 
         include jade/welcome-window.jade
     main
-        include jade/welcome.jade
+   
         include jade/toggle-menu.jade
             
 
@@ -37,6 +37,7 @@ html(lang="en")
     script(src='bower_components/headjs/dist/1.0.0/head.min.js')
     script(src='bower_components/gsap/src/uncompressed/TweenMax.js')
     script(src='bower_components/jquery-drawsvg/public/jquery.drawsvg.js')
+    script(src='bower_components/Modernizr/modernizr.custom.js')
     //endbower
     //endbuild
     //build:js js/main.js

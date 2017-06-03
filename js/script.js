@@ -1,12 +1,17 @@
+
 $(document).ready(function(){
-  logoAnimation();
+if (Modernizr.svgfilters) {
+  $('svg').css('display','block')
+};
+ 
+});
 
 $('#toggle-menu-icon').click(function() {
 	$('.l-toggle-menu').css('display','block')
 
 });
 
-});
+
 var toolTimeline = new TimelineMax();
 function newA() {
 		 toolTimeline.add("end", 5)
