@@ -1,21 +1,40 @@
-@import 'colors.scss';
+//Colors
+$blue: #199ed8;
+$text-color: #292b2c;
+$white: hsl(0, 0%, 100%);
+
+//Fonts
+$carrois: 'Carrois Gothic', sans-serif;
+$lato: 'Lato', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-cond: 'Roboto Condensed', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$kaushan: 'Kaushan Script', cursive;
+$kalam: 'Kalam', cursive;
+
+
 
 body {
-    font-family: Roboto;
+    font-family: $lato;
+    line-height:1.5em;
     font-size: 1em;
     width: 100%;
     min-width: 20em;
     color: $text-color;
+    padding:0;
+    margin:0;
 
 }
 
 h1 {
-    font-family: League Gothic;
-    font-size: 2.8em;
+    font-size: 2.6em;
+    line-height:1.25em;
+    margin:0;
 }
 
 h2 {
     font-size: 1.5em;
+
 }
 
 a {
@@ -27,7 +46,13 @@ img {
     width:100%;
     height:auto;
 }
-.darker {
+
+.alt-image {
+    display:none;
+}
+
+
+/* .darker {
     background-color:$text-color;
     opacity:0;
     position: fixed;
@@ -35,8 +60,7 @@ img {
     width: 100%;
     height: 100vh;
     display:none;
-}
-@import 'welcome-window.scss';
+} */
+@import 'welcome-page.scss';
 @import 'header.scss';
-@import 'welcome.scss';
-@import 'toggle-menu.scss';
+@import 'main-page.scss';

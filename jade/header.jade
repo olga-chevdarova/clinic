@@ -1,11 +1,49 @@
-.navigation.container-fluid
-            .l-navigation.row.align-items-center.justify-content-between
-                include ../img/logo.svg
-                .navigation-phone-numbers
-                    i(class="fa fa-phone navigation__phone-icon" aria-hidden="true")
-                    a(href="tel:01778-426000") 01778 426000 
-                    br
-                    i(class="fa fa-mobile navigation__phone-icon" aria-hidden="true")
-                    a(href="tel:07943-336336") 07943 336336
-                
-                include ../img/toggle-menu-icon.svg
+//- .navigation.container-fluid
+//-             .l-navigation.row.align-items-center.justify-content-between
+//-                 include ../img/logo.svg
+//-                 img.alt-image(src="../img/7853724F.jpg")
+//-                 .navigation-phone-numbers
+//-                     i(class="fa fa-phone navigation__phone-icon" aria-hidden="true")
+//-                     a(href="tel:01778-426000") 01778 426000 
+//-                     br
+//-                     i(class="fa fa-mobile navigation__phone-icon" aria-hidden="true")
+//-                     a(href="tel:07943-336336") 07943 336336
+//-                 include ../img/hamburger_icon.svg
+.header.container-fluid
+	.quick-access-bar-TAB
+		.social-icons__quick-access-bar-TAB
+			.social-icons--facebook__quick-access-bar-TAB
+			.social-icons--twitter__quick-access-bar-TAB.social-icons--google__quick-access-bar-TAB
+		.phone-numbers__quick-access-bar-TAB
+			.phone-icon__phone-numbers__quick-access-bar-TAB
+			.phone-number__phone-numbers__quick-access-bar-TAB
+	.navbar-top.row.align-items-center.justify-content-around
+		include ../img/logo.svg
+		img.alt-image#logo-ALT__navbar-top(src="img/logo.png")
+		.phone-numbers__navbar-top-MOB
+			i(class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB" aria-hidden="true")
+			a(href="tel:01778-426000") 01778 426000 
+			br
+			i(class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB" aria-hidden="true")
+			a(href="tel:07943-336336") 07943 336336
+		include ../img/hamburger_icon.svg
+		img.alt-image#hamburger_icon-ALT__navbar-top(src="img/hamburger_icon.png")
+		nav.menu__navbar-top-TAB
+			div(class="dropdown link__menu__navbar-top")
+				button(class="dropdown-toggle btn-link" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") About us
+				div(class="dropdown-menu" aria-labelledby="dropdownMenu2")
+					button(class="dropdown-item" type="button") Action
+					button(class="dropdown-item" type="button") Action
+			a.link__menu__navbar-top(href="") Conditions treated
+			a.link__menu__navbar-top(href="") Contacts
+			
+		nav.menu__navbar-top-PC
+			a.link__menu__navbar-top(href="") About us
+			a.link__menu__navbar-top(href="") Conditions treated
+			a.link__menu__navbar-top(href="") Gallery
+			a.link__menu__navbar-top(href="") Testimonials
+			a.link__menu__navbar-top(href="") Videos
+			a.link__menu__navbar-top(href="") Contacts
+		button.link__menu__navbar-top#appointment-button Appointment request	
+
+

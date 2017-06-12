@@ -1,13 +1,21 @@
 
 $(document).ready(function(){
 if (Modernizr.svgfilters) {
-  $('svg').css('display','block')
-};
- 
+  console.log('yes')
+ //   logoAnimation();
+ // welcomeDel();
+} else {
+  // $('.welcome-page').css('display','none');
+  $('svg').css('display','none');
+  $('.alt-image').css('display', 'block');
+}
+
+
+
 });
 
 $('#toggle-menu-icon').click(function() {
-	$('.l-toggle-menu').css('display','block')
+  $('.l-toggle-menu').css('display','block')
 
 });
 
@@ -25,10 +33,10 @@ function welcomeDel() {
 
 
 if ($(window).width() <= 500 ) {
-      toolTimeline.to('.welcome-window', 0.5, {display:'none',  alpha:0});
+      toolTimeline.to('.welcome-page', 0.5, {display:'none',  alpha:0});
 
-    toolTimeline.from('.welcome-block', 1, {display:'none', alpha:0, ease:Linear.easeOut, delay:0.2});
-  toolTimeline.from('#logo_main', 1, {alpha:0, x:'-100%'});
+    toolTimeline.from('.main-page', 1, {display:'none', alpha:0, ease:Linear.easeOut, delay:0.2});
+  toolTimeline.from('#logo__no-anim', 1, {alpha:0, x:'-100%'});
    toolTimeline.from('.navigation-phone-numbers', 0.7, {alpha:0, y:'-100%',  ease:Linear.easeOut, delay:0.5});
 
   }

@@ -1,18 +1,117 @@
-/*Mobile*/
+// Mobile
+.navbar-top {
+position: fixed;
+padding: .1em;
+width: 100%;
+height: 5em;
+background-color: rgba($white, 0.7);
+z-index: 200;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
 
-.l-navigation {
-    position: fixed;
-    padding: 0.1em;
-    width: 100%;
-    height: 5em;
-    background-color: rgba($white, 0.7);
-    z-index:2500;
+.phone-icon__phone-numbers__navbar-top-MOB {
+	color: $blue;
+	width: 1.3em;
+	padding: .3em;
+}
+
+.quick-access-bar-TAB {
+display: none;
+}
+
+.menu__navbar-top-TAB {
+display: none;
+}
+
+.menu__navbar-top-PC {
+display: none;
+}
+
+#appointment-button {
+display: none;
+}
+#logo-ALT__navbar-top,#hamburger_icon-ALT__navbar-top {
+width: auto;
+height: 100%;
+}
+
+
+@media (min-width: 900px) {
+	.alt-image #hamburger_icon-ALT__navbar-top {
+	display:none;
+}
+.menu__navbar-top-PC {
+	display: none;
+
+}
+#hamburger-icon {
+	display: none;
+}
+#hamburger_icon-ALT__navbar-top {
+	display:none;
+	opacity:0;
 
 }
 
-.navigation__phone-icon {
-    color: $blue;
-    width: 1.3em;
-    padding: 0.3em;
+.menu__navbar-top-TAB {
+	display: block;
+}
+.link__menu__navbar-top {
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0.6em;
+	
 }
 
+.dropdown-menu {
+	border: 0;
+	line-height: 1.5em;
+	background-color: none;
+	font-size: 1.5em;
+}
+.dropdown-item:hover {
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	outline: none;
+}
+.dropdown-toggle {
+	font-size: 1em;
+	text-transform: uppercase;
+	color: $text-color;
+}
+
+.dropdown-item {
+	font-size: 0.6em;
+	text-transform: uppercase;
+}
+.phone-numbers__navbar-top-MOB {
+	display: none;
+}
+
+#appointment-button {
+	-webkit-appearance: none;
+	border-radius: .3em;
+	border: 0;
+	background-color: $blue;
+	color: $white;
+	font-weight: 300;
+	display: inline-block;
+	font-size:1em;
+	padding:0.6em 1em;
+}
+
+}
+@media (min-width: 1300px) {
+.menu__navbar-top-PC {
+	display: block;
+}
+.menu__navbar-top-TAB {
+	display: none;
+}
+.navbar-top {
+	height: 6em;
+
+}
+}

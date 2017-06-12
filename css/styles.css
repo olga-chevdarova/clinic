@@ -1,13 +1,17 @@
 body {
-  font-family: Roboto;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5em;
   font-size: 1em;
   width: 100%;
   min-width: 20em;
-  color: #292b2c; }
+  color: #292b2c;
+  padding: 0;
+  margin: 0; }
 
 h1 {
-  font-family: League Gothic;
-  font-size: 2.8em; }
+  font-size: 2.6em;
+  line-height: 1.25em;
+  margin: 0; }
 
 h2 {
   font-size: 1.5em; }
@@ -20,38 +24,35 @@ img {
   width: 100%;
   height: auto; }
 
-.darker {
-  background-color: #292b2c;
-  opacity: 0;
-  position: fixed;
-  z-index: 150;
-  width: 100%;
-  height: 100vh;
+.alt-image {
   display: none; }
 
-.welcome-window {
-  height: 100%;
+/* .darker {
+    background-color:$text-color;
+    opacity:0;
+    position: fixed;
+    z-index: 150;
+    width: 100%;
+    height: 100vh;
+    display:none;
+} */
+.welcome-page {
+  height: 100vh;
   width: auto;
   z-index: 1000; }
 
-.alt-logo {
-  display: none; }
-
-.welcome-window__logo {
+.welcome-block {
   width: 100%;
   position: relative;
   margin: auto; }
 
-.welcome-window__logo-blue {
+.welcome-block__logo {
   width: 100%;
+  padding-top: 6em;
   margin: 0 auto; }
-
-.welcome-window-text__pc {
-  display: none; }
 
 @media only screen and (min-width: 500px) {
   .welcome-window {
-    background: url("../img/Why2.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover; }
   .welcome-window__logo {
@@ -70,11 +71,7 @@ img {
     padding-bottom: 0.5em;
     line-height: 1.3em;
     color: white;
-    font-family: 'Lato', sans-serif;
     font-weight: 100; } }
-
-svg {
-  display: none; }
 
 .alt-logo.no-csstransforms {
   display: block; }
@@ -213,76 +210,219 @@ svg {
   to {
     opacity: 1; } }
 
-/*Mobile*/
-.l-navigation {
+.navbar-top {
   position: fixed;
-  padding: 0.1em;
+  padding: .1em;
   width: 100%;
   height: 5em;
   background-color: rgba(255, 255, 255, 0.7);
-  z-index: 2500; }
+  z-index: 200;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
 
-.navigation__phone-icon {
+.phone-icon__phone-numbers__navbar-top-MOB {
   color: #199ed8;
   width: 1.3em;
-  padding: 0.3em; }
+  padding: .3em; }
 
-/*Mobile*/
-.welcome-block-background {
-  background: url("../img/mob-port-background.jpg") no-repeat;
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto; }
-
-.l-welcome-block {
-  padding: 6.5em 0.5em 0; }
-
-.welcome-block__text--title {
-  max-width: 50%; }
-
-.welcome-block__text--motto {
-  font-family: Kaushan Script;
-  line-height: 0.5em;
-  color: #199ed8; }
-  .welcome-block__text--motto:nth-of-type(2) {
-    padding: 0em 0.5em; }
-
-.welcome-block__text--description {
-  font-size: 1.125em;
-  text-align: justify;
-  background-color: rgba(255, 255, 255, 0.5); }
-
-.l-appointment-button {
-  margin: 2.5em 0;
-  opacity: 0; }
-
-.button--appointment {
-  width: 100%;
-  color: white;
-  background-color: #199ed8;
-  border: 0;
-  padding: 1em 0;
-  text-transform: uppercase; }
-
-.l-toggle-menu {
-  width: 80%;
-  background-color: white;
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 200;
+.quick-access-bar-TAB {
   display: none; }
 
-.l-toggle-menu__header {
-  padding: 0.1em;
-  height: 5em; }
+.menu__navbar-top-TAB {
+  display: none; }
 
-.l-toggle-content {
-  padding: 0.2em 2em;
-  font-size: 1.125em;
-  line-height: 2.5em;
-  text-transform: uppercase; }
+.menu__navbar-top-PC {
+  display: none; }
 
-.chevron-icon--menu {
-  padding: 0.6em;
-  color: #199ed8; }
+#appointment-button {
+  display: none; }
+
+#logo-ALT__navbar-top, #hamburger_icon-ALT__navbar-top {
+  width: auto;
+  height: 100%; }
+
+@media (min-width: 900px) {
+  .alt-image #hamburger_icon-ALT__navbar-top {
+    display: none; }
+  .menu__navbar-top-PC {
+    display: none; }
+  #hamburger-icon {
+    display: none; }
+  #hamburger_icon-ALT__navbar-top {
+    display: none;
+    opacity: 0; }
+  .menu__navbar-top-TAB {
+    display: block; }
+  .link__menu__navbar-top {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.6em; }
+  .dropdown-menu {
+    border: 0;
+    line-height: 1.5em;
+    background-color: none;
+    font-size: 1.5em; }
+  .dropdown-item:hover {
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none; }
+  .dropdown-toggle {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #292b2c; }
+  .dropdown-item {
+    font-size: 0.6em;
+    text-transform: uppercase; }
+  .phone-numbers__navbar-top-MOB {
+    display: none; }
+  #appointment-button {
+    -webkit-appearance: none;
+    border-radius: .3em;
+    border: 0;
+    background-color: #199ed8;
+    color: white;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.6em 1em; } }
+
+@media (min-width: 1300px) {
+  .menu__navbar-top-PC {
+    display: block; }
+  .menu__navbar-top-TAB {
+    display: none; }
+  .navbar-top {
+    height: 6em; } }
+
+.welcome-block__main-page {
+  width: 100%;
+  background: url("../img/mob-port-background.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 10% 0; }
+
+.text__welcome-block__main-page {
+  padding-top: 8em; }
+
+.title__text__welcome-block__main-page {
+  max-width: 50%;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  font-weight: 600; }
+
+.motto__text__welcome-block__main-page {
+  color: #199ed8;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5em;
+  max-width: 70%;
+  padding: 0.9em 0;
+  line-height: 1.2em; }
+
+.subtitle__text__welcome-block__main-page {
+  display: none; }
+
+#learn-more-button {
+  display: none; }
+
+.subtitle-TAB__text__welcome-block__main-page {
+  display: none; }
+
+.decription-PC__text__welcome-block__main-page {
+  display: none; }
+
+@media (min-width: 450px) {
+  .text__welcome-block__main-page {
+    padding-top: 7em;
+    padding-bottom: 1em; }
+  .welcome-block__main-page {
+    background: url("../img/020.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 70% 0; }
+  .title__text__welcome-block__main-page {
+    max-width: 75%; }
+  .subtitle__text__welcome-block__main-page {
+    display: block;
+    max-width: 70%;
+    padding-bottom: 0.9em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 600; }
+  .motto__text__welcome-block__main-page {
+    max-width: 100%; }
+  #learn-more-button {
+    -webkit-appearance: none;
+    border-radius: .3em;
+    border: 0;
+    background-color: #199ed8;
+    color: white;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.6em 1em;
+    text-transform: uppercase;
+    display: block; }
+  .title__text__welcome-block__main-page {
+    max-width: 70%;
+    font-weight: 600; } }
+
+@media (min-width: 700px) {
+  .welcome-block__main-page {
+    background: url("../img/pos.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 68% 0; }
+  .text__welcome-block__main-page {
+    padding-top: 8em;
+    padding-left: 2em;
+    padding-bottom: 2em; }
+  .subtitle__text__welcome-block__main-page {
+    display: none; }
+  .subtitle-TAB__text__welcome-block__main-page {
+    display: block;
+    max-width: 55%;
+    padding: 0 0 0.9em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    font-weight: 600; } }
+
+@media (min-width: 900px) {
+  .decription-PC__text__welcome-block__main-page {
+    display: block;
+    max-width: 50%;
+    text-align: justify;
+    font-size: 1em;
+    padding-bottom: 0.9em; }
+  .subtitle-TAB__text__welcome-block__main-page {
+    max-width: 60%; } }
+
+@media (min-width: 1100px) {
+  .text__welcome-block__main-page {
+    padding-top: 12em;
+    padding-left: 3em;
+    padding-bottom: 2em; }
+  .title__text__welcome-block__main-page {
+    font-size: 3.5em;
+    font-weight: 600; }
+  .subtitle-TAB__text__welcome-block__main-page {
+    max-width: 55%;
+    padding: 0.9em 0 0em; } }
+
+@media (min-width: 1500px) {
+  .subtitle-TAB__text__welcome-block__main-page {
+    max-width: 45%; }
+  .decription-PC__text__welcome-block__main-page {
+    max-width: 45%; }
+  .text__welcome-block__main-page {
+    padding-top: 14em;
+    padding-bottom: 4em;
+    padding-left: 7em; }
+  .welcome-block__main-page {
+    background: url("../img/gie5xokAT6.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; } }
