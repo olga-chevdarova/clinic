@@ -439,7 +439,7 @@ img {
 
 .welcome-block__main-page {
   width: 100%;
-  background: url("../img/mob-port-background.jpg") no-repeat;
+  background: url("../img/bg-MOB_port__welcome-block.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 10% 0; }
@@ -471,16 +471,9 @@ img {
 #learn-more-button {
   display: none; }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) {
-  .welcome-block__main-page {
-    background: url("../img/mob-port-background@1.5.jpg") no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: 10% 0; } }
-
 @media (min-width: 450px) {
   .welcome-block__main-page {
-    background: url("../img/020.jpg") no-repeat;
+    background: url("../img/bg-MOB_land__welcome-block.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 70% 0; }
@@ -512,7 +505,7 @@ img {
   .subtitle__text__welcome-block__main-page {
     display: none; }
   .welcome-block__main-page {
-    background: url("../img/pos2.jpg") no-repeat;
+    background: url("../img/bg-TAB__welcome-block.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 68% 0; }
@@ -528,13 +521,6 @@ img {
     line-height: 1.5em;
     text-align: justify;
     font-weight: 600; } }
-
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 700px) {
-  .welcome-block__main-page {
-    background: url("../img/pos.jpg") no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: 68% 0; } }
 
 @media (min-width: 900px) {
   .decription-PC__text__welcome-block__main-page {
@@ -559,7 +545,7 @@ img {
 
 @media (min-width: 1500px) {
   .welcome-block__main-page {
-    background: url("../img/gie5xokAT6.jpg") no-repeat;
+    background: url("../img/bg-PC__welcome-block.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover; }
   .text__welcome-block__main-page {
