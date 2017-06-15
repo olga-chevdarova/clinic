@@ -18,16 +18,20 @@
 			.phone-icon__phone-numbers__quick-access-bar-TAB
 			.phone-number__phone-numbers__quick-access-bar-TAB
 	.navbar-top.row.align-items-center.justify-content-around
-		include ../img/logo.svg
-		img.alt-image#logo-ALT__navbar-top(src="img/logo.png")
+		.logo-box__navbar-top
+			img.svg-image#logo-header(src="img/logo.svg")
+			img.alt-image#logo-ALT__navbar-top(src="img/logo.png")
 		.phone-numbers__navbar-top-MOB
 			i(class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB" aria-hidden="true")
 			a(href="tel:01778-426000") 01778 426000 
 			br
 			i(class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB" aria-hidden="true")
 			a(href="tel:07943-336336") 07943 336336
-		include ../img/hamburger_icon.svg
-		img.alt-image#hamburger_icon-ALT__navbar-top(src="img/hamburger_icon.png")
+		.menu-icon__navbar-top-MOB
+			#hamburger-icon
+				span
+				span
+				span
 		nav.menu__navbar-top-TAB
 			div(class="dropdown link__menu__navbar-top")
 				button(class="dropdown-toggle btn-link" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") About us
@@ -44,6 +48,7 @@
 			a.link__menu__navbar-top(href="") Testimonials
 			a.link__menu__navbar-top(href="") Videos
 			a.link__menu__navbar-top(href="") Contacts
-		button.link__menu__navbar-top#appointment-button Appointment request	
+		button.link__menu__navbar-top#appointment-button Appointment	
+		button.link__menu__navbar-top#appointment-button-PC Appointment request
 
 

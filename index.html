@@ -18,6 +18,7 @@
     <!--endbuild-->
     <header></header>
     <body>
+      <div id="fixed"></div>
       <div class="header container-fluid">
         <div class="quick-access-bar-TAB">
           <div class="social-icons__quick-access-bar-TAB">
@@ -29,9 +30,30 @@
             <div class="phone-number__phone-numbers__quick-access-bar-TAB"></div>
           </div>
         </div>
-        <div class="navbar-top row align-items-center justify-content-around"><?xml version="1.0" encoding="utf-8"?>
+        <div class="navbar-top row align-items-center justify-content-around">
+          <div class="logo-box__navbar-top"><img id="logo-header" src="img/logo.svg" class="svg-image"><img id="logo-ALT__navbar-top" src="img/logo.png" class="alt-image"></div>
+          <div class="phone-numbers__navbar-top-MOB"><i aria-hidden="true" class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:07943-336336">07943 336336</a></div>
+          <div class="menu-icon__navbar-top-MOB">
+            <div id="hamburger-icon"><span></span><span></span><span></span></div>
+          </div>
+          <nav class="menu__navbar-top-TAB">
+            <div class="dropdown link__menu__navbar-top">
+              <button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn-link">About us</button>
+              <div aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                <button type="button" class="dropdown-item">Action</button>
+                <button type="button" class="dropdown-item">Action</button>
+              </div>
+            </div><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Contacts</a>
+          </nav>
+          <nav class="menu__navbar-top-PC"><a href="" class="link__menu__navbar-top">About us</a><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Gallery</a><a href="" class="link__menu__navbar-top">Testimonials</a><a href="" class="link__menu__navbar-top">Videos</a><a href="" class="link__menu__navbar-top">Contacts</a></nav>
+          <button id="appointment-button" class="link__menu__navbar-top">Appointment	</button>
+          <button id="appointment-button-PC" class="link__menu__navbar-top">Appointment request</button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="logo__mobile-menu"><?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" id="logo__no-anim"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" id="logo__no-anim2"
 	 viewBox="0 0 493.3 362" style="enable-background:new 0 0 493.3 362;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
@@ -112,28 +134,21 @@
 	</g>
 </g>
 </svg>
-<img id="logo-ALT__navbar-top" src="img/logo.png" class="alt-image">
-          <div class="phone-numbers__navbar-top-MOB"><i aria-hidden="true" class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:07943-336336">07943 336336</a></div><?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" height="50%"
-	 y="0px" viewBox="0 0 640 488" style="enable-background:new 0 0 640 488;" xml:space="preserve">
-<rect id="hamburger-icon-bottom" x="23.4" y="17.6" width="588.6" height="90.6"/>
-<rect id="hamburger-icon-middle" x="23.4" y="198.2" width="588.6" height="90.6"/>
-<rect id="hamburger-icon-top" x="23.4" y="378.2" width="588.6" height="90.6"/>
-</svg>
-<img id="hamburger_icon-ALT__navbar-top" src="img/hamburger_icon.png" class="alt-image">
-          <nav class="menu__navbar-top-TAB">
-            <div class="dropdown link__menu__navbar-top">
-              <button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn-link">About us</button>
-              <div aria-labelledby="dropdownMenu2" class="dropdown-menu">
-                <button type="button" class="dropdown-item">Action</button>
-                <button type="button" class="dropdown-item">Action</button>
-              </div>
-            </div><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Contacts</a>
-          </nav>
-          <nav class="menu__navbar-top-PC"><a href="" class="link__menu__navbar-top">About us</a><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Gallery</a><a href="" class="link__menu__navbar-top">Testimonials</a><a href="" class="link__menu__navbar-top">Videos</a><a href="" class="link__menu__navbar-top">Contacts</a></nav>
-          <button id="appointment-button" class="link__menu__navbar-top">Appointment request	</button>
+
         </div>
+        <div class="button__mobile-menu">
+          <button id="appointment-button-MOB">Appointment request</button>
+        </div>
+        <nav class="navigation__mobile-menu">
+          <ul>
+            <li><a href="" class="link__navigation__mobile-menu">About us</a></li>
+            <li><a href="" class="link__navigation__mobile-menu">Conditions treated</a></li>
+            <li><a href="" class="link__navigation__mobile-menu">Gallery</a></li>
+            <li><a href="" class="link__navigation__mobile-menu">Testimonials</a></li>
+            <li><a href="" class="link__navigation__mobile-menu">Videos</a></li>
+            <li><a href="" class="link__navigation__mobile-menu">Contacts</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="main-page">
         <div class="welcome-block__main-page container-fluid">

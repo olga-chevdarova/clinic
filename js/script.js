@@ -1,18 +1,35 @@
 
 $(document).ready(function(){
 if (Modernizr.svgfilters) {
-  console.log('yes')
  //   logoAnimation();
  // welcomeDel();
 } else {
   // $('.welcome-page').css('display','none');
   $('svg').css('display','none');
+  $('.svg-image').css('display','none');
   $('.alt-image').css('display', 'block');
+
 }
 
+$('.menu-icon__navbar-top-MOB').click(function(){
+    $('#hamburger-icon').toggleClass('open');
+    $('.mobile-menu').toggle('non-visible');
+    $('.phone-numbers__navbar-top-MOB').toggleClass('non-visible');
+    $('.logo-box__navbar-top').toggleClass('non-visible');
+  });
+  });
 
 
-});
+
+
+
+
+// function iconAnim() {
+// var toolTimeline = new TimelineMax();
+// toolTimeline.to('#hamburger-icon-middle', 0.5, {display:'none'});
+// toolTimeline.to('#hamburger-icon-top', 0.5, { rotation: -60, ease: Linear.easeNone });
+// toolTimeline.to('#hamburger-icon-bottom', 0.5, {rotation:60});
+// }
 
 $('#toggle-menu-icon').click(function() {
   $('.l-toggle-menu').css('display','block')
