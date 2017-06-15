@@ -9,6 +9,7 @@ if (Modernizr.svgfilters) {
   $('.svg-image').css('display','none');
   $('.alt-image').css('display', 'block');
 
+
 }
 
 $('.menu-icon__navbar-top-MOB').click(function(){

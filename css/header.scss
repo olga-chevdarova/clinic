@@ -1,5 +1,9 @@
 // Mobile
 
+.quick-access-bar-TAB {
+display: none;
+}
+
 .navbar-top {
 position: fixed;
 padding: .1em;
@@ -10,37 +14,35 @@ z-index: 200;
 -ms-flex-pack: justify;
 justify-content: space-between;
 }
+
 .logo-box__navbar-top {
 	height:100%;
+	width:auto;
 }
+
+#logo-header {
+    height:100%;
+    width:auto;
+}
+
+#logo-ALT__navbar-top {
+	width:auto;
+	height:100%;
+	margin-left:2em;
+}
+
 .phone-icon__phone-numbers__navbar-top-MOB {
 	color: $blue;
 	width: 1.3em;
 	padding: .3em;
 }
 
-.quick-access-bar-TAB {
-display: none;
+.menu-icon__navbar-top-MOB {
+	height:100%;
 }
 
-.menu__navbar-top-TAB {
-display: none;
-}
 
-.menu__navbar-top-PC {
-display: none;
-}
-
-#appointment-button {
-display: none;
-}
-#appointment-button-PC {
-	display:none;
-}
-#logo-ALT__navbar-top,#hamburger_icon-ALT__navbar-top {
-width: auto;
-height: 100%;
-}
+//Hamburger-icon animation
 #hamburger-icon {
 width: 3.2em;
   position: relative;
@@ -56,10 +58,7 @@ width: 3.2em;
   top:1.10em;
 }
 
-.menu-icon__navbar-top-MOB {
-	height:100%;
-}
-#hamburger-icon span, #nav-icon3 span, #nav-icon4 span {
+#hamburger-icon span {
   display: block;
   position: absolute;
   height: 0.45em;
@@ -117,22 +116,38 @@ width: 3.2em;
     scale:0.7;
 }
 
-@media (min-width: 700px) {
-	.alt-image #hamburger_icon-ALT__navbar-top {
+
+.menu__navbar-top-TAB {
+display: none;
+}
+
+.menu__navbar-top-PC {
+display: none;
+}
+
+#appointment-button {
+display: none;
+}
+#appointment-button-LAP {
 	display:none;
 }
-.menu__navbar-top-PC {
-	display: none;
 
-}
-#hamburger-icon {
+//Tablets
+
+@media (min-width: 700px) {
+
+.phone-numbers__navbar-top-MOB {
 	display: none;
 }
 
+.menu-icon__navbar-top-MOB {
+	display: none;
+}
 
 .menu__navbar-top-TAB {
 	display: block;
 }
+
 .link__menu__navbar-top {
 	text-transform: uppercase;
 	display: inline-block;
@@ -146,12 +161,6 @@ width: 3.2em;
 	background-color: none;
 	font-size: 1.5em;
 }
-.dropdown-item:hover {
-	background-color: transparent;
-	border: 0;
-	box-shadow: none;
-	outline: none;
-}
 .dropdown-toggle {
 	font-size: 1em;
 	text-transform: uppercase;
@@ -162,8 +171,12 @@ width: 3.2em;
 	font-size: 0.6em;
 	text-transform: uppercase;
 }
-.phone-numbers__navbar-top-MOB {
-	display: none;
+
+.dropdown-item:hover {
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	outline: none;
 }
 
 #appointment-button {
@@ -178,13 +191,19 @@ width: 3.2em;
 	padding:0.6em 1em;
 }
 
+.menu__navbar-top-PC {
+	display: none;
 }
+
+}
+
+//Laptop
 
 @media (min-width: 800px) {
 #appointment-button {
 	display:none;
 }
-#appointment-button-PC {
+#appointment-button-LAP {
 	display:block;
 	-webkit-appearance: none;
 	border-radius: .3em;
@@ -197,13 +216,18 @@ width: 3.2em;
 	padding:0.6em 1em;
 }
 }
+
+//PC
 @media (min-width: 1300px) {
-.menu__navbar-top-PC {
-	display: block;
-}
+
 .menu__navbar-top-TAB {
 	display: none;
 }
+
+.menu__navbar-top-PC {
+	display: block;
+}
+
 .navbar-top {
 	height: 6em;
 
