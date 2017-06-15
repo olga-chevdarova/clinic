@@ -14,7 +14,7 @@ if (Modernizr.svgfilters) {
 
 $('.menu-icon__navbar-top-MOB').click(function(){
     $('#hamburger-icon').toggleClass('open');
-    $('.mobile-menu').toggle('non-visible');
+    $('.mobile-menu').toggle('show');
     $('.phone-numbers__navbar-top-MOB').toggleClass('non-visible');
     $('.logo-box__navbar-top').toggleClass('non-visible');
   });
