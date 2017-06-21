@@ -1,0 +1,147 @@
+
+.about-us__main-page {
+	padding:0;
+}
+.about-clinic__about-us__main-page {
+	font-size:1.1em;
+	line-height:1.6em;
+	max-width:100%;
+}
+.about-doctor__about-us__main-page {
+	width:100%;
+	background-color: $grey;
+margin:2em 0;
+padding:1em 0;
+}
+
+.marked-text  {
+	color:$blue;
+	font-weight:600;
+}
+
+.info__about-doctor__about-us__main-page {
+	text-align:justify;
+	font-size:1.1em;
+	line-height:1.6em;
+}
+
+.title__about-doctor__about-us__main-page {
+	font-size:1.2em;
+	color:$blue;
+	font-weight:600;
+	line-height:2em;
+}
+
+.text__about-doctor__about-us__main-page {
+	padding:1em;
+	font-style:italic;
+line-height:1.6em;
+}
+
+.tel__about-doctor__about-us__main-page {
+	padding:.5em 0;
+	line-height:1.8em;
+	font-weight:600;
+	i {
+		color:$blue;
+		width: 1.3em;
+		
+	}
+}
+.icons-block__about-us__main-page {
+	width:45%;
+	padding:0.5em;
+	margin:0.5em;
+	background-color: $grey;
+	text-align:center;
+	i {
+		color:#07638A;
+	}
+}
+.title__icons-block__about-us__main-page {
+	font-weight:600;
+	padding:0.5em 0;
+}
+.text__icons-block__about-us__main-page {
+	display:none;
+}
+
+.text-TAB__about-doctor__about-us__main-page {
+	display:none;
+}
+@media (min-width: 460px) {
+.text__icons-block__about-us__main-page {
+	text-align:left;
+	display:block;
+	padding:0 0.5em;
+}
+}
+@media (min-width: 600px) {
+.text__about-doctor__about-us__main-page {
+	padding-top:1.5em;
+}
+
+// .text__icon__about-us__main-page {
+// 	font-weight:normal;
+// 	font-size:1em;
+// 	text-align:left;
+// 	padding:0 0.8em;
+// 	padding-bottom :1em;
+// }
+
+
+}
+
+@media (min-width: 700px) {
+.text__about-doctor__about-us__main-page {
+	display:none;
+}
+.text-TAB__about-doctor__about-us__main-page {
+	padding-top:1em;
+		font-style:italic;
+		line-height:1.6em;
+		display:block;
+
+}
+.about-doctor__about-us__main-page {
+	padding:2em 0;
+}
+}
+@media (min-width: 800px) {
+
+.icons-block__about-us__main-page {
+	margin:0;
+	width:25%;
+	padding:2em 1.2em 1em;
+}
+.icons-block-wrap__about-us__main-page {
+	margin-top:2.5em;
+}
+
+}
+
+@media (min-width: 1000px) {
+.about-clinic__about-us__main-page {
+	width:45%;
+}
+.about-doctor__about-us__main-page {
+	width:45%;
+
+}
+
+.text-TAB__about-doctor__about-us__main-page  {
+	display:none;
+}
+.text__about-doctor__about-us__main-page {
+	display:block;
+}
+}
+@media (min-width: 1500px) {
+	.about-doctor__about-us__main-page {
+		max-width:40%;
+		margin-right:3em;
+	}
+.about-clinic__about-us__main-page {
+	text-align:justify;
+}
+}
