@@ -5,52 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:300,400,700" rel="stylesheet">
-    <!--build:css css/main.css-->
-    <!--bower:css-->
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
-    <link rel="stylesheet" href="bower_components/tooltipster/dist/css/tooltipster.bundle.css">
-    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
-    <!--endbower-->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <!--endbuild-->
-    <header></header>
-    <body>
-      <header class="container-fluid">
-        <div class="quick-access-bar-TAB">
-          <div class="social-icons__quick-access-bar-TAB">
-            <div class="social-icons--facebook__quick-access-bar-TAB"></div>
-            <div class="social-icons--twitter__quick-access-bar-TAB social-icons--google__quick-access-bar-TAB"></div>
-          </div>
-          <div class="phone-numbers__quick-access-bar-TAB">
-            <div class="phone-icon__phone-numbers__quick-access-bar-TAB"></div>
-            <div class="phone-number__phone-numbers__quick-access-bar-TAB"></div>
-          </div>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="quick-access-TAB row align-items-center justify-content-around">
+        <div class="social-icons-block__quick-access-TAB"><i aria-hidden="true" class="fa fa-facebook social-icon__social-icons-block__quick-access-TAB"></i><i aria-hidden="true" class="fa fa-twitter social-icon__social-icons-block__quick-access-TAB"></i><i aria-hidden="true" class="fa fa-google social-icon__social-icons-block__quick-access-TAB"></i></div>
+        <div class="phone-numbers-block__quick-access-TAB"><i aria-hidden="true" class="fa fa-phone phone-icon__phone-numbers-block__quick-access-TAB"></i><a href="tel:01778-426000">01778 426000 </a><i aria-hidden="true" class="fa fa-mobile phone-icon__phone-numbers-block__quick-access-TAB"></i><a href="tel:01778-426000">01778 426000</a></div>
+      </div>
+      <div class="navbar-top row align-items-center justify-content-around">
+        <div class="logo-box__navbar-top"><img id="logo-header" src="img/logo.svg" class="svg-image"><img id="logo-ALT__navbar-top" src="img/logo.png" class="alt-image"></div>
+        <div class="phone-numbers__navbar-top-MOB"><i aria-hidden="true" class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:07943-336336">07943 336336</a></div>
+        <div class="menu-icon__navbar-top-MOB">
+          <div id="hamburger-icon"><span></span><span></span><span></span></div>
         </div>
-        <div class="navbar-top row align-items-center justify-content-around">
-          <div class="logo-box__navbar-top"><img id="logo-header" src="img/logo.svg" class="svg-image"><img id="logo-ALT__navbar-top" src="img/logo.png" class="alt-image"></div>
-          <div class="phone-numbers__navbar-top-MOB"><i aria-hidden="true" class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:07943-336336">07943 336336</a></div>
-          <div class="menu-icon__navbar-top-MOB">
-            <div id="hamburger-icon"><span></span><span></span><span></span></div>
-          </div>
-          <nav class="menu__navbar-top-TAB">
-            <div class="dropdown link__menu__navbar-top">
-              <button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn-link">About us</button>
-              <div aria-labelledby="dropdownMenu2" class="dropdown-menu">
-                <button type="button" class="dropdown-item">Action</button>
-                <button type="button" class="dropdown-item">Action</button>
-              </div>
-            </div><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Contacts</a>
-          </nav>
-          <nav class="menu__navbar-top-PC"><a hrdef="" class="link__menu__navbar-top">About us</a><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Gallery</a><a href="" class="link__menu__navbar-top">Testimonials</a><a href="" class="link__menu__navbar-top">Videos</a><a href="" class="link__menu__navbar-top">Contacts</a></nav>
-          <button id="appointment-button" class="link__menu__navbar-top">Appointment	</button>
-          <button id="appointment-button-LAP" class="link__menu__navbar-top">Appointment request</button>
-        </div>
-      </header>
-      <div class="mobile-menu">
-        <div class="logo__mobile-menu"><?xml version="1.0" encoding="utf-8"?>
+        <nav class="menu__navbar-top-TAB">
+          <div class="dropdown link__menu__navbar-top">
+            <button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn-link">About us</button>
+            <div aria-labelledby="dropdownMenu2" class="dropdown-menu">
+              <button type="button" class="dropdown-item">Action</button>
+              <button type="button" class="dropdown-item">Action</button>
+            </div>
+          </div><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Contacts</a>
+        </nav>
+        <nav class="menu__navbar-top-PC"><a href="" class="link__menu__navbar-top">About us</a><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Gallery</a><a href="" class="link__menu__navbar-top">Testimonials</a><a href="" class="link__menu__navbar-top">Videos</a><a href="" class="link__menu__navbar-top">Contacts</a></nav>
+        <button id="appointment-button" class="link__menu__navbar-top">Appointment	</button>
+        <button id="appointment-button-LAP" class="link__menu__navbar-top">Appointment request</button>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="logo__mobile-menu"><?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" id="logo__no-anim"
 	 viewBox="0 0 493.3 362" style="enable-background:new 0 0 493.3 362;" xml:space="preserve">
@@ -134,34 +117,77 @@
 </g>
 </svg>
 
-        </div>
-        <div class="button__mobile-menu">
-          <button id="appointment-button-MOB">Appointment request</button>
-        </div>
-        <nav class="navigation__mobile-menu">
-          <ul>
-            <li><a href="" class="link__navigation__mobile-menu">About us</a></li>
-            <li><a href="" class="link__navigation__mobile-menu">Conditions treated</a></li>
-            <li><a href="" class="link__navigation__mobile-menu">Gallery</a></li>
-            <li><a href="" class="link__navigation__mobile-menu">Testimonials</a></li>
-            <li><a href="" class="link__navigation__mobile-menu">Videos</a></li>
-            <li><a href="" class="link__navigation__mobile-menu">Contacts</a></li>
-          </ul>
-        </nav>
       </div>
-      <section class="main-page">
-        <div class="welcome-block__main-page container-fluid">
-          <div class="text__welcome-block__main-page">
-            <h1 class="title__text__welcome-block__main-page">Bourne Osteopath Clinic</h1>
-            <div class="motto__text__welcome-block__main-page">Qualitive healthcare without the wait!</div>
-            <div class="subtitle__text__welcome-block__main-page"> Musculoskeletal disorders treatment without the use of drugs or surgery.</div>
-            <h2 class="subtitle-TAB__text__welcome-block__main-page">Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h2>
-            <p class="decription-PC__text__welcome-block__main-page">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
-            <button id="learn-more-button">Learn More</button>
+      <div class="button__mobile-menu">
+        <button id="appointment-button-MOB">Appointment request</button>
+      </div>
+      <nav class="navigation__mobile-menu">
+        <ul>
+          <li><a href="" class="link__navigation__mobile-menu">About us</a></li>
+          <li><a href="" class="link__navigation__mobile-menu">Conditions treated</a></li>
+          <li><a href="" class="link__navigation__mobile-menu">Gallery</a></li>
+          <li><a href="" class="link__navigation__mobile-menu">Testimonials</a></li>
+          <li><a href="" class="link__navigation__mobile-menu">Videos</a></li>
+          <li><a href="" class="link__navigation__mobile-menu">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="main-page">
+      <div class="welcome-block__main-page container-fluid">
+        <div class="text__welcome-block__main-page">
+          <h1 class="title__text__welcome-block__main-page">Bourne Osteopath Clinic</h1>
+          <div class="motto__text__welcome-block__main-page">Qualitive healthcare without the wait!</div>
+          <div class="subtitle__text__welcome-block__main-page"> Musculoskeletal disorders treatment without the use of drugs or surgery.</div>
+          <h3 class="subtitle-TAB__text__welcome-block__main-page">Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h3>
+          <p class="decription-PC__text__welcome-block__main-page">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
+          <button id="learn-more-button">Learn More</button>
+        </div>
+      </div>
+      <section class="container-fluid">
+        <div class="row about-us__main-page">
+          <div class="about-clinic__about-us__main-page container">
+            <h2>About us</h2><span>All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders </span><span class="marked-text">without the use of drugs or surgery.</span><br><span class="marked-text">Jo Sunner </span><span>is the principle at The Bourne Osteopath Clinic, the Bourne areas longest established Osteopath clinic. Jo Sunner also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists.</span><br><span>In Bourne, all treatments are in a medical centre, providing </span><span class="marked-text">the perfect safe, caring environment, </span><span>giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. </span><br><span>The clinic is open to everyone. </span>
+          </div>
+          <div class="about-doctor__about-us__main-page container-fluid row align-items-center justify-content-around">
+            <div class="col-6"><img src="../img/jo.jpg"></div>
+            <div class="col-6"><a href="#" class="title__about-doctor__about-us__main-page">Mr Jo Sunner</a><br><span class="info__about-doctor__about-us__main-page">BSc(ost.) DO. MMSM. Registered Osteopath</span>
+              <div class="tel__about-doctor__about-us__main-page"><i aria-hidden="true" class="fa fa-phone"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile"></i><a href="tel:01778-426000">01778 426000 </a></div>
+              <div class="text-TAB__about-doctor__about-us__main-page">Mr. Jo Sunner is the principle at Bourne Osteopath Clinic. He also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists. </div>
+            </div>
+            <div class="text__about-doctor__about-us__main-page">Mr. Jo Sunner is the principle at Bourne Osteopath Clinic. He also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists. </div>
+          </div>
+        </div>
+        <div class="icons-block-wrap__about-us__main-page row justify-content-around">
+          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-user-md fa-4x"></i>
+            <h3 class="title__icons-block__about-us__main-page">Since 1993</h3>
+            <p class="text__icons-block__about-us__main-page">Bourne Osteopath Clinic is the longest established clinic in the area</p>
+          </div>
+          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-info-circle fa-4x"></i>
+            <h3 class="title__icons-block__about-us__main-page">Expert Advice</h3>
+            <p class="text__icons-block__about-us__main-page">Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions </p>
+          </div>
+          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-trophy fa-4x"></i>
+            <h3 class="title__icons-block__about-us__main-page">Award Winning</h3>
+            <p class="text__icons-block__about-us__main-page"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium.</p>
+          </div>
+          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-star fa-4x"></i>
+            <h3 class="title__icons-block__about-us__main-page">First Class Service</h3>
+            <p class="text__icons-block__about-us__main-page">Bourne Osteopath Clinic was rated 5 stars by our patience</p>
           </div>
         </div>
       </section>
-    </body>
+    </section>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:300,400,700" rel="stylesheet">
+    <!--build:css css/main.css-->
+    <!--bower:css-->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+    <link rel="stylesheet" href="bower_components/tooltipster/dist/css/tooltipster.bundle.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <!--endbower-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
     <!--build:js js/vendor.js-->
     <!--bower:js-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -177,5 +203,5 @@
     <!--build:js js/main.js-->
     <script type="text/javascript" src="js/script.js"></script>
     <!--endbuild-->
-  </head>
+  </body>
 </html>

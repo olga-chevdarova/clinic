@@ -2,6 +2,7 @@
 $blue: #199ed8;
 $text-color: #292b2c;
 $white: hsl(0, 0%, 100%);
+$grey:#F2F2F2;
 
 //Fonts
 
@@ -28,7 +29,22 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
+     line-height:1.5em;
+     text-transform:uppercase;
+     padding:0.8em 0;
+}
+h2:before {
+    content: '\f054';
+    font-family: FontAwesome;
+    display: inline-block;
+    color: $blue;
+    padding:0 0.5em;
+
+}
+h3 {
+       
+       font-size: 1.2em;
      line-height:1.5em;
 }
 
@@ -66,3 +82,4 @@ img {
 @import 'header.scss';
 @import 'mobile-menu.scss';
 @import 'main-page.scss';
+

@@ -14,6 +14,19 @@ h1 {
   margin: 0; }
 
 h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  padding: 0.8em 0; }
+
+h2:before {
+  content: '\f054';
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #199ed8;
+  padding: 0 0.5em; }
+
+h3 {
   font-size: 1.2em;
   line-height: 1.5em; }
 
@@ -214,7 +227,7 @@ img {
   to {
     opacity: 1; } }
 
-.quick-access-bar-TAB {
+.quick-access-TAB {
   display: none; }
 
 .navbar-top {
@@ -326,6 +339,29 @@ img {
   display: none; }
 
 @media (min-width: 700px) {
+  .quick-access-TAB {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 15000;
+    height: 3.5em;
+    background-color: #F2F2F2;
+    width: 100%;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+  .social-icons-block__quick-access-TAB, .phone-numbers-block__quick-access-TAB {
+    padding: 0 1em; }
+  .social-icon__social-icons-block__quick-access-TAB, .phone-icon__phone-numbers-block__quick-access-TAB {
+    padding: 0em 0.8em;
+    font-size: 1.3em; }
+  .phone-numbers-block__quick-access-TAB a {
+    padding-right: 0.8em; }
+  .phone-icon__phone-numbers-block__quick-access-TAB {
+    color: #199ed8; }
   .phone-numbers__navbar-top-MOB {
     display: none; }
   .menu-icon__navbar-top-MOB {
@@ -335,7 +371,8 @@ img {
   .link__menu__navbar-top {
     text-transform: uppercase;
     display: inline-block;
-    padding: 0.6em; }
+    padding: 0.6em;
+    font-weight: 600; }
   .dropdown-menu {
     border: 0;
     line-height: 1.5em;
@@ -365,7 +402,9 @@ img {
     font-size: 1em;
     padding: 0.6em 1em; }
   .menu__navbar-top-PC {
-    display: none; } }
+    display: none; }
+  .navbar-top {
+    margin-top: 3.5em; } }
 
 @media (min-width: 800px) {
   #appointment-button {
@@ -383,12 +422,12 @@ img {
     padding: 0.6em 1em; } }
 
 @media (min-width: 1300px) {
+  .navbar-top {
+    height: 6em; }
   .menu__navbar-top-TAB {
     display: none; }
   .menu__navbar-top-PC {
-    display: block; }
-  .navbar-top {
-    height: 6em; } }
+    display: block; } }
 
 .mobile-menu {
   width: 80%;
@@ -520,7 +559,9 @@ img {
     font-size: 1.2em;
     line-height: 1.5em;
     text-align: justify;
-    font-weight: 600; } }
+    font-weight: 600; }
+  .text__welcome-block__main-page {
+    padding-top: 11.5em; } }
 
 @media (min-width: 900px) {
   .decription-PC__text__welcome-block__main-page {
@@ -556,3 +597,110 @@ img {
     max-width: 45%; }
   .decription-PC__text__welcome-block__main-page {
     max-width: 45%; } }
+
+.about-us__main-page {
+  padding: 0; }
+
+.about-clinic__about-us__main-page {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  max-width: 100%; }
+
+.about-doctor__about-us__main-page {
+  width: 100%;
+  background-color: #F2F2F2;
+  margin: 2em 0;
+  padding: 1em 0; }
+
+.marked-text {
+  color: #199ed8;
+  font-weight: 600; }
+
+.info__about-doctor__about-us__main-page {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6em; }
+
+.title__about-doctor__about-us__main-page {
+  font-size: 1.2em;
+  color: #199ed8;
+  font-weight: 600;
+  line-height: 2em; }
+
+.text__about-doctor__about-us__main-page {
+  padding: 1em;
+  font-style: italic;
+  line-height: 1.6em; }
+
+.tel__about-doctor__about-us__main-page {
+  padding: .5em 0;
+  line-height: 1.8em;
+  font-weight: 600; }
+  .tel__about-doctor__about-us__main-page i {
+    color: #199ed8;
+    width: 1.3em; }
+
+.icons-block__about-us__main-page {
+  width: 45%;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: #F2F2F2;
+  text-align: center; }
+  .icons-block__about-us__main-page i {
+    color: #07638A; }
+
+.title__icons-block__about-us__main-page {
+  font-weight: 600;
+  padding: 0.5em 0; }
+
+.text__icons-block__about-us__main-page {
+  display: none; }
+
+.text-TAB__about-doctor__about-us__main-page {
+  display: none; }
+
+@media (min-width: 460px) {
+  .text__icons-block__about-us__main-page {
+    text-align: left;
+    display: block;
+    padding: 0 0.5em; } }
+
+@media (min-width: 600px) {
+  .text__about-doctor__about-us__main-page {
+    padding-top: 1.5em; } }
+
+@media (min-width: 700px) {
+  .text__about-doctor__about-us__main-page {
+    display: none; }
+  .text-TAB__about-doctor__about-us__main-page {
+    padding-top: 1em;
+    font-style: italic;
+    line-height: 1.6em;
+    display: block; }
+  .about-doctor__about-us__main-page {
+    padding: 2em 0; } }
+
+@media (min-width: 800px) {
+  .icons-block__about-us__main-page {
+    margin: 0;
+    width: 25%;
+    padding: 2em 1.2em 1em; }
+  .icons-block-wrap__about-us__main-page {
+    margin-top: 2.5em; } }
+
+@media (min-width: 1000px) {
+  .about-clinic__about-us__main-page {
+    width: 45%; }
+  .about-doctor__about-us__main-page {
+    width: 45%; }
+  .text-TAB__about-doctor__about-us__main-page {
+    display: none; }
+  .text__about-doctor__about-us__main-page {
+    display: block; } }
+
+@media (min-width: 1500px) {
+  .about-doctor__about-us__main-page {
+    max-width: 40%;
+    margin-right: 3em; }
+  .about-clinic__about-us__main-page {
+    text-align: justify; } }

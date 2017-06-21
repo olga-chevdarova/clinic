@@ -113,6 +113,9 @@ background-position:68% 0;
     text-align: justify;
     font-weight:600;
 }
+ .text__welcome-block__main-page {
+    padding-top:11.5em;
+   } 
 }
 
 //Laptop
@@ -166,3 +169,4 @@ background-size: cover;
     max-width:45%;
 }
 }
+@import 'about-us.scss';

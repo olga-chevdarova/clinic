@@ -1,11 +1,14 @@
 header.container-fluid
-	.quick-access-bar-TAB
-		.social-icons__quick-access-bar-TAB
-			.social-icons--facebook__quick-access-bar-TAB
-			.social-icons--twitter__quick-access-bar-TAB.social-icons--google__quick-access-bar-TAB
-		.phone-numbers__quick-access-bar-TAB
-			.phone-icon__phone-numbers__quick-access-bar-TAB
-			.phone-number__phone-numbers__quick-access-bar-TAB
+	.quick-access-TAB.row.align-items-center.justify-content-around
+		div.social-icons-block__quick-access-TAB
+			i(class="fa fa-facebook social-icon__social-icons-block__quick-access-TAB" aria-hidden="true")
+			i(class="fa fa-twitter social-icon__social-icons-block__quick-access-TAB" aria-hidden="true")
+			i(class="fa fa-google social-icon__social-icons-block__quick-access-TAB" aria-hidden="true")
+		div.phone-numbers-block__quick-access-TAB
+			i(class="fa fa-phone phone-icon__phone-numbers-block__quick-access-TAB" aria-hidden="true")
+			a(href="tel:01778-426000") 01778 426000 
+			i(class="fa fa-mobile phone-icon__phone-numbers-block__quick-access-TAB" aria-hidden="true")
+			a(href="tel:01778-426000") 01778 426000
 	.navbar-top.row.align-items-center.justify-content-around
 		.logo-box__navbar-top
 			img.svg-image#logo-header(src="img/logo.svg")
@@ -31,7 +34,7 @@ header.container-fluid
 			a.link__menu__navbar-top(href="") Contacts
 			
 		nav.menu__navbar-top-PC
-			a.link__menu__navbar-top(hrdef="") About us
+			a.link__menu__navbar-top(href="") About us
 			a.link__menu__navbar-top(href="") Conditions treated
 			a.link__menu__navbar-top(href="") Gallery
 			a.link__menu__navbar-top(href="") Testimonials

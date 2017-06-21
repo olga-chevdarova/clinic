@@ -1,6 +1,6 @@
 // Mobile
 
-.quick-access-bar-TAB {
+.quick-access-TAB {
 display: none;
 }
 
@@ -13,6 +13,7 @@ background-color: rgba($white, 0.7);
 z-index: 200;
 -ms-flex-pack: justify;
 justify-content: space-between;
+
 }
 
 .logo-box__navbar-top {
@@ -136,6 +137,35 @@ display: none;
 
 @media (min-width: 700px) {
 
+.quick-access-TAB {
+	display:flex;
+	position:fixed;
+	z-index:15000;
+	height:3.5em;
+	background-color: $grey;
+	width:100%;
+	-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.social-icons-block__quick-access-TAB,.phone-numbers-block__quick-access-TAB {
+	padding:0 1em;
+}
+.social-icon__social-icons-block__quick-access-TAB, .phone-icon__phone-numbers-block__quick-access-TAB {
+	padding:0em 0.8em;
+	font-size:1.3em;
+}
+
+.phone-numbers-block__quick-access-TAB {
+	a {
+		padding-right:0.8em;
+	}
+}
+
+.phone-icon__phone-numbers-block__quick-access-TAB {
+color:$blue;
+}
+
+
 .phone-numbers__navbar-top-MOB {
 	display: none;
 }
@@ -152,6 +182,7 @@ display: none;
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 0.6em;
+	font-weight:600;
 	
 }
 
@@ -194,12 +225,17 @@ display: none;
 .menu__navbar-top-PC {
 	display: none;
 }
+	.navbar-top {
+		margin-top:3.5em;
+	}
 
 }
 
 //Laptop
 
 @media (min-width: 800px) {
+
+
 #appointment-button {
 	display:none;
 }
@@ -219,7 +255,10 @@ display: none;
 
 //PC
 @media (min-width: 1300px) {
+.navbar-top {
+	height: 6em;
 
+}
 .menu__navbar-top-TAB {
 	display: none;
 }
@@ -228,8 +267,5 @@ display: none;
 	display: block;
 }
 
-.navbar-top {
-	height: 6em;
 
-}
 }
