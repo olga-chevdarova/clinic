@@ -17,7 +17,7 @@ h2 {
   font-size: 1.5em;
   line-height: 1.5em;
   text-transform: uppercase;
-  padding: 0.8em 0; }
+  padding: 5% 5% 2.5%; }
 
 h2:before {
   content: '\f054';
@@ -609,7 +609,6 @@ img {
 .about-doctor__about-us__main-page {
   width: 100%;
   background-color: #F2F2F2;
-  margin: 2em 0;
   padding: 1em 0; }
 
 .marked-text {
@@ -633,12 +632,7 @@ img {
   line-height: 1.6em; }
 
 .tel__about-doctor__about-us__main-page {
-  padding: .5em 0;
-  line-height: 1.8em;
-  font-weight: 600; }
-  .tel__about-doctor__about-us__main-page i {
-    color: #199ed8;
-    width: 1.3em; }
+  display: none; }
 
 .icons-block__about-us__main-page {
   width: 45%;
@@ -663,7 +657,15 @@ img {
   .text__icons-block__about-us__main-page {
     text-align: left;
     display: block;
-    padding: 0 0.5em; } }
+    padding: 0 0.5em; }
+  .tel__about-doctor__about-us__main-page {
+    padding: .5em 0;
+    line-height: 1.8em;
+    font-weight: 600;
+    display: block; }
+    .tel__about-doctor__about-us__main-page i {
+      color: #199ed8;
+      width: 1.3em; } }
 
 @media (min-width: 600px) {
   .text__about-doctor__about-us__main-page {
@@ -696,7 +698,10 @@ img {
   .text-TAB__about-doctor__about-us__main-page {
     display: none; }
   .text__about-doctor__about-us__main-page {
-    display: block; } }
+    display: block;
+    width: 100%; }
+  .col-old {
+    width: 40%; } }
 
 @media (min-width: 1500px) {
   .about-doctor__about-us__main-page {
@@ -704,3 +709,52 @@ img {
     margin-right: 3em; }
   .about-clinic__about-us__main-page {
     text-align: justify; } }
+
+.services-block__services__main-page {
+  background-color: #199ed8;
+  color: white;
+  width: 100%;
+  line-height: 1.5em;
+  padding: 3% 0.8em;
+  width: 100%;
+  text-transform: capitalize;
+  vertical-align: middle; }
+
+.services-list__services__main-page {
+  padding: 1em 0; }
+
+.title__services__main-page {
+  padding: 3em 0.8em 0.8em;
+  font-weight: 600;
+  font-size: 1.2em; }
+
+.image__services__main-page.align-self-center {
+  display: none; }
+
+.title-TAB__services__main-page {
+  display: none; }
+
+@media (min-width: 460px) {
+  .services-list__services__main-page {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; }
+  .title-TAB__services__main-page {
+    display: block;
+    padding-top: 3em; }
+  .title__services__main-page {
+    display: none; } }
+
+@media (min-width: 1000px) {
+  .services-block__services__main-page {
+    width: 60%;
+    height: 25em; }
+  .image__services__main-page.align-self-center {
+    display: block;
+    width: 40%;
+    height: 25em;
+    background: url("../img/1.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 5em;
+    background-position: 10% 50%; } }

@@ -8,6 +8,27 @@ if (Modernizr.svgfilters) {
   $('svg').css('display','none');
   $('.svg-image').css('display','none');
   $('.alt-image').css('display', 'block');
+}
+if (Modernizr.flexwrap) {
+
+} else {
+  // $('.row.about-us__main-page').css('display', 'none');
+  $('.row-OLD').css('display','block');
+//   $('.to-change').removeClass('row').css('max-width', '100%');
+//   $('.icons-block__about-us__main-page').css({'display': 'table-cell'});
+//   $('.text__about-doctor__about-us__main-page').addClass('col-12');
+// //   $('.to-change-row').removeClass('row').addClass('row-old');
+// //   $('.to-change-col-icons').addClass('col-old-icons');
+// //  //  $('.to-change-col').addClass('col-old');
+// //  // $('.text-TAB__about-doctor__about-us__main-page').css('display', 'none');
+// //  //  $('.text__about-doctor__about-us__main-page').css('display', 'none');
+// // // $('.icons-block__about-us__main-page').addClass('table-cell');
+// // // $('.icons-block-wrap__about-us__main-page.table-row').css('text-align', 'center');
+// // $
+// $('.icons-block__about-us__main-page:even').before('<div class="row-old"></div>');
+// // // $('.icons-block__about-us__main-page').addClass('table-cell');
+
+
 
 
 }
