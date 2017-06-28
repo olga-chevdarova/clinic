@@ -1,0 +1,57 @@
+// .text:before {
+// 		    content: '\f054';
+//     font-family: FontAwesome;
+// margin-left:-1em;
+//     color: $blue;
+// 	}
+// .text:after {
+// 	    content: '\f054';
+//     font-family: FontAwesome;
+// display:inline-block;
+//     color: $blue;
+//     float:right;
+// }
+// .text {
+// 	margin:3em;
+// }
+
+.text {
+	padding:2em;
+}
+.pt {
+	float:right;
+}
+.fa-quote-right {
+	padding:0 1em;
+}
+
+.ko {
+	background-color: $grey;
+	width:100%;
+}
+
+.pt {
+	color: $blue;
+	font-style:italic;
+}
+.lol {
+	display:none;
+}
+.text {
+	max-width:100%;
+}
+@media (min-width: 700px) {
+.ko {
+	background:url('../img/senior-couple.png') no-repeat $grey;
+
+}
+.text {
+	padding-left:40%;
+	max-width:100em;
+}
+}
+@media (min-width: 900px) {
+	.ko {
+	background-position: 10% 0;
+}
+}

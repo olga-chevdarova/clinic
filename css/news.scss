@@ -1,0 +1,30 @@
+#learn-more-button-2 {
+	    -webkit-appearance: none;
+    border-radius: .3em;
+    border: 0;
+    background-color: $blue;
+    color: $white;
+    font-weight: 300;
+    display: inline-block;
+    font-size:1em;
+    padding:0.6em 1em;
+    text-transform:uppercase;
+}
+
+.learn-more-button__post__news__main-page {
+	text-align:right;
+}
+.post__news__main-page {
+	width:100%;
+}
+
+@media (min-width: 800px) {
+.post__news__main-page {
+	width:30%;
+}
+.short-content__post__news__main-page {
+	overflow:hidden;
+	margin-bottom:1em;
+}
+
+}

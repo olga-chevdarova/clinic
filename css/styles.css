@@ -758,3 +758,62 @@ img {
     background-size: cover;
     margin-bottom: 5em;
     background-position: 10% 50%; } }
+
+#learn-more-button-2 {
+  -webkit-appearance: none;
+  border-radius: .3em;
+  border: 0;
+  background-color: #199ed8;
+  color: white;
+  font-weight: 300;
+  display: inline-block;
+  font-size: 1em;
+  padding: 0.6em 1em;
+  text-transform: uppercase; }
+
+.learn-more-button__post__news__main-page {
+  text-align: right; }
+
+.post__news__main-page {
+  width: 100%; }
+
+@media (min-width: 800px) {
+  .post__news__main-page {
+    width: 30%; }
+  .short-content__post__news__main-page {
+    overflow: hidden;
+    margin-bottom: 1em; } }
+
+.text {
+  padding: 2em; }
+
+.pt {
+  float: right; }
+
+.fa-quote-right {
+  padding: 0 1em; }
+
+.ko {
+  background-color: #F2F2F2;
+  width: 100%; }
+
+.pt {
+  color: #199ed8;
+  font-style: italic; }
+
+.lol {
+  display: none; }
+
+.text {
+  max-width: 100%; }
+
+@media (min-width: 700px) {
+  .ko {
+    background: url("../img/senior-couple.png") no-repeat #F2F2F2; }
+  .text {
+    padding-left: 40%;
+    max-width: 100em; } }
+
+@media (min-width: 900px) {
+  .ko {
+    background-position: 10% 0; } }
