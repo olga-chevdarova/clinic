@@ -861,3 +861,25 @@ img {
   height: 100%;
   z-index: -1;
   background-color: rgba(7, 99, 138, 0.8); }
+
+.title__footer {
+  padding: 0 0.8em 0.5em 0;
+  border-bottom: 2px solid #199ed8; }
+
+.contacts__footer {
+  max-width: 50%; }
+
+.hours__footer {
+  max-width: 50%; }
+
+.kldg {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.3em; }
+
+.lala {
+  background-color: #F2F2F2; }
+  .lala i {
+    color: #199ed8;
+    padding: 0.4em 0.2em; }

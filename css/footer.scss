@@ -1,0 +1,26 @@
+.title__footer {
+	padding: 0 0.8em 0.5em 0;
+	border-bottom:2px solid $blue;
+}
+.contacts__footer {
+	max-width:50%;
+}
+.hours__footer {
+	max-width:50%;
+}
+
+.kldg {
+	font-size:1.2em;
+	font-weight:600;
+	display:inline-block;
+	padding:0.3em;
+}
+
+.lala {
+	background-color:$grey;
+	i {
+		color:$blue;
+		padding:0.4em 0.2em;
+
+	}
+}
