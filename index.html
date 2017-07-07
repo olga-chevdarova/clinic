@@ -7,29 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   </head>
   <body>
-    <header class="container-fluid">
-      <div class="quick-access-TAB row align-items-center justify-content-around">
-        <div class="social-icons-block__quick-access-TAB"><i aria-hidden="true" class="fa fa-facebook social-icon__social-icons-block__quick-access-TAB"></i><i aria-hidden="true" class="fa fa-twitter social-icon__social-icons-block__quick-access-TAB"></i><i aria-hidden="true" class="fa fa-google social-icon__social-icons-block__quick-access-TAB"></i></div>
-        <div class="phone-numbers-block__quick-access-TAB"><i aria-hidden="true" class="fa fa-phone phone-icon__phone-numbers-block__quick-access-TAB"></i><a href="tel:01778-426000">01778 426000 </a><i aria-hidden="true" class="fa fa-mobile phone-icon__phone-numbers-block__quick-access-TAB"></i><a href="tel:01778-426000">01778 426000</a></div>
-      </div>
-      <div class="navbar-top row align-items-center justify-content-around">
-        <div class="logo-box__navbar-top"><img id="logo-header" src="img/logo.svg" class="svg-image"><img id="logo-ALT__navbar-top" src="img/logo.png" class="alt-image"></div>
-        <div class="phone-numbers__navbar-top-MOB"><i aria-hidden="true" class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB"></i><a href="tel:07943-336336">07943 336336</a></div>
-        <div class="menu-icon__navbar-top-MOB">
-          <div id="hamburger-icon"><span></span><span></span><span></span></div>
-        </div>
-        <nav class="menu__navbar-top-TAB">
-          <div class="dropdown link__menu__navbar-top">
-            <button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn-link">About us</button>
-            <div aria-labelledby="dropdownMenu2" class="dropdown-menu">
-              <button type="button" class="dropdown-item">Action</button>
-              <button type="button" class="dropdown-item">Action</button>
+    <header class="header">
+      <div class="header__main-menu">
+        <div class="main-menu__row row">
+          <div class="main-menu__content">
+            <div class="main-menu__nav">
+              <div class="main-menu__nav--MOB">
+                <div class="nav--MOB__toggle-button"><a href="#" class="mobile-menu-toggle js-toggle-menu hamburger-menu"><span class="menu-item"></span><span class="menu-item"></span><span class="menu-item"></span></a></div>
+              </div>
             </div>
-          </div><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Contacts</a>
+          </div>
+        </div>
+        <nav class="nav--MOB__menu">
+          <ul class="menu--MOB__content">
+            <li><a href="#" class="link list-item">About us</a></li>
+            <li><a href="#" class="link list-item">conditions treated</a></li>
+            <li><a href="#" class="link list-item">gallery</a></li>
+            <li><a href="#" class="link list-item">testimonials</a></li>
+            <li><a href="#" class="link list-item">videos</a></li>
+            <li><a href="#" class="link list-item">contacts</a></li>
+            <li><a href="#" class="link list-item">contacts</a></li>
+            <li><a href="#" class="link list-item">last</a></li>
+            <div class="main-menu__logo"></div>
+            <div class="main-menu__contacts"></div>
+          </ul>
         </nav>
-        <nav class="menu__navbar-top-PC"><a href="" class="link__menu__navbar-top">About us</a><a href="" class="link__menu__navbar-top">Conditions treated</a><a href="" class="link__menu__navbar-top">Gallery</a><a href="" class="link__menu__navbar-top">Testimonials</a><a href="" class="link__menu__navbar-top">Videos</a><a href="" class="link__menu__navbar-top">Contacts</a></nav>
-        <button id="appointment-button" class="link__menu__navbar-top">Appointment	</button>
-        <button id="appointment-button-LAP" class="link__menu__navbar-top">Appointment request</button>
       </div>
     </header>
     <div class="mobile-menu">
@@ -147,7 +149,7 @@
         <h2>About us</h2>
         <div class="row about-us__main-page">
           <div class="about-clinic__about-us__main-page container"><span>All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders </span><span class="marked-text">without the use of drugs or surgery.</span><br><span class="marked-text">Jo Sunner </span><span>is the principle at The Bourne Osteopath Clinic, the Bourne areas longest established Osteopath clinic. Jo Sunner also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists.</span><br><span>In Bourne, all treatments are in a medical centre, providing </span><span class="marked-text">the perfect safe, caring environment, </span><span>giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. </span><br><span>The clinic is open to everyone. </span></div>
-          <div class="about-doctor__about-us__main-page container-fluid row align-items-center justify-content-around no-gutters">
+          <div class="about-doctor__about-us__main-page container-fluid row align-items-center justify-content-around">
             <div class="col-6"><img src="../img/jo.jpg"></div>
             <div class="col-6"><a href="#" class="title__about-doctor__about-us__main-page">Mr Jo Sunner</a><br><span class="info__about-doctor__about-us__main-page">BSc(ost.) DO. MMSM. Registered Osteopath</span>
               <div class="tel__about-doctor__about-us__main-page"><i aria-hidden="true" class="fa fa-phone"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile"></i><a href="tel:01778-426000">01778 426000 </a></div>
@@ -176,7 +178,7 @@
         </div>
       </section>
       <section class="services__main-page">
-        <p class="title__services__main-page">Musculoskeletal disorders that may cause:</p>
+        <h4>Musculoskeletal disorders that may cause:</h4>
         <h2 class="title-TAB__services__main-page">Treatment we do provide</h2>
         <div class="row no-gutters services-row__services__main-page">
           <div class="services-block__services__main-page">
@@ -210,57 +212,55 @@
           <div class="image__services__main-page align-self-center"></div>
         </div>
       </section>
-      <section class="news__main-page"></section>
-      <h2>News and events</h2>
-      <div class="conatiner-fluid">
-        <div class="row posts-row__news__main-page justify-content-between no-gutters">
-          <div class="post__news__main-page">
-            <div class="title__post__news__main-page">
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!</h5>
+      <section class="news__main-page">
+        <h2>News and events</h2>
+        <div class="conatiner-fluid">
+          <div class="row posts-row__news__main-page justify-content-between no-gutters">
+            <div class="post__news__main-page">
+              <div class="title__post__news__main-page">
+                <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.</h3><span>21.05.2017</span>
+              </div>
+              <div class="image__post__news__main-page"><img src="../img/post1.jpg"></div>
+              <div class="short-content__post__news__main-page">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.</p>
+              </div>
+              <div class="learn-more-button__post__news__main-page">
+                <button id="learn-more-button-2">Learn More</button>
+              </div>
             </div>
-            <div class="date__post__news__main-page">
-              <p>21.05.2017</p>
+            <div class="post__news__main-page">
+              <div class="title__post__news__main-page">
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!</h5>
+              </div>
+              <div class="date__post__news__main-page">
+                <p>21.05.2017</p>
+              </div>
+              <div class="image__post__news__main-page"><img src="../img/1.jpg"></div>
+              <div class="short-content__post__news__main-page">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              </div>
+              <div class="learn-more-button__post__news__main-page">
+                <button id="learn-more-button-2">Learn More</button>
+              </div>
             </div>
-            <div class="image__post__news__main-page"><img src="../img/post1.jpg"></div>
-            <div class="short-content__post__news__main-page">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.</p>
-            </div>
-            <div class="learn-more-button__post__news__main-page">
-              <button id="learn-more-button-2">Learn More</button>
-            </div>
-          </div>
-          <div class="post__news__main-page">
-            <div class="title__post__news__main-page">
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!</h5>
-            </div>
-            <div class="date__post__news__main-page">
-              <p>21.05.2017</p>
-            </div>
-            <div class="image__post__news__main-page"><img src="../img/1.jpg"></div>
-            <div class="short-content__post__news__main-page">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-            </div>
-            <div class="learn-more-button__post__news__main-page">
-              <button id="learn-more-button-2">Learn More</button>
-            </div>
-          </div>
-          <div class="post__news__main-page">
-            <div class="title__post__news__main-page">
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!</h5>
-            </div>
-            <div class="date__post__news__main-page">
-              <p>21.05.2017</p>
-            </div>
-            <div class="image__post__news__main-page"><img src="../img/post1.jpg"></div>
-            <div class="short-content__post__news__main-page">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, iure non. Inventore doloremque ipsam deleniti. Eaque rerum tempore voluptatem, deserunt sunt quas, minus veritatis aut.</p>
-            </div>
-            <div class="learn-more-button__post__news__main-page">
-              <button id="learn-more-button-2">Learn More</button>
+            <div class="post__news__main-page">
+              <div class="title__post__news__main-page">
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!</h5>
+              </div>
+              <div class="date__post__news__main-page">
+                <p>21.05.2017</p>
+              </div>
+              <div class="image__post__news__main-page"><img src="../img/post1.jpg"></div>
+              <div class="short-content__post__news__main-page">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, iure non. Inventore doloremque ipsam deleniti. Eaque rerum tempore voluptatem, deserunt sunt quas, minus veritatis aut.</p>
+              </div>
+              <div class="learn-more-button__post__news__main-page">
+                <button id="learn-more-button-2">Learn More</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="testimonialas">
         <div class="row no-gutters">
           <div class="ko">

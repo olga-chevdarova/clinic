@@ -1,5 +1,80 @@
-
 $(document).ready(function(){
+
+//Toggle Button Animation 
+  $('.js-toggle-menu').click(function(e){
+    e.preventDefault();
+     $('.mobile-menu-toggle').toggleClass('open');
+   })
+
+//Mobile-menu Toggle Animation
+var MenuButton= $('.mobile-menu-toggle');
+var clicked = true;
+MenuButton.click(function() {
+    if(clicked){
+      toolTimeline.to('.nav--MOB__menu', 0.3, {left:'0',ease:Linear.easeOut});
+      toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'absolute', left:'85%', ease:Linear.easeOut});
+   }else{
+      toolTimeline.to('.nav--MOB__menu', 0.3, {left:'-100%',ease:Linear.easeOut});
+      toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'absolute', left:'45%', ease:Linear.easeOut});
+      toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'static', left:'0', ease:Linear.easeOut});
+   }
+   clicked = !clicked;
+});
+
+});
+
+
+
+
+
+
+function toggleMenu() {
+    var toolTimeline = new TimelineMax();
+
+    if(".nav--MOB__toggle-button[pos='static']") {
+       toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'absolute', left:'95%', ease:Linear.easeOut});
+    } else {
+        toolTimeline.reverse();
+    }
+
+     
+           
+
+    // toolTimeline.from('#logo-text-fl', duration, {scale:0, transformOrigin:'50% 50%', ease:Linear.easeOut});
+    // toolTimeline.to('#logo-text-fl', 1, { fill:'#FFF'});
+    // toolTimeline.from('#black', 1, {scale:0, alpha:0, transformOrigin:'50% 50%', ease:Linear.easeOut,  delay:0.2});
+    // toolTimeline.to('#gradient', duration, {strokeWidth:5});
+};
+
+
+// $('.js-toggle-menu').click(function(e){
+//   e.preventDefault();
+//   $(this).toggleClass('open');
+//     $(this).toggleClass('li');
+// $('.main-menu__row ').toggleClass('disabled');
+// $('.nav--MOB__menu').toggle();
+// });
+
+
+ $(".grid-button").on("click", function() {
+        $(".grid").toggleClass("open close");
+    });
+  $(".menu-toggle").click(function() {
+    $('.header__nav-panel').slideToggle( "slow");
+
+  $('.loj').fadeToggle('slow');
+   $('.loj').fadeToggle('slow');
+});
+$('.kl').click(function() {
+  $('.menu__content').slideToggle( "slow");
+})
+$('#sandwich').click(function() {
+
+$('.top-row__content').slideToggle( "slow", function() {
+    $('.toggle-menu').fadeToggle();
+  });
+})
+
 if (Modernizr.svgfilters) {
  //   logoAnimation();
  // welcomeDel();
@@ -39,8 +114,6 @@ $('.menu-icon__navbar-top-MOB').click(function(){
     $('.phone-numbers__navbar-top-MOB').toggleClass('non-visible');
     $('.logo-box__navbar-top').toggleClass('non-visible');
   });
-  });
-
 
 
 
@@ -61,8 +134,8 @@ $('#toggle-menu-icon').click(function() {
 
 var toolTimeline = new TimelineMax();
 function newA() {
-		 toolTimeline.add("end", 5)
-	logoAnimation();
+     toolTimeline.add("end", 5)
+  logoAnimation();
 welcomeDel();
   
   }
@@ -117,7 +190,7 @@ function rio() {
 };
 
 function welcomeLogo() {
-	var toolTimeline = new TimelineMax();
+  var toolTimeline = new TimelineMax();
     var duration = 2;
     toolTimeline.from('#logo-text-fl', duration, {scale:0, transformOrigin:'50% 50%', ease:Linear.easeOut});
     toolTimeline.to('#logo-text-fl', 1, { fill:'#FFF'});
@@ -131,13 +204,13 @@ function welcomeLogo() {
 };
 
 function buttonChange() {
-	 TweenLite.to('.l-toggle-menu', 2, {x:20, display:'block'});
-	 TweenLite.to('.toggle-menu__header--logo', 1, {rotationY:360});
-	 TweenLite.to('.chevron-icon--menu:first()', 0.5, {delay:1, scale:1.5, z:-300});
-	 TweenLite.to('li:first()', 0.5, {delay:1, color:'#199ed8'});
-	 TweenLite.to('.navigation', 2, {y:-150});
-	 TweenLite.to('.darker', 0.2, {display:'block', alpha:0.8});
-	
+   TweenLite.to('.l-toggle-menu', 2, {x:20, display:'block'});
+   TweenLite.to('.toggle-menu__header--logo', 1, {rotationY:360});
+   TweenLite.to('.chevron-icon--menu:first()', 0.5, {delay:1, scale:1.5, z:-300});
+   TweenLite.to('li:first()', 0.5, {delay:1, color:'#199ed8'});
+   TweenLite.to('.navigation', 2, {y:-150});
+   TweenLite.to('.darker', 0.2, {display:'block', alpha:0.8});
+  
 }
   function dr() {
 var $svg = $('svg').drawsvg({
@@ -153,20 +226,20 @@ $svg.drawsvg('animate');
 
 
 function first(){
-		var menu = $('.l-navigation');
-		TweenMax.from(menu, 0.5, {
-			delay:0.7,
-			y:'-100%',
-			ease: Linear.easeNone
-		});
-	};
+    var menu = $('.l-navigation');
+    TweenMax.from(menu, 0.5, {
+      delay:0.7,
+      y:'-100%',
+      ease: Linear.easeNone
+    });
+  };
 
 
 
 function hj() {
-	TweenLite.from('#text-t', 3, {fill:"#000000", scale:0.25});
-	TweenLite.from('#text-p', 3, {fill:"#000000", scale:0.25});
-	TweenLite.from('#text-o', 3, {fill:"#000000", scale:0.25});
+  TweenLite.from('#text-t', 3, {fill:"#000000", scale:0.25});
+  TweenLite.from('#text-p', 3, {fill:"#000000", scale:0.25});
+  TweenLite.from('#text-o', 3, {fill:"#000000", scale:0.25});
 
 }
 
@@ -184,7 +257,7 @@ function init(){
 
 
 var tl = new TimelineMax({
-  paused:true, 
+  paused:true, 
   repeatDelay:1, 
   repeat:1, 
 
@@ -206,5 +279,3 @@ tl
 .play();
 
 TweenMax.fromTo('#lgrad stop', 1, {css: {stopOffset: "0"}}, {css:{left:"130px", top: "130px"}} )
-
-
