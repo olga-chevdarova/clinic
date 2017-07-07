@@ -1,5 +1,5 @@
 ul {
-    list-style-type:none;
+    list-style-type: none;
 }
 
 .row {
@@ -7,16 +7,15 @@ ul {
 }
 
 .main-menu__row {
-      // box-shadow: 0px 5px 5px #999999;
-  height: 6em;
-  width:100%;
-  position: fixed;
-  z-index:200;
-  background-color: rgba(255,255,255,0.6);
-      -webkit-box-pack: justify;
+    // box-shadow: 0px 5px 5px #999999;
+    height: 6em;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    background-color: rgba(255,255,255,0.6);
+    -webkit-box-pack: justify;
     justify-content: space-between;
     align-items: center;
-
 }
 
 // .hamburger-menu {
@@ -28,70 +27,66 @@ ul {
 // }
 .js-toggle-menu {
     &.li {
-        position:absolute;
-        right:1%;
+        position: absolute;
+        right: 1%;
     }
 }
 
 .hamburger-menu {
-
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  .menu-item {
-    background: black;
-    display: block;
-    height: 0.1875em;
-    margin: 0 0 0.625em;
     transition: all 0.3s ease-in-out;
-    width: 2.5em;
-  }
-    
-  &.open {
+
+    &:hover {
+        cursor: pointer;
+    }
 
     .menu-item {
-      margin: 0 0 0.3125em;
-
-      &:first-child {
-        transform: rotate(45deg);
-        transform-origin: 0.625em;
-      }
-      &:nth-child(2) {
-        opacity: 0;
-      }
-      &:nth-child(3) {
-        transform: rotate(-45deg);
-        transform-origin: 0.5em;
-      }
+        background: black;
+        display: block;
+        height: 0.1875em;
+        margin: 0 0 0.625em;
+        transition: all 0.3s ease-in-out;
+        width: 2.5em;
     }
-  }
+
+    &.open {
+        .menu-item {
+            margin: 0 0 0.3125em;
+
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: 0.625em;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: 0.5em;
+            }
+        }
+    }
 }
 
 
 .nav--MOB__menu {
-    position:fixed;
-background-color: white;
-    top:0;
-    left:-100%;
-    height:100%;
-    width:80%;
-     transition: all 0.5s ease-in-out;
-     z-index:2000;
-     overflow-y: scroll;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 80%;
+    transition: all 0.5s ease-in-out;
+    z-index: 2000;
+    overflow-y: scroll;
 }
 
 
 
 .nav--MOB__menu {
-
     &.li {
-        width:90%;
-        display:block;
-          transition: all 0.5s ease-in-out;
-
+        width: 90%;
+        display: block;
+        transition: all 0.5s ease-in-out;
     }
 }
 .menu--MOB__content {
@@ -102,10 +97,58 @@ background-color: white;
 
 .list-item {
     text-transform: uppercase;
-   line-height:1.5em;
-   font-size:1.2em;
-   display:block;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    display: block;
     background-color: pink;
-    padding:0.5em;
-    margin:0.5em 0;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.main-menu_logo {
+    height: 5em;
+    width: auto;
+}
+
+.contacts-item {
+    display: block;
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 0.5em;
+    background-color: black;
+    margin: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.main-menu__contacts.active {
+    .contacts-item:first-child {
+        -webkit-transform: translateY(0.79em) translateX(-0.79em);
+           -moz-transform: translateY(0.79em) translateX(-0.79em);
+            -ms-transform: translateY(0.79em) translateX(-0.79em);
+             -o-transform: translateY(0.79em) translateX(-0.79em);
+                transform: translateY(0.79em) translateX(-0.79em);
+        transform-origin: 0 0 0;
+    }
+
+       .contacts-item:last-child {
+        -webkit-transform: translateY(-0.79em) translateX(0.79em);
+           -moz-transform: translateY(-0.79em) translateX(0.79em);
+            -ms-transform: translateY(-0.79em) translateX(0.79em);
+             -o-transform: translateY(-0.79em) translateX(0.79em);
+                transform: translateY(-0.79em) translateX(0.79em);
+        transform-origin: 0 0 0;
+    }
+}
+
+.contacts--MOB {
+    position:fixed;
+    z-index:2000;
+    right:0;
+    width:85%;
+    top:6em;
+    height:auto;
+    background-color: white;
+   right:-100%;
 }

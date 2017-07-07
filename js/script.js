@@ -6,6 +6,11 @@ $(document).ready(function(){
      $('.mobile-menu-toggle').toggleClass('open');
    })
 
+    $('.main-menu__contacts').click(function(e){
+    e.preventDefault();
+     $(this).toggleClass('active');
+   })
+
 //Mobile-menu Toggle Animation
 var MenuButton= $('.mobile-menu-toggle');
 var clicked = true;
@@ -19,6 +24,20 @@ MenuButton.click(function() {
       toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'static', left:'0', ease:Linear.easeOut});
    }
    clicked = !clicked;
+});
+
+
+var ContactsButton = $('.main-menu__contacts');
+var clicked2 = true;
+ContactsButton.click(function() {
+    if(clicked2){
+    
+      toolTimeline.to('.contacts--MOB', 0.3, {right:'0',ease:Linear.easeOut});
+    
+   }else{
+      toolTimeline.to('.contacts--MOB', 0.3, {right:'-100%',ease:Linear.easeOut});
+   }
+   clicked2 = !clicked2;
 });
 
 });

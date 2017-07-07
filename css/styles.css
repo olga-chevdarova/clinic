@@ -343,6 +343,51 @@ ul {
   padding: 0.5em;
   margin: 0.5em 0; }
 
+.main-menu_logo {
+  height: 5em;
+  width: auto; }
+
+.contacts-item {
+  display: block;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 0.5em;
+  background-color: black;
+  margin: 0.3em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.main-menu__contacts.active .contacts-item:first-child {
+  -webkit-transform: translateY(0.79em) translateX(-0.79em);
+  -ms-transform: translateY(0.79em) translateX(-0.79em);
+  -o-transform: translateY(0.79em) translateX(-0.79em);
+  transform: translateY(0.79em) translateX(-0.79em);
+  -webkit-transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  -o-transform-origin: 0 0 0;
+  transform-origin: 0 0 0; }
+
+.main-menu__contacts.active .contacts-item:last-child {
+  -webkit-transform: translateY(-0.79em) translateX(0.79em);
+  -ms-transform: translateY(-0.79em) translateX(0.79em);
+  -o-transform: translateY(-0.79em) translateX(0.79em);
+  transform: translateY(-0.79em) translateX(0.79em);
+  -webkit-transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  -o-transform-origin: 0 0 0;
+  transform-origin: 0 0 0; }
+
+.contacts--MOB {
+  position: fixed;
+  z-index: 2000;
+  right: 0;
+  width: 85%;
+  top: 6em;
+  height: auto;
+  background-color: white;
+  right: -100%; }
+
 .mobile-menu {
   width: 80%;
   background-color: white;
@@ -390,9 +435,6 @@ ul {
 @media (min-width: 700px) {
   .mobile-menu {
     display: none; } }
-
-.main-page {
-  padding-top: 1em; }
 
 .welcome-block__main-page {
   width: 100%;
