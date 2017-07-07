@@ -1,38 +1,36 @@
 header.header
 	.header__main-menu
-		.main-menu__row.row
-			.main-menu__content
-				.main-menu__nav
-					.main-menu__nav--MOB
-						.nav--MOB__toggle-button
-							a.mobile-menu-toggle.js-toggle-menu.hamburger-menu(href='#')
-								span.menu-item
-								span.menu-item
-								span.menu-item
-			img.svg--img.main-menu_logo(src="img/logo.svg", alt="")
-			.main-menu__contacts
-				a.contacts-button(href='#')
-					span.contacts-item
-					span.contacts-item
-					span.contacts-item
-		nav.nav--MOB__menu
-			ul.menu--MOB__content
-				li
-					a.link.list-item(href='#') About us
-				li
-					a.link.list-item(href='#') conditions treated
-				li
-					a.link.list-item(href='#') gallery
-				li
-					a.link.list-item(href='#') testimonials
-				li
-					a.link.list-item(href='#') videos
-				li
-					a.link.list-item(href='#') contacts
-				li
-					a.link.list-item(href='#') contacts
-				li
-					a.link.list-item(href='#') last
-		div.contacts--MOB
-			.contact--MOB__content
-				div  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias et nostrum harum, ab doloremque aspernatur voluptas nihil magni ut laudantium omnis. Voluptates distinctio nesciunt, vitae.
+		.mobile-nav__row
+			.mobile-nav__content.row
+				.mobile-nav__menu-button
+					.hamburger-button( role="button")
+							span.hamburger-item
+							span.hamburger-item
+							span.hamburger-item
+				img.svg--img.mobile-nav__logo(src="img/logo.svg", alt="")
+				.mobile-contacts-button
+					.contacts-button
+						span.contacts-item
+						span.contacts-item
+						span.contacts-item
+			nav.nav--MOB__menu
+				ul.menu--MOB__content
+					li
+						a.link.list-item(href='#') About us
+					li
+						a.link.list-item(href='#') conditions treated
+					li
+						a.link.list-item(href='#') gallery
+					li
+						a.link.list-item(href='#') testimonials
+					li
+						a.link.list-item(href='#') videos
+					li
+						a.link.list-item(href='#') contacts
+					li
+						a.link.list-item(href='#') contacts
+					li
+						a.link.list-item(href='#') last
+			div.contacts--MOB
+				.contact--MOB__content
+					div  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias et nostrum harum, ab doloremque aspernatur voluptas nihil magni ut laudantium omnis. Voluptates distinctio nesciunt, vitae.

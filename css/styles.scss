@@ -90,7 +90,13 @@ svg {
   color:$text-color;
 }
 
+ul {
+    list-style-type: none;
+}
 
+.row {
+    margin: 0;
+}
 
 /* .darker {
     background-color:$text-color;

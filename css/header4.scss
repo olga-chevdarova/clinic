@@ -1,45 +1,40 @@
-ul {
-    list-style-type: none;
-}
 
-.row {
-    margin: 0;
-}
-
-.main-menu__row {
-    // box-shadow: 0px 5px 5px #999999;
-    height: 6em;
+.mobile-nav__row {
     width: 100%;
     position: fixed;
     z-index: 200;
     background-color: rgba(255,255,255,0.6);
+}
+
+.mobile-nav__content {
     -webkit-box-pack: justify;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 6em;
 }
 
-// .hamburger-menu {
-//     &.li {
-//            right:2%;
-//            position:absolute;
+.mobile-nav__menu-button,.mobile-contacts-button {
+    width:10%;
+}
 
-//     }
-// }
-.js-toggle-menu {
-    &.li {
-        position: absolute;
-        right: 1%;
+.mobile-nav__menu-button {
+    &.open {
+        width:100%;
     }
 }
 
-.hamburger-menu {
+.mobile-nav__logo,.mobile-contacts-button {
+    &.hidden {
+        display:none;
+    }
+}
+
+
+.hamburger-button {
     transition: all 0.3s ease-in-out;
-
-    &:hover {
-        cursor: pointer;
-    }
-
-    .menu-item {
+    .hamburger-item {
         background: black;
         display: block;
         height: 0.1875em;
@@ -49,7 +44,7 @@ ul {
     }
 
     &.open {
-        .menu-item {
+        .hamburger-item {
             margin: 0 0 0.3125em;
 
             &:first-child {
@@ -67,11 +62,46 @@ ul {
     }
 }
 
+.mobile-nav__logo {
+    height: 5em;
+    width: auto;
+}
+
+.contacts-item {
+    display: block;
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 0.5em;
+    background-color: black;
+    margin: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts-button.open {
+    .contacts-item:first-child {
+        -webkit-transform: translateY(0.79em) translateX(-0.79em);
+           -moz-transform: translateY(0.79em) translateX(-0.79em);
+            -ms-transform: translateY(0.79em) translateX(-0.79em);
+             -o-transform: translateY(0.79em) translateX(-0.79em);
+                transform: translateY(0.79em) translateX(-0.79em);
+        transform-origin: 0 0 0;
+    }
+
+    .contacts-item:last-child {
+        -webkit-transform: translateY(-0.79em) translateX(0.79em);
+           -moz-transform: translateY(-0.79em) translateX(0.79em);
+            -ms-transform: translateY(-0.79em) translateX(0.79em);
+             -o-transform: translateY(-0.79em) translateX(0.79em);
+                transform: translateY(-0.79em) translateX(0.79em);
+        transform-origin: 0 0 0;
+    }
+}
+
 
 .nav--MOB__menu {
     position: fixed;
     background-color: white;
-    top: 0;
+    top:0;
     left: -100%;
     height: 100%;
     width: 80%;
@@ -105,50 +135,19 @@ ul {
     margin: 0.5em 0;
 }
 
-.main-menu_logo {
-    height: 5em;
-    width: auto;
-}
-
-.contacts-item {
-    display: block;
-    height: 0.5em;
-    width: 0.5em;
-    border-radius: 0.5em;
-    background-color: black;
-    margin: 0.3em;
-    transition: all 0.3s ease-in-out;
-}
 
 
 
-.main-menu__contacts.active {
-    .contacts-item:first-child {
-        -webkit-transform: translateY(0.79em) translateX(-0.79em);
-           -moz-transform: translateY(0.79em) translateX(-0.79em);
-            -ms-transform: translateY(0.79em) translateX(-0.79em);
-             -o-transform: translateY(0.79em) translateX(-0.79em);
-                transform: translateY(0.79em) translateX(-0.79em);
-        transform-origin: 0 0 0;
-    }
 
-       .contacts-item:last-child {
-        -webkit-transform: translateY(-0.79em) translateX(0.79em);
-           -moz-transform: translateY(-0.79em) translateX(0.79em);
-            -ms-transform: translateY(-0.79em) translateX(0.79em);
-             -o-transform: translateY(-0.79em) translateX(0.79em);
-                transform: translateY(-0.79em) translateX(0.79em);
-        transform-origin: 0 0 0;
-    }
-}
+
 
 .contacts--MOB {
-    position:fixed;
-    z-index:2000;
-    right:0;
-    width:85%;
-    top:6em;
-    height:auto;
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    width: 85%;
+    top: 6em;
+    height: auto;
     background-color: white;
-   right:-100%;
+    right: -100%;
 }

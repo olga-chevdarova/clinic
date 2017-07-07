@@ -1,46 +1,59 @@
 $(document).ready(function(){
 
-//Toggle Button Animation 
-  $('.js-toggle-menu').click(function(e){
-    e.preventDefault();
-     $('.mobile-menu-toggle').toggleClass('open');
-   })
+var hamburgerButton = $('.hamburger-button');
+var contactsButton = $('.contacts-button');
 
-    $('.main-menu__contacts').click(function(e){
-    e.preventDefault();
-     $(this).toggleClass('active');
-   })
+toggleButton(hamburgerButton, openMobileMenu, closeMobileMenu);
 
-//Mobile-menu Toggle Animation
-var MenuButton= $('.mobile-menu-toggle');
-var clicked = true;
-MenuButton.click(function() {
-    if(clicked){
-      toolTimeline.to('.nav--MOB__menu', 0.3, {left:'0',ease:Linear.easeOut});
-      toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'absolute', left:'85%', ease:Linear.easeOut});
-   }else{
-      toolTimeline.to('.nav--MOB__menu', 0.3, {left:'-100%',ease:Linear.easeOut});
-      toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'absolute', left:'45%', ease:Linear.easeOut});
-      toolTimeline.to('.nav--MOB__toggle-button', 0.3, {position:'static', left:'0', ease:Linear.easeOut});
-   }
-   clicked = !clicked;
+toggleButton(contactsButton, openContacts, closeContacts);
+
+
+
+
+function toggleButton(button, functionOpen, functionClose) {
+  var toggler = true;
+  $(button).click(function() {
+    if(toggler) {
+      functionOpen();
+    } else {
+      functionClose();
+    }
+    toggler = !toggler;
+  })
+}
+
+function openMobileMenu() {
+  $('.mobile-nav__logo, .mobile-contacts-button').addClass('hidden');
+  $('.hamburger-button').addClass('open');
+  $('.mobile-nav__menu-button').addClass('open');
+    toolTimeline.to('.nav--MOB__menu', 0.2, {left:'0',ease:Linear.easeInOut} );
+toolTimeline.to('.hamburger-button', 0.1, {'position': 'relative','left': '90%', ease:Linear.easeInOut});
+}
+
+function closeMobileMenu() {
+  $('.hamburger-button').removeClass('open');
+  toolTimeline.to('.nav--MOB__menu', 0.2, {left:'-100%',ease:Linear.easeInOut} );
+  toolTimeline.to('.hamburger-button', 0.3, {'left': '0',ease:Linear.easeInOut, onComplete:function() {
+      $('.mobile-nav__menu-button').removeClass('open');
+  }});
+  toolTimeline.to('.hamburger-button', 0.1, {position: 'static', ease:Linear.easeInOut, onComplete:function() {
+      $('.mobile-nav__logo, .mobile-contacts-button').removeClass('hidden');
+  }});
+}
+
+function openContacts() {
+  $('.contacts-button').addClass('open');
+  toolTimeline.to('.contacts--MOB', 0.3, {right:'0',ease:Linear.easeOut});
+}
+
+function closeContacts() {
+  toolTimeline.to('.contacts--MOB', 0.3, {right:'-100%',ease:Linear.easeOut});
+ $('.contacts-button').removeClass('open');
+}
+
 });
 
 
-var ContactsButton = $('.main-menu__contacts');
-var clicked2 = true;
-ContactsButton.click(function() {
-    if(clicked2){
-    
-      toolTimeline.to('.contacts--MOB', 0.3, {right:'0',ease:Linear.easeOut});
-    
-   }else{
-      toolTimeline.to('.contacts--MOB', 0.3, {right:'-100%',ease:Linear.easeOut});
-   }
-   clicked2 = !clicked2;
-});
-
-});
 
 
 
