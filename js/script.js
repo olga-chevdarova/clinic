@@ -2,56 +2,79 @@ $(document).ready(function(){
 
 var hamburgerButton = $('.hamburger-button');
 var contactsButton = $('.contacts-button');
+var wrap=$('#wrap');
 
 toggleButton(hamburgerButton, openMobileMenu, closeMobileMenu);
 
 toggleButton(contactsButton, openContacts, closeContacts);
-
-
-
-
-function toggleButton(button, functionOpen, functionClose) {
   var toggler = true;
+function toggleButton(button, functionOpen, functionClose) {
+
   $(button).click(function() {
     if(toggler) {
       functionOpen();
+      toggler = false;
     } else {
       functionClose();
+      toggler = true;
     }
-    toggler = !toggler;
   })
 }
 
 function openMobileMenu() {
-  $('.mobile-nav__logo, .mobile-contacts-button').addClass('hidden');
+    if($('.contacts-button').hasClass('open')){
+  closeContacts();
+  };
+
+  $('.mobile-nav__logo, .mobile-nav__contacts-button').addClass('hidden');
   $('.hamburger-button').addClass('open');
   $('.mobile-nav__menu-button').addClass('open');
-    toolTimeline.to('.nav--MOB__menu', 0.2, {left:'0',ease:Linear.easeInOut} );
-toolTimeline.to('.hamburger-button', 0.1, {'position': 'relative','left': '90%', ease:Linear.easeInOut});
+  $('.main-page').wrap('<div id="wrap"></div>');
+toolTimeline.to('.mobile-nav__menu', 0.2, {left:'0',ease:Linear.easeInOut} );
+toolTimeline.to('.hamburger-button', 0.1, {'position': 'relative','left': '87%', ease:Linear.easeInOut});
+$('#wrap').click(function() {
+closeMobileMenu();
+toggler = true;
+  });
 }
 
 function closeMobileMenu() {
   $('.hamburger-button').removeClass('open');
-  toolTimeline.to('.nav--MOB__menu', 0.2, {left:'-100%',ease:Linear.easeInOut} );
+   $('.main-page').unwrap('<div id="wrap"></div>');
+  toolTimeline.to('.mobile-nav__menu', 0.2, {left:'-100%',ease:Linear.easeInOut} );
   toolTimeline.to('.hamburger-button', 0.3, {'left': '0',ease:Linear.easeInOut, onComplete:function() {
       $('.mobile-nav__menu-button').removeClass('open');
   }});
   toolTimeline.to('.hamburger-button', 0.1, {position: 'static', ease:Linear.easeInOut, onComplete:function() {
-      $('.mobile-nav__logo, .mobile-contacts-button').removeClass('hidden');
+      $('.mobile-nav__logo, .mobile-nav__contacts-button').removeClass('hidden');
   }});
 }
 
 function openContacts() {
+  if($('.hamburger-button').hasClass('open')){
+closeMobileMenu();
+  };
   $('.contacts-button').addClass('open');
-  toolTimeline.to('.contacts--MOB', 0.3, {right:'0',ease:Linear.easeOut});
+    $('.main-page').wrap('<div id="wrap-trans"></div>');
+    toolTimeline.to('.mobile-nav__contacts', 0.3, {right:'0',ease:Linear.easeOut});
+
+
+  $('#wrap-trans').click(function() {
+ closeContacts();
+ toggler = true;
+});
+
 }
 
 function closeContacts() {
-  toolTimeline.to('.contacts--MOB', 0.3, {right:'-100%',ease:Linear.easeOut});
+  toolTimeline.to('.mobile-nav__contacts', 0.2, {right:'-100%',ease:Linear.easeOut});
+$('.main-page').unwrap('<div id="wrap-trans"></div>');
  $('.contacts-button').removeClass('open');
 }
 
+
 });
+
 
 
 
