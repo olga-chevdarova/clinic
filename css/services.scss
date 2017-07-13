@@ -13,6 +13,14 @@
 .services-list__services__main-page {
 	padding:1em 0;
 }
+
+.services-item {
+	i {
+		display: inline-block;
+		padding-right:0.3em;
+	}
+}
+
 .title__services__main-page {
 
 	font-weight:600;
@@ -33,6 +41,11 @@
     -moz-column-count:2;  
     column-count:2;  
 
+}
+.services-item {
+	i {
+		display: none;
+	}
 }
 .title-TAB__services__main-page {
 	display:block;

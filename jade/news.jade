@@ -1,37 +1,55 @@
 section.news__main-page
 	h2 News and events
-	.conatiner-fluid
-		.row.posts-row__news__main-page.justify-content-between.no-gutters
-			.post__news__main-page
-				.title__post__news__main-page
-					h3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.
-					span 21.05.2017
+	//- .conatiner-fluid
+	//- 	.row.posts-row__news__main-page.justify-content-between.no-gutters
+	//- 		.post__news__main-page
+	//- 			.title__post__news__main-page
+	//- 				h3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.
+	//- 				span 21.05.2017
 					
-				.image__post__news__main-page
-					img(src="../img/post1.jpg")
-				.short-content__post__news__main-page
-					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.
-				.learn-more-button__post__news__main-page
-					button#learn-more-button-2 Learn More
-			.post__news__main-page
-				.title__post__news__main-page
-					h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!
-				.date__post__news__main-page
-					p 21.05.2017
-				.image__post__news__main-page
-					img(src="../img/1.jpg")
-				.short-content__post__news__main-page
-					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				.learn-more-button__post__news__main-page
-					button#learn-more-button-2 Learn More
-			.post__news__main-page
-				.title__post__news__main-page
-					h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!
-				.date__post__news__main-page
-					p 21.05.2017
-				.image__post__news__main-page
-					img(src="../img/post1.jpg")
-				.short-content__post__news__main-page
-					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, iure non. Inventore doloremque ipsam deleniti. Eaque rerum tempore voluptatem, deserunt sunt quas, minus veritatis aut.
-				.learn-more-button__post__news__main-page
-					button#learn-more-button-2 Learn More
+	//- 			.image__post__news__main-page
+	//- 				img(src="../img/post1.jpg")
+	//- 			.short-content__post__news__main-page
+	//- 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.
+	//- 			.learn-more-button__post__news__main-page
+	//- 				button#learn-more-button-2 Learn More
+	//- 		.post__news__main-page
+	//- 			.title__post__news__main-page
+	//- 				h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!
+	//- 			.date__post__news__main-page
+	//- 				p 21.05.2017
+	//- 			.image__post__news__main-page
+	//- 				img(src="../img/1.jpg")
+	//- 			.short-content__post__news__main-page
+	//- 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	//- 			.learn-more-button__post__news__main-page
+	//- 				button#learn-more-button-2 Learn More
+	//- 		.post__news__main-page
+	//- 			.title__post__news__main-page
+	//- 				h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!
+	//- 			.date__post__news__main-page
+	//- 				p 21.05.2017
+	//- 			.image__post__news__main-page
+	//- 				img(src="../img/post1.jpg")
+	//- 			.short-content__post__news__main-page
+	//- 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, iure non. Inventore doloremque ipsam deleniti. Eaque rerum tempore voluptatem, deserunt sunt quas, minus veritatis aut.
+	//- 			.learn-more-button__post__news__main-page
+	//- 				button#learn-more-button-2 Learn More
+	.container-fluid
+		#slider
+			.slide
+				.slide-copy
+					h3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.
+					h3 21.05.2017
+					.image__post__news__main-page(class="wow fadeIn" data-wow-duration="2s")
+						img(src="../img/post1.jpg")
+					.short-content__post__news__main-page
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.
+					.icons__post.row
+						.col-2.lo-1
+							i#prev(class="fa fa-chevron-circle-left fa-2x development" aria-hidden="true")
+						.col-8.lo-2
+							button.development#learn-more-button-2 Learn More
+						.col-2.lo-3
+							i#next(class="fa fa-chevron-circle-right fa-2x development" aria-hidden="true")
+		

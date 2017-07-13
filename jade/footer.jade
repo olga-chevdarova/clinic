@@ -9,21 +9,36 @@
 //- 			p.title__footer Opening hours
 //- 			p Mon-Fri 
 
-section.lala
-	i(class="fa fa-clock-o fa-2x" aria-hidden="true")
-	p.kldg Opening Hours
-	.container
-		.row
-			.col-6
-				
-				span Mon-Fri
-				br
-				span Saturday
-				br
-				span Sunday
-			.col-6
-				span  8:00 am-8:00 pm 
-				br
-				span  8:00 am-1:00 pm 
-				br
-				span Closed
+section.lala.row.justify-content-between
+	img.kol(src="img/logo.svg")
+	.mobile-contacts__content
+					.mobile-contacts__adress.row
+						.col-2
+							i(class="fa fa-home fa-2x" aria-hidden="true")
+						.col-10
+							a#adress.link Pulse Practice, West Street, Bourne, PE109NE
+					.mobile-contacts__hours.row
+						.col-2
+							i(class="fa fa-clock-o fa-2x" aria-hidden="true")
+						.col-10
+							.row.no-gutters
+								.col-6
+									span Mon-Fri
+									br
+									span Saturday
+									br
+									span Sunday
+								.col-6
+									span 8AM - 8PM
+									br
+									span 8AM - 1PM
+									br
+									span Closed
+					.mobile-contacts__phones.row
+						.col-2
+							i(class="fa fa-phone fa-2x" aria-hidden="true")
+						.col-10
+							.mobile-phones__item
+								a.link(href="tel:01778426000") 01778 426000
+							.mobile-phones__item
+								a.link(href="tel:07943336336") 07943 336336

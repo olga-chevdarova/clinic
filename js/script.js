@@ -1,5 +1,32 @@
 $(document).ready(function(){
 
+  new WOW().init();
+
+   // $('.tooltips').tooltipster();
+$('.development').click(function() {
+  alert('This function is on the stage of development now');
+})
+
+function windowSize(resolution){
+    if ($(window).width() <= resolution){
+          $('[data-toggle="tooltip"]').tooltip();
+    // } else {
+    //     notToDo();
+    // }
+}};
+
+//Tooltips
+$(window).on('load resize',windowSize(800));
+
+
+$('#adress').click(function() {
+  var googleMaps = confirm('You will be redirected to Google Maps webpage');
+  if (googleMaps) {
+    location.href = 'https://www.google.com.ua/maps/place/West+St,+Bourne+PE10+9NE,+UK/@50.4387744,30.3967042,15z/data=!4m5!3m4!1s0x48781f42f6474cb5:0xe5c6e7110f956fe9!8m2!3d52.7682031!4d-0.3788978?hl=en';
+
+  }
+})
+
 var hamburgerButton = $('.hamburger-button');
 var contactsButton = $('.contacts-button');
 var wrap=$('#wrap');
@@ -71,6 +98,67 @@ function closeContacts() {
 $('.main-page').unwrap('<div id="wrap-trans"></div>');
  $('.contacts-button').removeClass('open');
 }
+
+
+
+//Set options
+// var speed = 500;
+// var autoswitch = true;
+// var autoswitch_speed = 4000;
+
+//Add initial active class
+
+// $('.slide').first().addClass('activeSlide');
+
+// //Hide all slides
+
+// $('.slide').hide();
+
+// //Show first slide
+
+// $('.activeSlide').show();
+
+// $('#next').on('click', nextSlide);
+
+// $('#prev').on('click', prevSlide);
+
+// //Autoslider Handler
+// if(autoswitch == true) {
+//   setInterval( nextSlide, autoswitch_speed);
+// }
+
+// //Switch to next slide
+// function nextSlide() {
+//     $('.activeSlide').removeClass('activeSlide').addClass('oldActive');
+//   // check to see if we have reached the final slide
+//   if ($('.oldActive').is(':last-child')) {
+//     $('.slide').first().addClass('activeSlide');
+//   } else {
+//     $('.oldActive').next().addClass('activeSlide');
+//   }
+//   $('.oldActive').removeClass('oldActive');
+//   $('.slide').fadeOut(speed);
+//   $('.activeSlide').fadeIn(speed);
+// }
+
+// //Switch to previus slide
+
+// function prevSlide() {
+//     $('.activeSlide').removeClass('activeSlide').addClass('oldActive');
+//   // check to see if we have reached the final slide
+//   if ($('.oldActive').is(':first-child')) {
+//     $('.slide').last().addClass('activeSlide');
+//   } else {
+//     $('.oldActive').prev().addClass('activeSlide');
+//   }
+//   $('.oldActive').removeClass('oldActive');
+//   $('.slide').fadeOut(speed);
+//   $('.activeSlide').fadeIn(speed);
+// }
+
+
+
+
 
 
 });

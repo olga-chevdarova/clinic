@@ -58,9 +58,12 @@ svg {
   width: 100%;
   height: auto; }
 
-.link, .link:focus, .link:visited, .link:hover, .link:active {
+a, a:focus, a:visited, a:hover, a:active {
   outline: none;
   text-decoration: none; }
+
+.link:hover, .link:active {
+  color: #199ed8; }
 
 ul {
   list-style-type: none; }
@@ -263,6 +266,11 @@ ul {
   to {
     opacity: 1; } }
 
+.form {
+  position: fixed;
+  background-color: pink;
+  z-index: 2500; }
+
 .button {
   -webkit-appearance: none;
   border: 0;
@@ -275,6 +283,12 @@ ul {
   background-color: #199ed8;
   color: white;
   padding: 0.7em 1em; }
+
+.red-tooltip + .tooltip > .tooltip-inner {
+  background-color: #f00; }
+
+.red-tooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #f00; }
 
 .mobile-nav__row {
   width: 100%;
@@ -411,8 +425,7 @@ ul {
   border-bottom: 1px solid #F2F2F2; }
 
 .mobile-menu__link:hover {
-  background: rgba(242, 242, 242, 0.7);
-  color: #292b2c; }
+  background: rgba(242, 242, 242, 0.7); }
 
 .mobile-menu__button {
   width: 90%;
@@ -425,7 +438,7 @@ ul {
   position: fixed;
   z-index: 2000;
   right: 0;
-  width: 90%;
+  width: 91%;
   top: 6em;
   height: auto;
   background-color: white;
@@ -444,9 +457,10 @@ ul {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0.5em 0;
+  padding: 0.3em 0;
   color: #292b2c;
   font-size: 1.2em;
+  line-height: 1.5em;
   border-bottom: 1px solid #F2F2F2; }
   .mobile-contacts__adress i, .mobile-contacts__hours i, .mobile-contacts__phones i {
     color: #199ed8; }
@@ -455,10 +469,6 @@ ul {
 
 .mobile-contacts__phones {
   border: 0; }
-
-.mobile-contacts__phones a {
-  display: inline-block;
-  padding: 0.55em 0; }
 
 .mobile-phones__item {
   display: inline-block;
@@ -762,6 +772,10 @@ ul {
 .services-list__services__main-page {
   padding: 1em 0; }
 
+.services-item i {
+  display: inline-block;
+  padding-right: 0.3em; }
+
 .title__services__main-page {
   font-weight: 600;
   font-size: 1.2em; }
@@ -777,6 +791,8 @@ ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; }
+  .services-item i {
+    display: none; }
   .title-TAB__services__main-page {
     display: block;
     padding-top: 3em; }
@@ -819,6 +835,26 @@ ul {
 .date__post__news__main-page span {
   padding: 0% 5% 0% 5%;
   color: #199ed8; }
+
+.arrow-row i {
+  display: inline-box;
+  padding: 0.5em; }
+
+.lo-2 {
+  margin: 0 auto;
+  text-align: center; }
+
+.lo-3 {
+  text-align: right; }
+
+.image__post__news__main-page {
+  padding: 1em 0; }
+
+.icons__post {
+  margin-bottom: 3em; }
+
+.news__main-page h2 {
+  padding-top: 2em; }
 
 @media (min-width: 800px) {
   .post__news__main-page {
@@ -922,7 +958,18 @@ ul {
   padding: 0.3em; }
 
 .lala {
-  background-color: #F2F2F2; }
-  .lala i {
-    color: #199ed8;
-    padding: 0.4em 0.2em; }
+  width: 100%; }
+  .lala .mobile-contacts__content {
+    font-size: 0.8em; }
+
+.kol {
+  display: none; }
+
+@media (min-width: 500px) {
+  .mobile-contacts__content {
+    width: 70%;
+    display: inline-block; }
+  .kol {
+    width: 20%;
+    height: auto;
+    display: inline-block; } }

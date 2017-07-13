@@ -2,24 +2,24 @@ header.header
 	.header__main-menu
 		.mobile-nav__row
 			.mobile-nav__content.row
-				.mobile-nav__menu-button
+				.mobile-nav__menu-button(class="wow slideInLeft" data-wow-offset="0"  data-wow-duration="1s" )
 					.hamburger-button(role="button")
 						span.hamburger-item
 						span.hamburger-item
 						span.hamburger-item
 				img.svg--img.mobile-nav__logo(src="img/logo.svg", alt="")
-				.mobile-nav__contacts-button
+				.mobile-nav__contacts-button(class="wow slideInRight" data-wow-duration="1s" )
 					.contacts-button(role="button")
 						span.contacts-item
 						span.contacts-item
 						span.contacts-item
 			nav.mobile-nav__menu
 				ul.mobile-menu__content
-					button.button.mobile-menu__button.btn-appointment make an appointment 
+					button.button.mobile-menu__button.btn-appointment.development make an appointment 
 					li.mobile-menu__item
 						a.link.mobile-menu__link(href='#') about us
 					li.mobile-menu__item
-						a.link.mobile-menu__link(href='http://recurial.com/programming/understanding-callback-functions-in-javascript/') conditions treated
+						a.link.mobile-menu__link(href='#') conditions treated
 					li.mobile-menu__item
 						a.link.mobile-menu__link(href='#') gallery
 					li.mobile-menu__item
@@ -28,17 +28,13 @@ header.header
 						a.link.mobile-menu__link(href='#') videos
 					li.mobile-menu__item
 						a.link.mobile-menu__link(href='#') contacts
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') contacts
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') last
 			div.mobile-nav__contacts
 				.mobile-contacts__content
 					.mobile-contacts__adress.row
 						.col-2
 							i(class="fa fa-home fa-2x" aria-hidden="true")
 						.col-10
-							a(href='#') Pulse Practice, West Street, Bourne, PE109NE
+							a#adress.link Pulse Practice, West Street, Bourne, PE109NE
 					.mobile-contacts__hours.row
 						.col-2
 							i(class="fa fa-clock-o fa-2x" aria-hidden="true")
@@ -61,7 +57,13 @@ header.header
 							i(class="fa fa-phone fa-2x" aria-hidden="true")
 						.col-10
 							.mobile-phones__item
-								a(href='#') 01778 426000
+								a.link(href="tel:01778426000") 01778 426000
 							.mobile-phones__item
-								a(href='#') 01778 426000
-					
+								a.link(href="tel:07943336336") 07943 336336
+			#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+				.modal-dialog(role='document')
+					.modal-content
+						.modal-header
+							h5#exampleModalLabel.modal-title Modal title
+						.modal-body
+							div  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, temporibus!

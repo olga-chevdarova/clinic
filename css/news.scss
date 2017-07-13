@@ -24,7 +24,31 @@
         color:$blue;
     }
 }
+.arrow-row {
+    i {
+        display:inline-box;
+        padding:0.5em;
+    }
+}
+.lo-2 {
+    margin: 0 auto;
+    text-align:center;
+}
+.lo-3 {
+    text-align:right;
+}
+.image__post__news__main-page {
+    padding:1em 0;
+}
+.icons__post {
+    margin-bottom: 3em;
+}
 
+.news__main-page {
+    h2 {
+        padding-top:2em;
+    }
+}
 @media (min-width: 800px) {
 .post__news__main-page {
 	width:30%;

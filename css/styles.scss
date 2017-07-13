@@ -84,9 +84,13 @@ svg {
 }
 
 
-.link , .link:focus, .link:visited, .link:hover, .link:active {
+a , a:focus, a:visited, a:hover, a:active {
     outline: none;
   text-decoration: none;
+}
+
+.link:hover, .link:active {
+    color:$blue;
 }
 
 ul {
@@ -121,6 +125,7 @@ ul {
 }
 
 @import 'welcome-page.scss';
+@import 'appointment-form.scss';
 @import 'header4.scss';
 @import 'mobile-menu.scss';
 @import 'main-page.scss';

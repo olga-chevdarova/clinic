@@ -17,10 +17,24 @@
 }
 
 .lala {
-	background-color:$grey;
-	i {
-		color:$blue;
-		padding:0.4em 0.2em;
+	width:100%;
+	.mobile-contacts__content {
+		font-size:0.8em;
+	}
+}
 
+.kol {
+	display:none;
+}
+@media (min-width: 500px) {
+	.mobile-contacts__content {
+		width:70%;
+		display:inline-block;
+	}
+	.kol {
+		width:20%;
+		height:auto;
+		display:inline-block;
+		
 	}
 }

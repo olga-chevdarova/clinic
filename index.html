@@ -11,31 +11,29 @@
       <div class="header__main-menu">
         <div class="mobile-nav__row">
           <div class="mobile-nav__content row">
-            <div class="mobile-nav__menu-button">
+            <div data-wow-offset="0" data-wow-duration="1s" class="mobile-nav__menu-button wow slideInLeft">
               <div role="button" class="hamburger-button"><span class="hamburger-item"></span><span class="hamburger-item"></span><span class="hamburger-item"></span></div>
             </div><img src="img/logo.svg" alt="" class="svg--img mobile-nav__logo">
-            <div class="mobile-nav__contacts-button">
+            <div data-wow-duration="1s" class="mobile-nav__contacts-button wow slideInRight">
               <div role="button" class="contacts-button"><span class="contacts-item"></span><span class="contacts-item"></span><span class="contacts-item"></span></div>
             </div>
           </div>
           <nav class="mobile-nav__menu">
             <ul class="mobile-menu__content">
-              <button class="button mobile-menu__button btn-appointment">make an appointment </button>
+              <button class="button mobile-menu__button btn-appointment development">make an appointment </button>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">about us</a></li>
-              <li class="mobile-menu__item"><a href="http://recurial.com/programming/understanding-callback-functions-in-javascript/" class="link mobile-menu__link">conditions treated</a></li>
+              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">conditions treated</a></li>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">gallery</a></li>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">testimonials</a></li>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">videos</a></li>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">contacts</a></li>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">contacts</a></li>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">last</a></li>
             </ul>
           </nav>
           <div class="mobile-nav__contacts">
             <div class="mobile-contacts__content">
               <div class="mobile-contacts__adress row">
                 <div class="col-2"><i aria-hidden="true" class="fa fa-home fa-2x"></i></div>
-                <div class="col-10"><a href="#">Pulse Practice, West Street, Bourne, PE109NE</a></div>
+                <div class="col-10"><a id="adress" class="link">Pulse Practice, West Street, Bourne, PE109NE</a></div>
               </div>
               <div class="mobile-contacts__hours row">
                 <div class="col-2"><i aria-hidden="true" class="fa fa-clock-o fa-2x"></i></div>
@@ -49,8 +47,20 @@
               <div class="mobile-contacts__phones row">
                 <div class="col-2"><i aria-hidden="true" class="fa fa-phone fa-2x"></i></div>
                 <div class="col-10">
-                  <div class="mobile-phones__item"><a href="#">01778 426000</a></div>
-                  <div class="mobile-phones__item"><a href="#">01778 426000</a></div>
+                  <div class="mobile-phones__item"><a href="tel:01778426000" class="link">01778 426000</a></div>
+                  <div class="mobile-phones__item"><a href="tel:07943336336" class="link">07943 336336</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+            <div role="document" class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
+                </div>
+                <div class="modal-body">
+                  <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, temporibus!</div>
                 </div>
               </div>
             </div>
@@ -172,7 +182,7 @@
       <section class="container-fluid">
         <h2>About us</h2>
         <div class="row about-us__main-page">
-          <div class="about-clinic__about-us__main-page container"><span>All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders </span><span class="marked-text">without the use of drugs or surgery.</span><br><span class="marked-text">Jo Sunner </span><span>is the principle at The Bourne Osteopath Clinic, the Bourne areas longest established Osteopath clinic. Jo Sunner also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists.</span><br><span>In Bourne, all treatments are in a medical centre, providing </span><span class="marked-text">the perfect safe, caring environment, </span><span>giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. </span><br><span>The clinic is open to everyone. </span></div>
+          <div data-wow-duration="2s" class="about-clinic__about-us__main-page container wow fadeInUp"><span>All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders </span><span class="marked-text">without the use of drugs or surgery.</span><br><span>In Bourne, all treatments are in a medical centre, providing </span><span class="marked-text">the perfect safe, caring environment, </span><span>giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. </span><br><span>The clinic is open to everyone. </span></div>
           <div class="about-doctor__about-us__main-page container-fluid row align-items-center justify-content-around">
             <div class="col-6"><img src="../img/jo.jpg"></div>
             <div class="col-6"><a href="#" class="title__about-doctor__about-us__main-page">Mr Jo Sunner</a><br><span class="info__about-doctor__about-us__main-page">BSc(ost.) DO. MMSM. Registered Osteopath</span>
@@ -183,19 +193,19 @@
           </div>
         </div>
         <div class="icons-block-wrap__about-us__main-page row justify-content-between">
-          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-user-md fa-4x"></i>
+          <div data-toggle="tooltip" data-placement="top" title="Bourne Osteopath Clinic is the longest established clinic in the area" data-wow-duration="1s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-user-md fa-4x"></i>
             <h3 class="title__icons-block__about-us__main-page">Since 1993</h3>
             <p class="text__icons-block__about-us__main-page">Bourne Osteopath Clinic is the longest established clinic in the area</p>
           </div>
-          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-info-circle fa-4x"></i>
+          <div data-toggle="tooltip" data-placement="top" title="Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions " data-wow-duration="1s" data-wow-delay="0.7s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-info-circle fa-4x"></i>
             <h3 class="title__icons-block__about-us__main-page">Expert Advice</h3>
             <p class="text__icons-block__about-us__main-page">Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions </p>
           </div>
-          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-trophy fa-4x"></i>
+          <div data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium." data-wow-duration="1s" data-wow-delay="1.4s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-trophy fa-4x"></i>
             <h3 class="title__icons-block__about-us__main-page">Award Winning</h3>
             <p class="text__icons-block__about-us__main-page"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium.</p>
           </div>
-          <div class="icons-block__about-us__main-page"><i aria-hidden="true" class="fa fa-star fa-4x"></i>
+          <div data-toggle="tooltip" data-placement="top" title="Bourne Osteopath Clinic was rated 5 stars by our patience" data-wow-duration="1s" data-wow-delay="2.1s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-star fa-4x"></i>
             <h3 class="title__icons-block__about-us__main-page">First Class Service</h3>
             <p class="text__icons-block__about-us__main-page">Bourne Osteopath Clinic was rated 5 stars by our patience</p>
           </div>
@@ -203,33 +213,32 @@
       </section>
       <section class="services__main-page">
         <h4>Musculoskeletal disorders that may cause:</h4>
-        <h2 class="title-TAB__services__main-page">Treatment we do provide</h2>
         <div class="row no-gutters services-row__services__main-page">
           <div class="services-block__services__main-page">
             <div class="services-list__services__main-page">
               <ul>
-                <li>Migraine Headache Treatment</li>
-                <li>injury rehabilitation</li>
-                <li>pain relief therapy</li>
-                <li>shoulder pain treatment</li>
-                <li>sciatica treatment</li>
-                <li>trapped nerves treatment</li>
-                <li>arthritic pain treatment</li>
-                <li>muscle pain treatment</li>
-                <li>repetitive strain injury treatment</li>
-                <li>joint pain treatment</li>
-                <li>Foot Pain</li>
-                <li>back treatment</li>
-                <li>Pins & Needles in Fingers & Legs</li>
-                <li>Stiff Neck & Shoulders</li>
-                <li>Muscle Spasms</li>
-                <li>Pain Managment</li>
-                <li>Painfull knee</li>
-                <li>Pain on coughing or sneezing</li>
-                <li>Painful Coccyx (Tail bone)</li>
-                <li>Arthritic Pain</li>
-                <li>Pain when sitting or standing</li>
-                <li>sports injury clinics</li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Migraine Headache Treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>injury rehabilitation</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>pain relief therapy</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>shoulder pain treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>sciatica treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>trapped nerves treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>arthritic pain treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>muscle pain treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>repetitive strain injury treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>joint pain treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Foot Pain</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>back treatment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pins & Needles in Fingers & Legs</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Stiff Neck & Shoulders</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Muscle Spasms</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pain Managment</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Painfull knee</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pain on coughing or sneezing</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Painful Coccyx (Tail bone)</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Arthritic Pain</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pain when sitting or standing</span></li>
+                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>sports injury clinics</span></li>
               </ul>
             </div>
           </div>
@@ -238,48 +247,23 @@
       </section>
       <section class="news__main-page">
         <h2>News and events</h2>
-        <div class="conatiner-fluid">
-          <div class="row posts-row__news__main-page justify-content-between no-gutters">
-            <div class="post__news__main-page">
-              <div class="title__post__news__main-page">
-                <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.</h3><span>21.05.2017</span>
-              </div>
-              <div class="image__post__news__main-page"><img src="../img/post1.jpg"></div>
-              <div class="short-content__post__news__main-page">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.</p>
-              </div>
-              <div class="learn-more-button__post__news__main-page">
-                <button id="learn-more-button-2">Learn More</button>
-              </div>
-            </div>
-            <div class="post__news__main-page">
-              <div class="title__post__news__main-page">
-                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!</h5>
-              </div>
-              <div class="date__post__news__main-page">
-                <p>21.05.2017</p>
-              </div>
-              <div class="image__post__news__main-page"><img src="../img/1.jpg"></div>
-              <div class="short-content__post__news__main-page">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-              </div>
-              <div class="learn-more-button__post__news__main-page">
-                <button id="learn-more-button-2">Learn More</button>
-              </div>
-            </div>
-            <div class="post__news__main-page">
-              <div class="title__post__news__main-page">
-                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ex!</h5>
-              </div>
-              <div class="date__post__news__main-page">
-                <p>21.05.2017</p>
-              </div>
-              <div class="image__post__news__main-page"><img src="../img/post1.jpg"></div>
-              <div class="short-content__post__news__main-page">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, iure non. Inventore doloremque ipsam deleniti. Eaque rerum tempore voluptatem, deserunt sunt quas, minus veritatis aut.</p>
-              </div>
-              <div class="learn-more-button__post__news__main-page">
-                <button id="learn-more-button-2">Learn More</button>
+        <div class="container-fluid">
+          <div id="slider">
+            <div class="slide">
+              <div class="slide-copy">
+                <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.</h3>
+                <h3>21.05.2017</h3>
+                <div data-wow-duration="2s" class="image__post__news__main-page wow fadeIn"><img src="../img/post1.jpg"></div>
+                <div class="short-content__post__news__main-page">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.</p>
+                </div>
+                <div class="icons__post row">
+                  <div class="col-2 lo-1"><i id="prev" aria-hidden="true" class="fa fa-chevron-circle-left fa-2x development"></i></div>
+                  <div class="col-8 lo-2">
+                    <button id="learn-more-button-2" class="development">Learn More</button>
+                  </div>
+                  <div class="col-2 lo-3"><i id="next" aria-hidden="true" class="fa fa-chevron-circle-right fa-2x development"></i></div>
+                </div>
               </div>
             </div>
           </div>
@@ -297,16 +281,31 @@
         </div>
       </section>
       <section class="banner">
-        <p class="banner-title">Do you want to Get a free consultation?</p>
+        <p data-wow-duration="2s" class="banner-title wow fadeIn">Do you want to Get a free consultation?</p>
         <p class="text-banner">We are always ready to welcome you in our clinic!</p>
-        <button class="banner-button"> Book an appointment</button>
+        <button data-wow-duration="1.5s" data-wow-delay="1s" class="banner-button development wow fadeInUp"> Book an appointment</button>
       </section>
-      <section class="lala"><i aria-hidden="true" class="fa fa-clock-o fa-2x"></i>
-        <p class="kldg">Opening Hours</p>
-        <div class="container">
-          <div class="row">
-            <div class="col-6"><span>Mon-Fri</span><br><span>Saturday</span><br><span>Sunday</span></div>
-            <div class="col-6"><span> 8:00 am-8:00 pm </span><br><span> 8:00 am-1:00 pm </span><br><span>Closed</span></div>
+      <section class="lala row justify-content-between"><img src="img/logo.svg" class="kol">
+        <div class="mobile-contacts__content">
+          <div class="mobile-contacts__adress row">
+            <div class="col-2"><i aria-hidden="true" class="fa fa-home fa-2x"></i></div>
+            <div class="col-10"><a id="adress" class="link">Pulse Practice, West Street, Bourne, PE109NE</a></div>
+          </div>
+          <div class="mobile-contacts__hours row">
+            <div class="col-2"><i aria-hidden="true" class="fa fa-clock-o fa-2x"></i></div>
+            <div class="col-10">
+              <div class="row no-gutters">
+                <div class="col-6"><span>Mon-Fri</span><br><span>Saturday</span><br><span>Sunday</span></div>
+                <div class="col-6"><span>8AM - 8PM</span><br><span>8AM - 1PM</span><br><span>Closed</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-contacts__phones row">
+            <div class="col-2"><i aria-hidden="true" class="fa fa-phone fa-2x"></i></div>
+            <div class="col-10">
+              <div class="mobile-phones__item"><a href="tel:01778426000" class="link">01778 426000</a></div>
+              <div class="mobile-phones__item"><a href="tel:07943336336" class="link">07943 336336</a></div>
+            </div>
           </div>
         </div>
       </section>
