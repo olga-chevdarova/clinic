@@ -1,12 +1,28 @@
 $(document).ready(function(){
 
-  new WOW().init();
+ wow = new WOW(
+                      {
+                      live:         false        // default
+                    }
+                    )
+                    wow.init();
 
    // $('.tooltips').tooltipster();
 $('.development').click(function() {
   alert('This function is on the stage of development now');
 })
 
+
+$(document).click(function(){
+  $("#myDropdown").removeClass('open');
+});
+
+
+$('.dropdown-box').click(function(e) {
+  e.stopPropagation();
+  $('#myDropdown').toggleClass('open');
+
+});
 function windowSize(resolution){
     if ($(window).width() <= resolution){
           $('[data-toggle="tooltip"]').tooltip();

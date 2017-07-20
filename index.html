@@ -8,6 +8,19 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__top-menu">
+        <div class="top-menu__content row align-items-center justify-content-between">
+          <div data-wow-duration="2s" class="top-menu__social-icons-block wow slideInDown">
+            <div class="btn-group"><a href="#" class="top-menu__item link"><i aria-hidden="true" class="fa fa-google top-menu__icon"></i></a><a href="#" class="top-menu__item link"><i aria-hidden="true" class="fa fa-facebook top-menu__icon"></i></a><a href="#" class="top-menu__item link"><i aria-hidden="true" class="fa fa-twitter top-menu__icon"></i></a></div>
+          </div>
+          <div class="top-menu__phone-numbers-block">
+            <div class="btn-group">
+              <div><a href="tel:01778-426000" class="top-menu__item link"><i aria-hidden="true" class="fa fa-phone top-menu__icon"></i></a><a href="tel:01778-426000" class="top-menu__link link">01778 426000</a></div>
+              <div><a href="tel:07943-336336" class="top-menu__item link"><i aria-hidden="true" class="fa fa-mobile top-menu__icon"></i></a><a href="tel:07943-336336" class="top-menu__link link">07943 336336</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="header__main-menu">
         <div class="mobile-nav__row">
           <div class="mobile-nav__content row">
@@ -20,7 +33,7 @@
           </div>
           <nav class="mobile-nav__menu">
             <ul class="mobile-menu__content">
-              <button class="button mobile-menu__button btn-appointment development">make an appointment </button>
+              <button class="button mobile-menu__button btn-appointment development">appointment request</button>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">about us</a></li>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">conditions treated</a></li>
               <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">gallery</a></li>
@@ -53,16 +66,24 @@
               </div>
             </div>
           </div>
-          <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
-            <div role="document" class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
-                </div>
-                <div class="modal-body">
-                  <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, temporibus!</div>
-                </div>
-              </div>
+        </div>
+        <div class="tab-nav__row">
+          <div class="tab-nav__content row align-items-center justify-content-around">
+            <div class="tab-nav__logo-box"><img src="img/logo.png" class="tab-nav__logo"></div>
+            <div class="tab-nav__menu">
+              <nav>
+                <div class="dropdown tab-nav__item dropdown-box"><a href="#" class="dropbtn link"> Information</a>
+                  <div id="myDropdown" class="dropdown-content">
+                    <li class="dropdown-item"><a href="#" class="link">About us</a></li>
+                    <li class="dropdown-item"><a href="#" class="link">gallery</a></li>
+                    <li class="dropdown-item"><a href="#" class="link">testimonials</a></li>
+                    <li class="dropdown-item"><a href="#" class="link">videos</a></li>
+                  </div>
+                </div><a href="#" class="link tab-nav__item tab-nav__item--PC"> about us</a><a href="#" class="link tab-nav__item"> conditions treated</a><a href="#" class="link tab-nav__item tab-nav__item--PC"> gallery</a><a href="#" class="link tab-nav__item tab-nav__item--PC"> testimonials</a><a href="#" class="link tab-nav__item tab-nav__item--PC"> videos</a><a href="#" class="link tab-nav__item"> contacts</a>
+              </nav>
+            </div>
+            <div class="tab-nav__button">
+              <button data-wow-delay="1.5s" data-wow-duration="2s" class="button btn-appointment development wow fadeInRight">appointment </button>
             </div>
           </div>
         </div>
@@ -168,47 +189,15 @@
         </ul>
       </nav>
     </div>
-    <section class="main-page">
-      <div class="welcome-block__main-page container-fluid">
-        <div class="text__welcome-block__main-page">
-          <h1 class="title__text__welcome-block__main-page">Bourne Osteopath Clinic</h1>
-          <div class="motto__text__welcome-block__main-page">Qualitive healthcare without the wait!</div>
-          <div class="subtitle__text__welcome-block__main-page"> Musculoskeletal disorders treatment without the use of drugs or surgery.</div>
-          <h3 class="subtitle-TAB__text__welcome-block__main-page">Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h3>
-          <p class="decription-PC__text__welcome-block__main-page">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
-          <button id="learn-more-button">Learn More</button>
-        </div>
-      </div>
-      <section class="container-fluid">
-        <h2>About us</h2>
-        <div class="row about-us__main-page">
-          <div data-wow-duration="2s" class="about-clinic__about-us__main-page container wow fadeInUp"><span>All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders </span><span class="marked-text">without the use of drugs or surgery.</span><br><span>In Bourne, all treatments are in a medical centre, providing </span><span class="marked-text">the perfect safe, caring environment, </span><span>giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. </span><br><span>The clinic is open to everyone. </span></div>
-          <div class="about-doctor__about-us__main-page container-fluid row align-items-center justify-content-around">
-            <div class="col-6"><img src="../img/jo.jpg"></div>
-            <div class="col-6"><a href="#" class="title__about-doctor__about-us__main-page">Mr Jo Sunner</a><br><span class="info__about-doctor__about-us__main-page">BSc(ost.) DO. MMSM. Registered Osteopath</span>
-              <div class="tel__about-doctor__about-us__main-page"><i aria-hidden="true" class="fa fa-phone"></i><a href="tel:01778-426000">01778 426000 </a><br><i aria-hidden="true" class="fa fa-mobile"></i><a href="tel:01778-426000">01778 426000 </a></div>
-              <div class="text-TAB__about-doctor__about-us__main-page">Mr. Jo Sunner is the principle at Bourne Osteopath Clinic. He also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists. </div>
-            </div>
-            <div class="text__about-doctor__about-us__main-page">Mr. Jo Sunner is the principle at Bourne Osteopath Clinic. He also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists. </div>
-          </div>
-        </div>
-        <div class="icons-block-wrap__about-us__main-page row justify-content-between">
-          <div data-toggle="tooltip" data-placement="top" title="Bourne Osteopath Clinic is the longest established clinic in the area" data-wow-duration="1s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-user-md fa-4x"></i>
-            <h3 class="title__icons-block__about-us__main-page">Since 1993</h3>
-            <p class="text__icons-block__about-us__main-page">Bourne Osteopath Clinic is the longest established clinic in the area</p>
-          </div>
-          <div data-toggle="tooltip" data-placement="top" title="Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions " data-wow-duration="1s" data-wow-delay="0.7s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-info-circle fa-4x"></i>
-            <h3 class="title__icons-block__about-us__main-page">Expert Advice</h3>
-            <p class="text__icons-block__about-us__main-page">Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions </p>
-          </div>
-          <div data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium." data-wow-duration="1s" data-wow-delay="1.4s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-trophy fa-4x"></i>
-            <h3 class="title__icons-block__about-us__main-page">Award Winning</h3>
-            <p class="text__icons-block__about-us__main-page"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium.</p>
-          </div>
-          <div data-toggle="tooltip" data-placement="top" title="Bourne Osteopath Clinic was rated 5 stars by our patience" data-wow-duration="1s" data-wow-delay="2.1s" class="icons-block__about-us__main-page wow fadeIn"><i aria-hidden="true" class="fa fa-star fa-4x"></i>
-            <h3 class="title__icons-block__about-us__main-page">First Class Service</h3>
-            <p class="text__icons-block__about-us__main-page">Bourne Osteopath Clinic was rated 5 stars by our patience</p>
-          </div>
+    <main class="main-page">
+      <section class="slide container-fluid">
+        <div class="slide__content">
+          <h1 class="slide__title">Bourne Osteopath Clinic</h1>
+          <div data-wow-duration="2s" data-wow-delay="2s" class="slide__motto wow slideInLeft">Qualitive healthcare without the wait!</div>
+          <div class="slide__subtitle"> Musculoskeletal disorders treatment without the use of drugs or surgery.</div>
+          <h3 class="slide__subtitle--TAB">Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h3>
+          <p class="slide__text">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
+          <button class="btn-learn-more button development">Learn More</button>
         </div>
       </section>
       <section class="services__main-page">
@@ -245,30 +234,6 @@
           <div class="image__services__main-page align-self-center"></div>
         </div>
       </section>
-      <section class="news__main-page">
-        <h2>News and events</h2>
-        <div class="container-fluid">
-          <div id="slider">
-            <div class="slide">
-              <div class="slide-copy">
-                <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.</h3>
-                <h3>21.05.2017</h3>
-                <div data-wow-duration="2s" class="image__post__news__main-page wow fadeIn"><img src="../img/post1.jpg"></div>
-                <div class="short-content__post__news__main-page">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.</p>
-                </div>
-                <div class="icons__post row">
-                  <div class="col-2 lo-1"><i id="prev" aria-hidden="true" class="fa fa-chevron-circle-left fa-2x development"></i></div>
-                  <div class="col-8 lo-2">
-                    <button id="learn-more-button-2" class="development">Learn More</button>
-                  </div>
-                  <div class="col-2 lo-3"><i id="next" aria-hidden="true" class="fa fa-chevron-circle-right fa-2x development"></i></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="testimonialas">
         <div class="row no-gutters">
           <div class="ko">
@@ -283,33 +248,9 @@
       <section class="banner">
         <p data-wow-duration="2s" class="banner-title wow fadeIn">Do you want to Get a free consultation?</p>
         <p class="text-banner">We are always ready to welcome you in our clinic!</p>
-        <button data-wow-duration="1.5s" data-wow-delay="1s" class="banner-button development wow fadeInUp"> Book an appointment</button>
+        <button data-wow-duration="2s" data-wow-delay="1s" class="banner-button development wow fadeInUp"> Book an appointment</button>
       </section>
-      <section class="lala row justify-content-between"><img src="img/logo.svg" class="kol">
-        <div class="mobile-contacts__content">
-          <div class="mobile-contacts__adress row">
-            <div class="col-2"><i aria-hidden="true" class="fa fa-home fa-2x"></i></div>
-            <div class="col-10"><a id="adress" class="link">Pulse Practice, West Street, Bourne, PE109NE</a></div>
-          </div>
-          <div class="mobile-contacts__hours row">
-            <div class="col-2"><i aria-hidden="true" class="fa fa-clock-o fa-2x"></i></div>
-            <div class="col-10">
-              <div class="row no-gutters">
-                <div class="col-6"><span>Mon-Fri</span><br><span>Saturday</span><br><span>Sunday</span></div>
-                <div class="col-6"><span>8AM - 8PM</span><br><span>8AM - 1PM</span><br><span>Closed</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-contacts__phones row">
-            <div class="col-2"><i aria-hidden="true" class="fa fa-phone fa-2x"></i></div>
-            <div class="col-10">
-              <div class="mobile-phones__item"><a href="tel:01778426000" class="link">01778 426000</a></div>
-              <div class="mobile-phones__item"><a href="tel:07943336336" class="link">07943 336336</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
+    </main>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:300,400,700" rel="stylesheet">
     <!--build:css css/main.css-->
     <!--bower:css-->

@@ -1,27 +1,9 @@
-.button {
-    -webkit-appearance: none;
-    border: 0;
-    font-size: 1em;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.btn-appointment {
-    border-radius: 0.3em;
-    background-color: $blue;
-    color: $white;
-    padding: 0.7em 1em;
-}
-
-.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
-.red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
 .mobile-nav__row {
     width: 100%;
     position: fixed;
     z-index: 200;
     background-color: rgba(255,255,255,0.6);
 }
-
 .mobile-nav__content {
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -125,8 +107,6 @@
     transition: all 0.5s ease-in-out;
     z-index: 2000;
     overflow-y: scroll;
-
-
 }
 
 .mobile-nav__menu {
@@ -140,7 +120,7 @@
 
 .mobile-menu__content {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .mobile-menu__link {
@@ -149,23 +129,21 @@
     font-size: 1.2em;
     display: block;
     padding: 0.5em;
-    padding-left:1em;
+    padding-left: 1em;
     margin: 0.5em 0;
-    border-bottom:1px solid $grey;
-
+    border-bottom: 1px solid $grey;
 }
 
 .mobile-menu__link:hover {
-    background:rgba($grey, 0.7);
-
+    background: rgba($grey, 0.7);
 }
 
 .mobile-menu__button {
-    width:90%;
-    display:block;
-    margin:0 auto;
-    margin-top:1.4em;
-    margin-bottom:1.65em;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.4em;
+    margin-bottom: 1.65em;
 }
 .mobile-nav__contacts {
     position: fixed;
@@ -176,40 +154,157 @@
     height: auto;
     background-color: white;
     right: -100%;
-        overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 .mobile-contacts__content {
-padding:0.8em 0;
+    padding: 0.8em 0;
 }
 
-.mobile-contacts__adress, .mobile-contacts__hours, .mobile-contacts__phones {
-        -webkit-box-pack: justify;
+.mobile-contacts__adress,.mobile-contacts__hours,.mobile-contacts__phones {
+    -webkit-box-pack: justify;
     justify-content: space-between;
     align-items: center;
-padding:0.3em 0;
-color:$text-color;
-font-size:1.2em;
-line-height:1.5em;
-border-bottom:1px solid $grey;
+    padding: 0.3em 0;
+    color: $text-color;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    border-bottom: 1px solid $grey;
     i {
-        color:$blue;
+        color: $blue;
     }
     a {
-        color:$text-color;
+        color: $text-color;
     }
 }
 .mobile-contacts__phones {
-    border:0;
+    border: 0;
 }
 
-// .mobile-contacts__phones {
-//     a {
-// display: inline-block;
-// padding:0.55em 0;
-//     }
-// }
 .mobile-phones__item {
-    display:inline-block;
-    padding:0 0.5em;
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+.header__top-menu {
+    display: none;
+}
+.tab-nav__row {
+    display: none;
+}
+
+@media (min-width: 740px) {
+    .mobile-nav__row {
+        display: none;
+    }
+
+    .header__top-menu {
+        display: flex;
+        position: fixed;
+        z-index: 1500;
+        height: 3em;
+        background-color: $grey;
+        width: 100%;
+    }
+
+
+    .top-menu__content {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .top-menu__item {
+        padding: 0.4em 0.7em;
+        font-size: 1.5em;
+    }
+
+    .top-menu__link {
+        font-size: 1em;
+        padding: 0.9em 0.7em;
+    }
+
+
+    .tab-nav__row {
+        display: flex;
+        position: fixed;
+        z-index: 1500;
+        height: 5.5em;
+        background-color: rgba($white, 0.7);
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    .tab-nav__content {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        vertical-align: center;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+    .dropdown-content {
+        position: absolute;
+        text-transform: uppercase;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        top: 4.2em;
+        left: 0;
+        display: none;
+        &.open {
+            display: block;
+        }
+    }
+    .dropdown-item {
+        line-height: 2em;
+        background-color: white;
+        padding: 0.5em;
+        padding-left: 1em;
+        min-width: 10em;
+        border-bottom: 1px solid $grey;
+    }
+
+
+    .dropbtn:after {
+        content: '\25be';
+        display: inline-block;
+        margin: 0 0.5em;
+    }
+    .tab-nav__logo {
+        width: auto;
+        height: 5em;
+    }
+
+    .tab-nav__item {
+        display: inline-block;
+        padding: 0.7em;
+        text-transform: uppercase;
+    }
+    .tab-nav__item--PC {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .top-menu__content {
+        padding: 0 2%;
+    }
+}
+@media (min-width: 1200px) {
+    .dropdown {
+        display: none;
+    }
+
+    .tab-nav__item--PC {
+        display: inline-block;
+    }
+    .btn-appointment:after {
+        content: ' request';
+    }
+}
+@media (min-width: 1800px) {
+    .top-menu__content {
+        padding: 0 6%;
+    }
 }

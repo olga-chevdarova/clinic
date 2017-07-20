@@ -123,6 +123,23 @@ ul {
     height:100%;
     opacity:0.8;
 }
+.button {
+    -webkit-appearance: none;
+    border: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-appointment {
+    border-radius: 0.3em;
+    background-color: $blue;
+    color: $white;
+    padding: 0.7em 1em;
+}
+
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+.red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
 
 @import 'welcome-page.scss';
 @import 'appointment-form.scss';

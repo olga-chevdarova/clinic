@@ -92,6 +92,25 @@ ul {
   height: 100%;
   opacity: 0.8; }
 
+.button {
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.btn-appointment {
+  border-radius: 0.3em;
+  background-color: #199ed8;
+  color: white;
+  padding: 0.7em 1em; }
+
+.red-tooltip + .tooltip > .tooltip-inner {
+  background-color: #f00; }
+
+.red-tooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #f00; }
+
 .welcome-page {
   height: 100vh;
   width: auto;
@@ -270,25 +289,6 @@ ul {
   position: fixed;
   background-color: pink;
   z-index: 2500; }
-
-.button {
-  -webkit-appearance: none;
-  border: 0;
-  font-size: 1em;
-  text-transform: uppercase;
-  cursor: pointer; }
-
-.btn-appointment {
-  border-radius: 0.3em;
-  background-color: #199ed8;
-  color: white;
-  padding: 0.7em 1em; }
-
-.red-tooltip + .tooltip > .tooltip-inner {
-  background-color: #f00; }
-
-.red-tooltip + .tooltip > .tooltip-arrow {
-  border-bottom-color: #f00; }
 
 .mobile-nav__row {
   width: 100%;
@@ -474,6 +474,105 @@ ul {
   display: inline-block;
   padding: 0 0.5em; }
 
+.header__top-menu {
+  display: none; }
+
+.tab-nav__row {
+  display: none; }
+
+@media (min-width: 740px) {
+  .mobile-nav__row {
+    display: none; }
+  .header__top-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 1500;
+    height: 3em;
+    background-color: #F2F2F2;
+    width: 100%; }
+  .top-menu__content {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%; }
+  .top-menu__item {
+    padding: 0.4em 0.7em;
+    font-size: 1.5em; }
+  .top-menu__link {
+    font-size: 1em;
+    padding: 0.9em 0.7em; }
+  .tab-nav__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 1500;
+    height: 5.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    margin-top: 3em; }
+  .tab-nav__content {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    vertical-align: center; }
+  .dropdown {
+    position: relative; }
+  .dropdown-content {
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 4.2em;
+    left: 0;
+    display: none; }
+    .dropdown-content.open {
+      display: block; }
+  .dropdown-item {
+    line-height: 2em;
+    background-color: white;
+    padding: 0.5em;
+    padding-left: 1em;
+    min-width: 10em;
+    border-bottom: 1px solid #F2F2F2; }
+  .dropbtn:after {
+    content: '\25be';
+    display: inline-block;
+    margin: 0 0.5em; }
+  .tab-nav__logo {
+    width: auto;
+    height: 5em; }
+  .tab-nav__item {
+    display: inline-block;
+    padding: 0.7em;
+    text-transform: uppercase; }
+  .tab-nav__item--PC {
+    display: none; } }
+
+@media (min-width: 900px) {
+  .top-menu__content {
+    padding: 0 2%; } }
+
+@media (min-width: 1200px) {
+  .dropdown {
+    display: none; }
+  .tab-nav__item--PC {
+    display: inline-block; }
+  .btn-appointment:after {
+    content: ' request'; } }
+
+@media (min-width: 1800px) {
+  .top-menu__content {
+    padding: 0 6%; } }
+
 .mobile-menu {
   width: 80%;
   background-color: white;
@@ -522,21 +621,21 @@ ul {
   .mobile-menu {
     display: none; } }
 
-.welcome-block__main-page {
+.slide {
   width: 100%;
   background: url("../img/bg-MOB_port__welcome-block.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 10% 0; }
 
-.text__welcome-block__main-page {
+.slide__content {
   padding-top: 8em; }
 
-.title__text__welcome-block__main-page {
+.slide__title {
   max-width: 50%;
   font-weight: 600; }
 
-.motto__text__welcome-block__main-page {
+.slide__motto {
   color: #199ed8;
   font-family: "Kaushan Script", cursive;
   font-size: 1.5em;
@@ -544,36 +643,36 @@ ul {
   padding: 0.9em 0;
   line-height: 1.2em; }
 
-.subtitle__text__welcome-block__main-page {
+.slide__subtitle {
   display: none; }
 
-.subtitle-TAB__text__welcome-block__main-page {
+.slide__subtitle--TAB {
   display: none; }
 
-.decription-PC__text__welcome-block__main-page {
+.slide__text {
   display: none; }
 
-#learn-more-button {
+.btn-learn-more {
   display: none; }
 
 @media (min-width: 450px) {
-  .welcome-block__main-page {
+  .slide {
     background: url("../img/bg-MOB_land__welcome-block.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 70% 0; }
-  .text__welcome-block__main-page {
+  .slide__content {
     padding-top: 7em;
     padding-bottom: 1em; }
-  .title__text__welcome-block__main-page {
+  .slide__title {
     max-width: 70%; }
-  .motto__text__welcome-block__main-page {
+  .slide__motto {
     max-width: 100%; }
-  .subtitle__text__welcome-block__main-page {
+  .slide__subtitle {
     display: block;
     padding-bottom: 0.9em;
     font-weight: 600; }
-  #learn-more-button {
+  .btn-learn-more {
     -webkit-appearance: none;
     border-radius: .3em;
     border: 0;
@@ -587,18 +686,18 @@ ul {
     display: block; } }
 
 @media (min-width: 700px) {
-  .subtitle__text__welcome-block__main-page {
+  .slide__subtitle {
     display: none; }
-  .welcome-block__main-page {
+  .slide {
     background: url("../img/bg-TAB__welcome-block.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 68% 0; }
-  .text__welcome-block__main-page {
+  .slide__content {
     padding-top: 8em;
     padding-left: 2em;
     padding-bottom: 2em; }
-  .subtitle-TAB__text__welcome-block__main-page {
+  .slide__subtitle--TAB {
     display: block;
     max-width: 55%;
     padding: 0 0 0.9em;
@@ -606,158 +705,43 @@ ul {
     line-height: 1.5em;
     text-align: justify;
     font-weight: 600; }
-  .text__welcome-block__main-page {
+  .slide__content {
     padding-top: 11.5em; } }
 
 @media (min-width: 900px) {
-  .decription-PC__text__welcome-block__main-page {
+  .slide__text {
     display: block;
     max-width: 50%;
     text-align: justify;
     font-size: 1em;
     padding-bottom: 0.9em; }
-  .subtitle-TAB__text__welcome-block__main-page {
+  .slide__subtitle--TAB {
     max-width: 60%; } }
 
 @media (min-width: 1100px) {
-  .text__welcome-block__main-page {
+  .slide__content {
     padding-top: 12em;
     padding-left: 3em;
     padding-bottom: 2em; }
-  .title__text__welcome-block__main-page {
+  .slide__title {
     font-size: 3.5em; }
-  .subtitle-TAB__text__welcome-block__main-page {
+  .slide__subtitle--TAB {
     max-width: 55%;
     padding: 0.9em 0 0em; } }
 
 @media (min-width: 1500px) {
-  .welcome-block__main-page {
+  .slide {
     background: url("../img/bg-PC__welcome-block.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover; }
-  .text__welcome-block__main-page {
+  .slide__content {
     padding-top: 14em;
     padding-bottom: 4em;
     padding-left: 7em; }
-  .subtitle-TAB__text__welcome-block__main-page {
+  .slide__subtitle--TAB {
     max-width: 45%; }
-  .decription-PC__text__welcome-block__main-page {
+  .slide__text {
     max-width: 45%; } }
-
-.about-us__main-page {
-  padding: 0; }
-
-.about-clinic__about-us__main-page {
-  font-size: 1.1em;
-  line-height: 1.6em;
-  max-width: 100%;
-  margin-bottom: 5%; }
-
-.about-doctor__about-us__main-page {
-  width: 100%;
-  background-color: #F2F2F2;
-  padding: 1em 0;
-  margin: 0;
-  margin-bottom: 5%; }
-
-.marked-text {
-  color: #199ed8;
-  font-weight: 600; }
-
-.info__about-doctor__about-us__main-page {
-  text-align: justify;
-  font-size: 1.1em;
-  line-height: 1.6em; }
-
-.title__about-doctor__about-us__main-page {
-  font-size: 1.2em;
-  color: #199ed8;
-  font-weight: 600;
-  line-height: 2em; }
-
-.text__about-doctor__about-us__main-page {
-  padding: 1em;
-  font-style: italic;
-  line-height: 1.6em; }
-
-.tel__about-doctor__about-us__main-page {
-  display: none; }
-
-.icons-block__about-us__main-page {
-  width: 45%;
-  padding: 0.5em;
-  margin: 0.5em;
-  background-color: #F2F2F2;
-  text-align: center; }
-  .icons-block__about-us__main-page i {
-    color: #07638A; }
-
-.title__icons-block__about-us__main-page {
-  font-weight: 600;
-  padding: 0.5em 0; }
-
-.text__icons-block__about-us__main-page {
-  display: none; }
-
-.text-TAB__about-doctor__about-us__main-page {
-  display: none; }
-
-@media (min-width: 460px) {
-  .text__icons-block__about-us__main-page {
-    text-align: left;
-    display: block;
-    padding: 0 0.5em; }
-  .tel__about-doctor__about-us__main-page {
-    padding: .5em 0;
-    line-height: 1.8em;
-    font-weight: 600;
-    display: block; }
-    .tel__about-doctor__about-us__main-page i {
-      color: #199ed8;
-      width: 1.3em; } }
-
-@media (min-width: 600px) {
-  .text__about-doctor__about-us__main-page {
-    padding-top: 1.5em; } }
-
-@media (min-width: 700px) {
-  .text__about-doctor__about-us__main-page {
-    display: none; }
-  .text-TAB__about-doctor__about-us__main-page {
-    padding-top: 1em;
-    font-style: italic;
-    line-height: 1.6em;
-    display: block; }
-  .about-doctor__about-us__main-page {
-    padding: 2em 0; } }
-
-@media (min-width: 800px) {
-  .icons-block__about-us__main-page {
-    margin: 0;
-    width: 25%;
-    padding: 2em 1.2em 1em; }
-  .icons-block-wrap__about-us__main-page {
-    margin-top: 2.5em; } }
-
-@media (min-width: 1000px) {
-  .about-clinic__about-us__main-page {
-    width: 45%; }
-  .about-doctor__about-us__main-page {
-    width: 45%; }
-  .text-TAB__about-doctor__about-us__main-page {
-    display: none; }
-  .text__about-doctor__about-us__main-page {
-    display: block;
-    width: 100%; }
-  .col-old {
-    width: 40%; } }
-
-@media (min-width: 1500px) {
-  .about-doctor__about-us__main-page {
-    max-width: 40%;
-    margin-right: 3em; }
-  .about-clinic__about-us__main-page {
-    text-align: justify; } }
 
 .services-block__services__main-page {
   background-color: #199ed8;
