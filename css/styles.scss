@@ -3,6 +3,7 @@ $blue: #199ed8;
 $text-color: #292b2c;
 $white: hsl(0, 0%, 100%);
 $grey:#F2F2F2;
+$blue2:#07638a;
 
 
 //Fonts
@@ -32,7 +33,8 @@ h2 {
     font-size: 1.5em;
      line-height:1.5em;
      text-transform:uppercase;
-     padding:0.5em 0em 0.5em 0.8em;
+     // padding:0.5em 0em 0.5em 0.8em;
+     padding:2em 0 1em;
 }
 h2:before {
     content: '\f054';
@@ -140,7 +142,10 @@ ul {
 
 .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
 .red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
-
+.marked-text {
+     color:$blue;
+ font-weight:600;
+}
 @import 'welcome-page.scss';
 @import 'appointment-form.scss';
 @import 'header4.scss';

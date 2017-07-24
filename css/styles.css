@@ -17,7 +17,7 @@ h2 {
   font-size: 1.5em;
   line-height: 1.5em;
   text-transform: uppercase;
-  padding: 0.5em 0em 0.5em 0.8em; }
+  padding: 2em 0 1em; }
 
 h2:before {
   content: '\f054';
@@ -110,6 +110,10 @@ ul {
 
 .red-tooltip + .tooltip > .tooltip-arrow {
   border-bottom-color: #f00; }
+
+.marked-text {
+  color: #199ed8;
+  font-weight: 600; }
 
 .welcome-page {
   height: 100vh;
@@ -674,7 +678,7 @@ ul {
     font-weight: 600; }
   .btn-learn-more {
     -webkit-appearance: none;
-    border-radius: .3em;
+    border-radius: 0.3em;
     border: 0;
     background-color: #199ed8;
     color: white;
@@ -742,6 +746,159 @@ ul {
     max-width: 45%; }
   .slide__text {
     max-width: 45%; } }
+
+.doctor__title {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6em; }
+
+.doctor__phones {
+  display: none; }
+
+.h {
+  text-align: center;
+  padding: 1em;
+  color: #07638a; }
+
+.u h3 {
+  color: #07638a; }
+
+.icons-block__about-us__main-page {
+  padding: 0.5em;
+  width: 3em;
+  margin: 1em;
+  text-align: center;
+  border: 3px solid #F2F2F2;
+  background-color: #F2F2F2; }
+  .icons-block__about-us__main-page i {
+    color: #07638a; }
+
+.title__icons-block__about-us__main-page {
+  font-weight: 600;
+  padding: 0.5em 0; }
+
+.text__icons-block__about-us__main-page {
+  display: none; }
+
+.text-TAB__about-doctor__about-us__main-page {
+  display: none; }
+
+.about-us__doctor {
+  background-color: #F2F2F2;
+  padding: 1.5em 0;
+  margin: 1em 0; }
+
+.doctor__name {
+  font-size: 1.2em;
+  line-height: 2em; }
+
+.doctor__text {
+  font-style: italic;
+  padding: 1em 0 0; }
+
+.doctor__text-block--PC {
+  display: none; }
+
+.icons__item {
+  background-color: orange; }
+
+.icons-block__about-us__main-page {
+  margin: 0.5em; }
+
+.icons__item-content {
+  background-color: pink;
+  margin: 0.7em; }
+
+@media (min-width: 460px) {
+  .doctor__phones {
+    padding: 0.5em 0;
+    line-height: 1.8em;
+    font-weight: 600;
+    display: block; }
+    .doctor__phones i {
+      color: #199ed8;
+      width: 1.3em; } }
+
+@media (min-width: 800px) {
+  .icons-block__about-us__main-page {
+    width: 20%; }
+  .icons-block-wrap__about-us__main-page {
+    margin-top: 2.5em; } }
+
+@media (min-width: 768px) {
+  .about-us__doctor {
+    padding: 1em 0;
+    margin: 0; }
+  .doctor__text {
+    padding: 0;
+    padding-bottom: 1em; }
+  .about-us__clinic {
+    text-align: justify;
+    padding-right: 2em;
+    padding-top: 1.5em; } }
+
+@media (min-width: 846px) {
+  .doctor__text {
+    padding-top: 1.5em;
+    padding-bottom: 1em; } }
+
+@media (min-width: 1300px) {
+  .doctor__text-wrap {
+    display: none; }
+  .doctor__text-block--PC {
+    display: block; }
+  .doctor__text {
+    padding-top: 0;
+    padding-bottom: 0; } }
+
+@media (min-width: 1600px) {
+  .about-us__content {
+    width: 90%; } }
+
+.benefits__wrap {
+  background-color: #F2F2F2;
+  margin-bottom: 1em;
+  width: 100%; }
+
+.benefits__icon {
+  margin: 1em; }
+
+.benefits__text {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  text-align: justify; }
+
+.benefits {
+  padding-top: 2em; }
+
+.benefits__icon {
+  width: 5em;
+  height: 5em; }
+
+.benefits__title {
+  text-transform: uppercase; }
+
+.benefits__icon-1 {
+  background: url("../img/139302.svg"); }
+
+.benefits__icon-2 {
+  background: url("../img/194915.svg"); }
+
+.benefits__icon-3 {
+  background: url("../img/234688.svg"); }
+
+.benefits__icon-4 {
+  background: url("../img/485515.svg"); }
+
+@media (min-width: 1200px) {
+  .benefits__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .benefits__content-1, .benefits__content-2 {
+    max-width: 50%; } }
 
 .services-block__services__main-page {
   background-color: #199ed8;
