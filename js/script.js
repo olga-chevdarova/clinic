@@ -2,7 +2,7 @@ $(document).ready(function(){
 
  wow = new WOW(
                       {
-                      live:         false        // default
+                      live:         false  , repeat: 1      // default
                     }
                     )
                     wow.init();

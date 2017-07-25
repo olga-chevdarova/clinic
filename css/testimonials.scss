@@ -15,10 +15,24 @@
 // 	margin:3em;
 // }
 
+
+.btn-learn-more--blue {
+	border:1px solid $blue;
+		background-color: transparent;
+		color:$blue;
+margin:0 auto;
+}
+.kjhss {
+	width:80%;
+}
 .text {
 	padding:2em;
 }
 .pt {
+	float:right;
+}
+
+.nmn {
 	float:right;
 }
 .fa-quote-right {
@@ -28,6 +42,7 @@
 .ko {
 	background-color: $grey;
 	width:100%;
+	margin-top:3em;
 }
 
 .pt {
@@ -43,7 +58,6 @@
 @media (min-width: 700px) {
 .ko {
 	background:url('../img/senior-couple.png') no-repeat $grey;
-
 }
 .text {
 	padding-left:40%;

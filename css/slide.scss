@@ -37,7 +37,7 @@
     display: none;
 }
 
-.btn-learn-more {
+.slide__btn-learn-more {
     display: none;
 }
 
@@ -68,17 +68,8 @@
         font-weight: 600;
     }
 
-    .btn-learn-more {
-        -webkit-appearance: none;
-        border-radius: 0.3em;
-        border: 0;
-        background-color: $blue;
-        color: $white;
-        font-weight: 300;
+    .slide__btn-learn-more {
         display: inline-block;
-        font-size: 1em;
-        padding: 0.6em 1em;
-        text-transform: uppercase;
         display: block;
     }
 }

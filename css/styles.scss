@@ -34,7 +34,7 @@ h2 {
      line-height:1.5em;
      text-transform:uppercase;
      // padding:0.5em 0em 0.5em 0.8em;
-     padding:2em 0 1em;
+     padding: 1em 0;
 }
 h2:before {
     content: '\f054';
@@ -140,6 +140,18 @@ ul {
     padding: 0.7em 1em;
 }
 
+    .btn-learn-more {
+        -webkit-appearance: none;
+        border-radius: 0.3em;
+        border: 0;
+        background-color: $blue;
+        color: $white;
+        font-weight: 300;
+        font-size: 1em;
+        padding: 0.6em 1em;
+        text-transform: uppercase;
+    }
+
 .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
 .red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
 .marked-text {
@@ -147,8 +159,6 @@ ul {
  font-weight:600;
 }
 @import 'welcome-page.scss';
-@import 'appointment-form.scss';
-@import 'header4.scss';
-@import 'mobile-menu.scss';
+@import 'header.scss';
 @import 'main-page.scss';
 

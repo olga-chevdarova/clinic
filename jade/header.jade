@@ -1,51 +1,107 @@
-header.container-fluid
-	.quick-access-TAB.row.align-items-center.justify-content-around
-		div.social-icons-block__quick-access-TAB
-			i(class="fa fa-facebook social-icon__social-icons-block__quick-access-TAB" aria-hidden="true")
-			i(class="fa fa-twitter social-icon__social-icons-block__quick-access-TAB" aria-hidden="true")
-			i(class="fa fa-google social-icon__social-icons-block__quick-access-TAB" aria-hidden="true")
-		div.phone-numbers-block__quick-access-TAB
-			i(class="fa fa-phone phone-icon__phone-numbers-block__quick-access-TAB" aria-hidden="true")
-			a(href="tel:01778-426000") 01778 426000 
-			i(class="fa fa-mobile phone-icon__phone-numbers-block__quick-access-TAB" aria-hidden="true")
-			a(href="tel:01778-426000") 01778 426000
-	.navbar-top.row.align-items-center.justify-content-around
-		.logo-box__navbar-top
-			img.svg-image#logo-header(src="img/logo.svg")
-			img.alt-image#logo-ALT__navbar-top(src="img/logo.png")
-		.phone-numbers__navbar-top-MOB
-			i(class="fa fa-phone phone-icon__phone-numbers__navbar-top-MOB" aria-hidden="true")
-			a(href="tel:01778-426000") 01778 426000 
-			br
-			i(class="fa fa-mobile phone-icon__phone-numbers__navbar-top-MOB" aria-hidden="true")
-			a(href="tel:07943-336336") 07943 336336
-		.menu-icon__navbar-top-MOB
-			#sandwich
-				.sw-topper
-				.sw-bottom
-				.sw-footer
-		//- nav.menu__navbar-top-TAB
-		//- 	div(class="dropdown link__menu__navbar-top")
-		//- 		button(class="dropdown-toggle btn-link" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") About us
-		//- 		div(class="dropdown-menu" aria-labelledby="dropdownMenu2")
-		//- 			button(class="dropdown-item" type="button") Action
-		//- 			button(class="dropdown-item" type="button") Action
-		//- 	a.link__menu__navbar-top(href="") Conditions treated
-		//- 	a.link__menu__navbar-top(href="") Contacts
-			
-		//- nav.menu__navbar-top-PC
-		//- 	a.link__menu__navbar-top(href="") About us
-		//- 	a.link__menu__navbar-top(href="") Conditions treated
-		//- 	a.link__menu__navbar-top(href="") Gallery
-		//- 	a.link__menu__navbar-top(href="") Testimonials
-		//- 	a.link__menu__navbar-top(href="") Videos
-		//- 	a.link__menu__navbar-top(href="") Contacts
-		//- button.link__menu__navbar-top#appointment-button Appointment    
-		//- button.link__menu__navbar-top#appointment-button-LAP Appointment request
-		nav.top_menu
-			ul
-				li lo
-				li oj
-				li lkj
-				li
-				li
+header.header
+	.header__top-menu
+		.top-menu__content.row.align-items-center.justify-content-between
+			.top-menu__social-icons-block
+				.btn-group
+					a.top-menu__item.link(href="#")
+						i(class="fa fa-google top-menu__icon" aria-hidden="true")
+					a.top-menu__item.link(href="#")
+						i(class="fa fa-facebook top-menu__icon" aria-hidden="true")
+					a.top-menu__item.link(href="#")
+						i(class="fa fa-twitter top-menu__icon" aria-hidden="true")
+			.top-menu__phone-numbers-block
+				.btn-group
+					div
+						a.top-menu__item.link(href="tel:01778-426000")
+							i(class="fa fa-phone top-menu__icon" aria-hidden="true")
+						a.top-menu__link.link(href="tel:01778-426000") 01778 426000
+					div
+						a.top-menu__item.link(href="tel:07943-336336")
+							i(class="fa fa-mobile top-menu__icon" aria-hidden="true")
+						a.top-menu__link.link(href="tel:07943-336336") 07943 336336
+	.header__main-menu
+		.mobile-nav__row
+			.mobile-nav__content.row
+				.mobile-nav__menu-button(class="wow slideInLeft" data-wow-offset="0"  data-wow-duration="1s" )
+					.hamburger-button(role="button")
+						span.hamburger-item
+						span.hamburger-item
+						span.hamburger-item
+				img.svg--img.mobile-nav__logo(src="img/logo.svg", alt="")
+				.mobile-nav__contacts-button(class="wow slideInRight" data-wow-duration="1s" )
+					.contacts-button(role="button")
+						span.contacts-item
+						span.contacts-item
+						span.contacts-item
+			nav.mobile-nav__menu
+				ul.mobile-menu__content
+					button.button.mobile-menu__button.btn-appointment.development appointment request
+					li.mobile-menu__item
+						a.link.mobile-menu__link(href='#') about us
+					li.mobile-menu__item
+						a.link.mobile-menu__link(href='#') conditions treated
+					li.mobile-menu__item
+						a.link.mobile-menu__link(href='#') gallery
+					li.mobile-menu__item
+						a.link.mobile-menu__link(href='#') testimonials
+					li.mobile-menu__item
+						a.link.mobile-menu__link(href='#') videos
+					li.mobile-menu__item
+						a.link.mobile-menu__link(href='#') contacts
+			div.mobile-nav__contacts
+				.mobile-contacts__content
+					.mobile-contacts__adress.row
+						.col-2
+							i(class="fa fa-home fa-2x" aria-hidden="true")
+						.col-10
+							a#adress.link Pulse Practice, West Street, Bourne, PE109NE
+					.mobile-contacts__hours.row
+						.col-2
+							i(class="fa fa-clock-o fa-2x" aria-hidden="true")
+						.col-10
+							.row.no-gutters
+								.col-6
+									span Mon-Fri
+									br
+									span Saturday
+									br
+									span Sunday
+								.col-6
+									span 8AM - 8PM
+									br
+									span 8AM - 1PM
+									br
+									span Closed
+					.mobile-contacts__phones.row
+						.col-2
+							i(class="fa fa-phone fa-2x" aria-hidden="true")
+						.col-10
+							.mobile-phones__item
+								a.link(href="tel:01778426000") 01778 426000
+							.mobile-phones__item
+								a.link(href="tel:07943336336") 07943 336336
+		.tab-nav__row
+			.tab-nav__content.row.align-items-center.justify-content-around
+				.tab-nav__logo-box
+					img.tab-nav__logo(src="img/logo.png")
+				.tab-nav__menu
+					nav
+						.dropdown.tab-nav__item.dropdown-box
+							a.dropbtn.link(href='#')  Information
+							div(id="myDropdown" class="dropdown-content")
+								li.dropdown-item
+									a(href="#").link About us
+								li.dropdown-item
+									a(href="#").link gallery
+								li.dropdown-item
+									a(href="#").link testimonials
+								li.dropdown-item
+									a(href="#").link videos
+						a.link.tab-nav__item.tab-nav__item--PC(href='#')  about us
+						a.link.tab-nav__item(href='#')  conditions treated
+						a.link.tab-nav__item.tab-nav__item--PC(href='#')  gallery
+						a.link.tab-nav__item.tab-nav__item--PC(href='#')  testimonials
+						a.link.tab-nav__item.tab-nav__item--PC(href='#')  videos
+						a.link.tab-nav__item(href='#')  contacts
+				.tab-nav__button
+					button.button.btn-appointment.development(class="wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s") appointment 

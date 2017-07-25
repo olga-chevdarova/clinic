@@ -1,10 +1,19 @@
+.btn-learn-more--grey {
+	border:1px solid white;
+	background-color: transparent;
+}
+
+.services__btn-learn-more {
+	margin-left:1em;
+margin-top:2em;
+}
 
 .services-block__services__main-page {
 	background-color: $blue;
 	color:white;
 	width:100%;
 		line-height:1.5em;
-	padding:3% 0.8em;
+	padding:1% 0em;
 	width:100%;
 	text-transform:capitalize;
 	vertical-align: middle;
@@ -67,8 +76,17 @@
 	height:25em;
 	background: url('../img/1.jpg') no-repeat;
 background-size: cover;
-margin-bottom:5em;
+
 background-position:10% 50%;
 
 }
+.bh {
+	padding-left:5%;
 }
+
+.services-list__services__main-page {
+	width:90%;
+	margin:0 auto;
+}
+}
+

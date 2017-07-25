@@ -1,5 +1,5 @@
-section.news__main-page
-	h2 News and events
+//- section.news__main-page
+//- 	h2 News and events
 	//- .conatiner-fluid
 	//- 	.row.posts-row__news__main-page.justify-content-between.no-gutters
 	//- 		.post__news__main-page
@@ -35,21 +35,59 @@ section.news__main-page
 	//- 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, iure non. Inventore doloremque ipsam deleniti. Eaque rerum tempore voluptatem, deserunt sunt quas, minus veritatis aut.
 	//- 			.learn-more-button__post__news__main-page
 	//- 				button#learn-more-button-2 Learn More
-	.container-fluid
-		#slider
-			.slide
-				.slide-copy
-					h3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.
-					h3 21.05.2017
-					.image__post__news__main-page(class="wow fadeIn" data-wow-duration="2s")
-						img(src="../img/post1.jpg")
-					.short-content__post__news__main-page
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.
-					.icons__post.row
-						.col-2.lo-1
-							i#prev(class="fa fa-chevron-circle-left fa-2x development" aria-hidden="true")
-						.col-8.lo-2
-							button.development#learn-more-button-2 Learn More
-						.col-2.lo-3
-							i#next(class="fa fa-chevron-circle-right fa-2x development" aria-hidden="true")
-		
+	//- .container-fluid
+	//- 	#slider
+	//- 		.slide
+	//- 			.slide-copy
+	//- 				h3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sequi.
+	//- 				h3 21.05.2017
+	//- 				.image__post__news__main-page(class="wow fadeIn" data-wow-duration="2s")
+	//- 					img(src="../img/post1.jpg")
+	//- 				.short-content__post__news__main-page
+	//- 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptas culpa reprehenderit eos earum nihil, delectus exercitationem perferendis laborum modi, facere recusandae, iste neque nobis.
+	//- 				.icons__post.row
+	//- 					.col-2.lo-1
+	//- 						i#prev(class="fa fa-chevron-circle-left fa-2x development" aria-hidden="true")
+	//- 					.col-8.lo-2
+	//- 						button.development#learn-more-button-2 Learn More
+	//- 					.col-2.lo-3
+	//- 						i#next(class="fa fa-chevron-circle-right fa-2x development" aria-hidden="true")
+section.news__main-page
+	.container
+		h2 news and events
+	.news__wrap
+		.news__row.row
+			.news__item.col-12.col-md-4
+				.news__date
+					p March 17, 2017
+				.news__header
+					h4  Lorem ipsum dolor sit amet
+				.news__photo
+					img(src='../img/post1.jpg')
+				.news__short-text
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorem, placeat sunt, similique iure perspiciatis iste rem nihil impedit eveniet libero nobis fuga nisi animi!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque sint eveniet fuga esse dolorum ab.
+				.news__button
+					button.button.btn-learn-more learn more
+			.news__item.col-12.col-md-4
+				.news__date
+					p March 17, 2017
+				.news__header
+					h4  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sequi.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, temporibus.
+				.news__photo
+					img(src='../img/jo.jpg')
+				.news__short-text
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorem, placeat sunt, similique iure perspiciatis iste rem nihil impedit eveniet libero nobis fuga nisi animi!
+				.news__button
+					button.button.btn-learn-more learn more
+			.news__item.col-12.col-md-4
+				.news__date
+					p March 17, 2017
+				.news__header
+					h4  Lorem ipsum dolor sit amet
+				.news__photo
+					img(src='../img/doctor-points-to-model-spine.jpg')
+				.news__short-text
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorem, placeat sunt, similique iure perspiciatis iste rem nihil impedit eveniet libero nobis fuga nisi animi!
+				.news__button
+					button.button.btn-learn-more learn more
+
