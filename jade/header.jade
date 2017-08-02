@@ -35,19 +35,19 @@ header.header
 						span.contacts-item
 			nav.mobile-nav__menu
 				ul.mobile-menu__content
-					button.button.mobile-menu__button.btn-appointment.development appointment request
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') about us
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') conditions treated
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') gallery
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') testimonials
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') videos
-					li.mobile-menu__item
-						a.link.mobile-menu__link(href='#') contacts
+					button.button.mobile-menu__button.btn-appointment appointment request
+					li
+						a(href='#') about us
+					li
+						a(href='#') conditions treated
+					li
+						a(href='#') gallery
+					li
+						a(href='#') testimonials
+					li
+						a(href='#') videos
+					li
+						a(href='#') contacts
 			div.mobile-nav__contacts
 				.mobile-contacts__content
 					.mobile-contacts__adress.row
@@ -83,9 +83,9 @@ header.header
 		.tab-nav__row
 			.tab-nav__content.row.align-items-center.justify-content-around
 				.tab-nav__logo-box
-					img.tab-nav__logo(src="img/logo.png")
+					img.tab-nav__logo(src="img/logo.svg")
 				.tab-nav__menu
-					nav
+					nav.tab-menu
 						.dropdown.tab-nav__item.dropdown-box
 							a.dropbtn.link(href='#')  Information
 							div(id="myDropdown" class="dropdown-content")
@@ -97,11 +97,11 @@ header.header
 									a(href="#").link testimonials
 								li.dropdown-item
 									a(href="#").link videos
-						a.link.tab-nav__item.tab-nav__item--PC(href='#')  about us
-						a.link.tab-nav__item(href='#')  conditions treated
-						a.link.tab-nav__item.tab-nav__item--PC(href='#')  gallery
-						a.link.tab-nav__item.tab-nav__item--PC(href='#')  testimonials
-						a.link.tab-nav__item.tab-nav__item--PC(href='#')  videos
-						a.link.tab-nav__item(href='#')  contacts
+						a.tab-nav__item--PC(href='#')  about us
+						a(href='#')  conditions treated
+						a.tab-nav__item--PC(href='#')  gallery
+						a.tab-nav__item--PC(href='#')  testimonials
+						a.tab-nav__item--PC(href='#')  videos
+						a(href='#')  contacts
 				.tab-nav__button
-					button.button.btn-appointment.development(class="wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s") appointment 
+					button.button.btn-appointment(class="wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s") appointment 

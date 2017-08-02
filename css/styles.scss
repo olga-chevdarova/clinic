@@ -91,7 +91,7 @@ a , a:focus, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-.link:hover, .link:active {
+a:hover, a:active {
     color:$blue;
 }
 
@@ -138,6 +138,8 @@ ul {
     background-color: $blue;
     color: $white;
     padding: 0.7em 1em;
+    font-size:1em;
+
 }
 
     .btn-learn-more {

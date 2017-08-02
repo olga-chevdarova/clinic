@@ -12,7 +12,19 @@
     margin: 0 auto;
     height: 6em;
 }
-
+.mobile-nav__menu {
+    a {
+        text-transform: uppercase;
+        line-height: 1.5em;
+        font-weight: 600;
+        font-size: 1em;
+        display: block;
+        padding: 0.5em;
+        padding-left: 1em;
+        margin: 0.5em 0;
+        border-bottom: 1px solid $grey;
+    }
+}
 .mobile-nav__menu-button {
     &.open {
         width: 100%;
@@ -123,16 +135,6 @@
     padding: 0;
 }
 
-.mobile-menu__link {
-    text-transform: uppercase;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    display: block;
-    padding: 0.5em;
-    padding-left: 1em;
-    margin: 0.5em 0;
-    border-bottom: 1px solid $grey;
-}
 
 .mobile-menu__link:hover {
     background: rgba($grey, 0.7);
@@ -232,6 +234,7 @@
         background-color: rgba($white, 0.7);
         width: 100%;
         margin-top: 3em;
+        font-weight: 600;
     }
 
     .tab-nav__content {
@@ -276,14 +279,20 @@
         height: 5em;
     }
 
-    .tab-nav__item {
-        display: inline-block;
-        padding: 0.7em;
-        text-transform: uppercase;
-    }
-    .tab-nav__item--PC {
+    .tab-menu {
+        a {
+            display: inline-block;
+            padding: 0.7em;
+            text-transform: uppercase;
+            
+        }
+      
+   .tab-nav__item--PC {
         display: none;
     }
+    }
+
+   
 }
 
 @media (min-width: 900px) {
@@ -296,7 +305,7 @@
         display: none;
     }
 
-    .tab-nav__item--PC {
+    .tab-menu .tab-nav__item--PC {
         display: inline-block;
     }
     .btn-appointment:after {

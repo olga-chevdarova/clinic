@@ -5,6 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--build:js js/vendor.js-->
+    <!--bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/wow/dist/wow.js"></script>
+    <script src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>
+    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="bower_components/jquery-drawsvg/public/jquery.drawsvg.js"></script>
+    <script src="bower_components/Modernizr/modernizr.custom.js"></script>
+    <script src="bower_components/tether/dist/js/tether.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+    <!--endbower-->
+    <!--endbuild-->
+    <!--build:js js/main.js-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--endbuild-->
   </head>
   <body>
     <header class="header">
@@ -33,13 +49,13 @@
           </div>
           <nav class="mobile-nav__menu">
             <ul class="mobile-menu__content">
-              <button class="button mobile-menu__button btn-appointment development">appointment request</button>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">about us</a></li>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">conditions treated</a></li>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">gallery</a></li>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">testimonials</a></li>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">videos</a></li>
-              <li class="mobile-menu__item"><a href="#" class="link mobile-menu__link">contacts</a></li>
+              <button class="button mobile-menu__button btn-appointment">appointment request</button>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">conditions treated</a></li>
+              <li><a href="#">gallery</a></li>
+              <li><a href="#">testimonials</a></li>
+              <li><a href="#">videos</a></li>
+              <li><a href="#">contacts</a></li>
             </ul>
           </nav>
           <div class="mobile-nav__contacts">
@@ -69,9 +85,9 @@
         </div>
         <div class="tab-nav__row">
           <div class="tab-nav__content row align-items-center justify-content-around">
-            <div class="tab-nav__logo-box"><img src="img/logo.png" class="tab-nav__logo"></div>
+            <div class="tab-nav__logo-box"><img src="img/logo.svg" class="tab-nav__logo"></div>
             <div class="tab-nav__menu">
-              <nav>
+              <nav class="tab-menu">
                 <div class="dropdown tab-nav__item dropdown-box"><a href="#" class="dropbtn link"> Information</a>
                   <div id="myDropdown" class="dropdown-content">
                     <li class="dropdown-item"><a href="#" class="link">About us</a></li>
@@ -79,27 +95,35 @@
                     <li class="dropdown-item"><a href="#" class="link">testimonials</a></li>
                     <li class="dropdown-item"><a href="#" class="link">videos</a></li>
                   </div>
-                </div><a href="#" class="link tab-nav__item tab-nav__item--PC"> about us</a><a href="#" class="link tab-nav__item"> conditions treated</a><a href="#" class="link tab-nav__item tab-nav__item--PC"> gallery</a><a href="#" class="link tab-nav__item tab-nav__item--PC"> testimonials</a><a href="#" class="link tab-nav__item tab-nav__item--PC"> videos</a><a href="#" class="link tab-nav__item"> contacts</a>
+                </div><a href="#" class="tab-nav__item--PC"> about us</a><a href="#"> conditions treated</a><a href="#" class="tab-nav__item--PC"> gallery</a><a href="#" class="tab-nav__item--PC"> testimonials</a><a href="#" class="tab-nav__item--PC"> videos</a><a href="#"> contacts</a>
               </nav>
             </div>
             <div class="tab-nav__button">
-              <button data-wow-delay="1s" data-wow-duration="2s" class="button btn-appointment development wow fadeInRight">appointment </button>
+              <button data-wow-delay="1s" data-wow-duration="2s" class="button btn-appointment wow fadeInRight">appointment </button>
             </div>
           </div>
         </div>
       </div>
     </header>
     <main class="main-page">
-      <section class="slide container-fluid">
-        <div class="slide__content">
-          <h1 class="slide__title">Bourne Osteopath Clinic</h1>
-          <div class="slide__motto">Qualitive healthcare without the wait!</div>
-          <div class="slide__subtitle"> Musculoskeletal disorders treatment without the use of drugs or surgery.</div>
-          <h3 class="slide__subtitle--TAB">Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h3>
-          <p class="slide__text">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
-          <button class="btn-learn-more slide__btn-learn-more button development">Learn More</button>
+      <div data-stellar-background-ratio="0.5" class="main_head">
+        <div class="top_wrapper">
+          <div class="top_descr">
+            <div class="top_center">
+              <div class="top_text">
+                <div class="ole"> 
+                  <h1 class="slide__title">Bourne Osteopath Clinic</h1>
+                  <div class="slide__motto">Qualitive healthcare without the wait!</div>
+                  <div class="slide__subtitle"> Musculoskeletal disorders treatment without the use of drugs or surgery.</div>
+                  <h3 class="slide__subtitle--TAB">Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h3>
+                  <p class="slide__text">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
+                  <button class="btn-learn-more slide__btn-learn-more button development">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
       <section class="about-us">
         <div class="container">
           <h2>about us</h2>
@@ -133,7 +157,7 @@
         </div>
         <div class="bene">
           <div class="benefits__wrap">
-            <div class="benefits__content-1 row no-gutters">
+            <div class="benefits__content-1 row no-gutters justify-content-between">
               <div data-wow-duration="1.5s" class="benefits__item col-12 col-md-6 wow fadeIn">
                 <div class="benefits__header row align-items-center">
                   <div class="benefits__icon benefits__icon-1"></div>
@@ -157,7 +181,7 @@
                 </div>
               </div>
             </div>
-            <div class="benefits__content-2 row no-gutters">
+            <div class="benefits__content-2 row no-gutters justify-content-between">
               <div data-wow-duration="1.5s" data-wow-delay="2s" class="benefits__item col-12 col-md-6 wow fadeIn">
                 <div class="benefits__header row align-items-center">
                   <div class="benefits__icon benefits__icon-3"></div>
@@ -293,43 +317,8 @@
         <button data-wow-duration="1.5s" data-wow-delay="1s" class="banner-button development wow fadeInUp"> Book an appointment</button>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__wrap">
-        <div class="footer__content row">
-          <div class="footer__logo"><img src="../img/logo.png"></div>
-          <div class="footer__adress">
-            <div class="mobile-nav__contacts"></div>
-            <div class="mobile-contacts__content">
-              <div class="mobile-contacts__adress row">
-                <div class="col-2"><i aria-hidden="true" class="fa fa-home fa-2x"></i></div>
-                <div class="col-10"><a id="adress" class="link">Pulse Practice, West Street, Bourne, PE109NE</a></div>
-              </div>
-              <div class="mobile-contacts__hours row">
-                <div class="col-2"><i aria-hidden="true" class="fa fa-clock-o fa-2x"></i></div>
-                <div class="col-10">
-                  <div class="row no-gutters">
-                    <div class="col-6"><span>Mon-Fri</span><br><span>Saturday</span><br><span>Sunday</span></div>
-                    <div class="col-6"><span>8AM - 8PM</span><br><span>8AM - 1PM</span><br><span>Closed</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="mobile-contacts__phones row">
-                <div class="col-2"><i aria-hidden="true" class="fa fa-phone fa-2x"></i></div>
-                <div class="col-10">
-                  <div class="mobile-phones__item"><a href="tel:01778426000" class="link">01778 426000</a></div><br>
-                  <div class="mobile-phones__item"><a href="tel:07943336336" class="link">07943 336336</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.9960544502324!2d-0.38106323453708857!3d52.768345029862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48781f42f6474cb5%3A0xe5c6e7110f956fe9!2sWest+St%2C+Bourne+PE10+9NE%2C+UK!5e0!3m2!1sen!2sua!4v1500978716348" width="600" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </footer>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:300,400,700" rel="stylesheet">
-    <!--build:css css/main.css-->
+    <!--build:css css/vendor.css-->
     <!--bower:css-->
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.css">
@@ -337,22 +326,9 @@
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
     <!--endbower-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!--endbuild-->
+    <!--build:css css/styles.css-->
     <link rel="stylesheet" href="css/styles.css">
-    <!--endbuild-->
-    <!--build:js js/vendor.js-->
-    <!--bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
-    <script src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>
-    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
-    <script src="bower_components/jquery-drawsvg/public/jquery.drawsvg.js"></script>
-    <script src="bower_components/Modernizr/modernizr.custom.js"></script>
-    <script src="bower_components/tether/dist/js/tether.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <!--endbower-->
-    <!--endbuild-->
-    <!--build:js js/main.js-->
-    <script type="text/javascript" src="js/script.js"></script>
     <!--endbuild-->
   </body>
 </html>
