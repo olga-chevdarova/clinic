@@ -1,53 +1,8 @@
-//- section.container-fluid
-//- 	h2 About us
-//- 	.row.about-us__main-page
-//- 		.about-clinic__about-us__main-page.container(class="wow fadeInUp" data-wow-duration="2s")
-//- 			span All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders 
-//- 			span.marked-text without the use of drugs or surgery.
-//- 			br
-//- 			span In Bourne, all treatments are in a medical centre, providing 
-//- 			span.marked-text the perfect safe, caring environment, 
-//- 			span giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. 
-//- 			br
-//- 			span The clinic is open to everyone. 
-//- 		.about-doctor__about-us__main-page.container-fluid.row.align-items-center.justify-content-around
-//- 			.col-6
-//- 				img(src="../img/jo.jpg")
-//- 			.col-6
-//- 				a(href="#").title__about-doctor__about-us__main-page Mr Jo Sunner
-//- 				br
-//- 				span.info__about-doctor__about-us__main-page BSc(ost.) DO. MMSM. Registered Osteopath
-//- 				.tel__about-doctor__about-us__main-page
-//- 					i(class="fa fa-phone" aria-hidden="true")
-//- 					a(href="tel:01778-426000") 01778 426000 
-//- 					br
-//- 					i(class="fa fa-mobile" aria-hidden="true")
-//- 					a(href="tel:01778-426000") 01778 426000 
-//- 				.text-TAB__about-doctor__about-us__main-page Mr. Jo Sunner is the principle at Bourne Osteopath Clinic. He also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists. 
-//- 			.text__about-doctor__about-us__main-page Mr. Jo Sunner is the principle at Bourne Osteopath Clinic. He also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists. 
-//- 	.icons-block-wrap__about-us__main-page.row.justify-content-between
-//- 		.icons-block__about-us__main-page(data-toggle="tooltip" data-placement="top" title="Bourne Osteopath Clinic is the longest established clinic in the area" class="wow fadeIn" data-wow-duration="1s")
-//- 			i(class="fa fa-user-md fa-4x" aria-hidden="true")
-//- 			h3.title__icons-block__about-us__main-page Since 1993
-//- 			p.text__icons-block__about-us__main-page Bourne Osteopath Clinic is the longest established clinic in the area
-//- 		.icons-block__about-us__main-page(data-toggle="tooltip" data-placement="top" title="Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions " class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s")
-//- 			i(class="fa fa-info-circle fa-4x" aria-hidden="true")
-//- 			h3.title__icons-block__about-us__main-page Expert Advice
-//- 			p.text__icons-block__about-us__main-page Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions 
-//- 		.icons-block__about-us__main-page(data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium." class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s")
-//- 			i(class="fa fa-trophy fa-4x" aria-hidden="true")
-//- 			h3.title__icons-block__about-us__main-page Award Winning
-//- 			p.text__icons-block__about-us__main-page  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium.
-//- 		.icons-block__about-us__main-page(data-toggle="tooltip" data-placement="top" title="Bourne Osteopath Clinic was rated 5 stars by our patience" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="2.1s")
-//- 			i(class="fa fa-star fa-4x" aria-hidden="true")
-//- 			h3.title__icons-block__about-us__main-page First Class Service
-//- 			p.text__icons-block__about-us__main-page Bourne Osteopath Clinic was rated 5 stars by our patience
 section.about-us
-	.container
+	.wrapper-fluid
 		h2 about us
-	.about-us__content.container-fluid(class="wow fadeInUp" data-wow-duration="2s"  )
-		.row
-			.about-us__clinic.col-12.col-md-6
+		.row.js-class.row-md
+			.about-us__clinic.col-12.col-lg-6
 				span All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders 
 				span.marked-text without the use of drugs or surgery.
 				br
@@ -56,27 +11,7 @@ section.about-us
 				span giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. 
 				br
 				span The clinic is open to everyone.
-				//- .about-us__icons-wrap
-				//- 	.icons__content.row.justify-content-between.no-gutters
-				//- 		.col-6.lok
-				//- 			.row.align-items-center.j
-				//- 				.col-4.h
-				//- 					
-				//- 				.col-8.u
-				//- 					h3 Since 1993
-				//- 				i(class="fa fa-user-md fa-4x" aria-hidden="true")	p Bourne Osteopath Clinic is the longest established clinic in the area
-
-				//- 		.col-6.lok
-				//- 			.lkj
-				//- 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectae! Temporibus, soluta.
-				//- 	.icons__content.row.justify-content-between.no-gutters
-				//- 		.col-6.lok
-				//- 			.lkj
-				//- 				p  Lorem ipsum dolor sit amet, consect
-				//- 		.col-6.lok
-				//- 			.lkj
-				//- 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus totam recusandae, perferendis reiciendis quasi repellendus aliquid, eos suscipit est, et dolorum fugiat beatae! Temporibus, soluta.
-			.about-us__doctor.col-12.col-md-6
+			.about-us__doctor.col-12.col-lg-6
 				.row.align-items-center
 					.col-6.doctor__photo
 						img(src="img/jo.jpg")
@@ -95,28 +30,3 @@ section.about-us
 				.row.doctor__text-wrap
 					.col-12
 						p.doctor__text Mr. Jo Sunner is the principle at Bourne Osteopath Clinic. He also consults at the Fitzwilliam Hospital in Peterborough, working with orthopedic consultants, pain management consultants and consultant rheumatologists. 
-			//- .benefits__row.row
-			//- 	.benefits__item-wrap.col-12
-			//- 		.benefits__item
-			//- 				.benefits__icon
-			//- 				.benefits__title
-			//- 					h3.title__icons-block__about-us__main-page Since 1993
-			//- 			.row
-			//- 				.benefits__text 
-			//- 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nam obcaecati pariatur corporis maxime veniam, autem officia architecto placeat quasi exercitationem mollitia magnam harum, recusandae.
-			//- 	.benefits__item-wrap.col-12
-			//- 		.benefits__item
-			//- 			.benefits__icon
-			//- 				i(class="fa fa-user-md fa-4x" aria-hidden="true")
-			//- 			.benefits__title
-			//- 				h3.title__icons-block__about-us__main-page Expert Advice
-			//- 			.benefits__text 
-			//- 				//- p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nam obcaecati pariatur corporis maxime veniam, autem officia architecto placeat quasi exercitationem mollitia magnam harum, recusandae.
-			//- 	.benefits__item-wrap.col-12
-			//- 		.benefits__item
-			//- 			.benefits__icon
-			//- 				i(class="fa fa-user-md fa-4x" aria-hidden="true")
-			//- 			.benefits__title
-			//- 				h3.title__icons-block__about-us__main-page Expert Advice
-			//- 			.benefits__text 
-			//- 				//- p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nam obcaecati pariatur corporis maxime veniam, autem officia architecto placeat quasi exercitationem mollitia magnam harum, recusandae.

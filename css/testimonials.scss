@@ -1,71 +1,379 @@
-// .text:before {
-// 		    content: '\f054';
-//     font-family: FontAwesome;
-// margin-left:-1em;
-//     color: $blue;
-// 	}
-// .text:after {
-// 	    content: '\f054';
-//     font-family: FontAwesome;
-// display:inline-block;
-//     color: $blue;
-//     float:right;
-// }
-// .text {
-// 	margin:3em;
-// }
+.imh {
+	width:100%;
+		background: url('../img/seni.jpg') no-repeat;
+	background-size: cover;
+    height: 13em;
+    background-position:center;
 
 
-.btn-learn-more--blue {
-	border:1px solid $blue;
-		background-color: transparent;
-		color:$blue;
-margin:0 auto;
 }
-.kjhss {
+
+.io {
+	margin-bottom:10em;
+}
+.wrapp {
+	background-color: $grey;
+}
+.blue {
+	background-color: blue;
+	width:100%;
+	min-height:8em;
+
+}
+.flex {
+	display: flex;
+	// background-color: pink;
+	min-height:8em;
+	justify-content:center;
+	align-items:center;
+}
+.ilo {
+
+	height:auto;
+	// background-color: green;
+	text-align:left;
+	img {
+		width:2.7em;
+	}
+}
+.ilo2 {
+text-align:right;
+}
+.it1 {
+	// background-color: green;
+	width:20%;
+}
+
+.it2 {
+	// background-color: grey;
 	width:80%;
+padding:2em 0;
+
 }
-.text {
+
+	.rt {
+		width:90%;
+		margin:0 auto;
+		font-style:italic;
+		// background-color: yellow;
+	}
+
+	.ws {
+
+		text-align:right;
+		display:inline-block;
+		padding:1em 0;
+		width:90%;
+		margin:0 auto;
+		font-family:$kaushan;
+	}
+.it3 {
+	background-color: orange;
+}
+.roww {
+	display:flex;
+	 flex-direction: row;
+	background-color: purple;
+	
+}
+.green {
+	background-color: green;
+	width:90%;
+	margin:0 auto;
+	// position:relative;
+	display:flex;
+	align-items:center;
+	position:relative;
+
+}
+.pink {
+	background-color: pink;
+	width:70%;
+	margin:0 auto;
+
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.orange  {
+	background-color: orange;
+
+}
+.left, .right {
+	width:3em;
+	position:absolute;
+	top:0;
+
+}
+.left {
+	left:0;
+}
+
+.right {
+right:0;
+}
+.testimonials__content {
+	text-align:center;
+}
+.testimonials__sign {
+	width:4em;
+	opacity:0.8;
+}
+.test {
+	min-height:8em;
+	background-color: pink;
+	display:flex;
+	align-items:center;
+}
+.gh {
+	background-color: green;
+		width:70%;
+		margin: 0 auto;
+}
+
+.yf {
+	display: inline-block;
+	margin-top:1em;
+
+}
+.arrow {
+	width:3em;
+	position:absolute;
+}
+.arrow-right {
+	right:0;
+}
+.arrow-left {
+left:0;
+}
+// .testimonials {
+// 	background-color: $grey;
+// }
+.testimonials__text {
+	width:80%;
+	text-align:left;
+	margin:0 auto;
+	padding:2em 0;
+	// font-style:italic;
+}
+.testimonials__sign {
+	opacity:0.4;
+}
+
+.klo  {
+	font-style:italic;
+	background-color: $grey;
 	padding:2em;
 }
-.pt {
-	float:right;
-}
+.testimonials__footer {
 
-.nmn {
-	float:right;
-}
-.fa-quote-right {
-	padding:0 1em;
-}
+width:80%;
+margin: 0 auto;
+font-family:$kaushan;
+font-size:1.2em;
+color:lighten($text-color, 27%);
 
-.ko {
-	background-color: $grey;
-	width:100%;
-	margin-top:3em;
 }
+// .arrow {
+// 	width:2.2em;
+// 	position:absolute;
+// 	opacity:1;
+// }
 
-.pt {
-	color: $blue;
-	font-style:italic;
+// .arrow-left {
+// 	left:0;
+// 	top:50%;
+// 	margin-left: -0.7em;
+	
+// }
+// .arrow-right {
+// 	right:0;
+// 	top:50%;
+// 		margin-right: -0.7em;
+// }
+.testimonials__content {
+	position:relative;
 }
-.lol {
-	display:none;
-}
-.text {
-	max-width:100%;
-}
-@media (min-width: 700px) {
-.ko {
-	background:url('../img/senior-couple.png') no-repeat $grey;
-}
-.text {
-	padding-left:40%;
-	max-width:100em;
-}
-}
-@media (min-width: 900px) {
-	.ko {
-	background-position: 10% 0;
-}
-}
+// .testimonials {
+
+// }
+
+// .testimonials__text {
+// 	margin:0 1em 0 2em;
+// 	padding:1em 0;
+// 	// font-family:$kaushan;
+
+
+// }
+// .testimonials__text:before {
+// 		content: '" ';
+//         display: inline-block;
+//     font-size:1.5em;
+//     font-family:$kaushan;
+//     opacity:0.7;
+//     padding-riht:1em;
+
+// }
+
+// .testimonials__text:after {
+// 		content: '" ';
+//         display: inline-block;
+//     font-size:1.5em;
+//         font-family:$kaushan;
+
+// }
+// .arrow {
+// 	width:3em;
+// 	position: absolute;
+// 	opacity:0.5;
+// }
+// .testimonials__wrap {
+
+// }
+// .testimonials__row {
+// 	position:relative;
+// 	min-height:7em;
+// 	display: flex;
+// 	align-items:center;
+// }
+// .testimonials__item{
+// 	display: flex;
+// 	align-items:center;
+// 	background-color: green;
+// 	height:100%;
+
+// }
+// .arrow-right {
+// 	right: -1em;
+// }
+// .arrow-left {
+// 	left:-1em;
+// }
+// .arr {
+// 	width:2em;
+// }
+// .testimonials__ro {
+// 	display:flex;
+// 	align-items:center;
+// 	min-height:20em;
+// 	position:relative;
+// }
+// .testimonials__conten {
+// 	background-color: $grey;
+// }
+// .testimonials__row {
+// 	max-width:100%;
+
+// }
+// .te {
+// 		position:relative;
+// }
+
+// .arrow {
+// 	width:4em;
+// 	height:auto;
+// 	-webkit-box-sizing: border-box;
+// 	   -moz-box-sizing: border-box;
+// 	        box-sizing: border-box;
+
+
+
+// }
+
+// .testimonials__name {
+// 	float:right;
+// }
+
+// .fa-quote-right {
+// 	padding:0 1em;
+// }
+// .fa-quote-left {
+// 	padding-right:0.7em;
+// 	padding-left:0.7em;
+// }
+// .testimonials__name{
+// 	color: $blue;
+// 	font-style:italic;
+// }
+
+// .btn-learn-more--blue {
+// 	border:1px solid $blue;
+// 		background-color: transparent;
+// 		color:$blue;
+// margin:0 auto;
+// }
+// .testimonials__row {
+// 	display:flex;
+// 	align-items:center;
+// 	justify-content:center;
+// }
+
+// @media (min-width: 700px) {
+// .testimonials__wrap {
+// 	background:url('../img/senior-couple.png') no-repeat $grey;
+
+// }
+// .testimonials__row {
+// 	padding-left:50%;
+// 	max-width:100em;
+// }
+// }
+// @media (min-width: 950px) {
+// 	.testimonials__wrap {
+// 	background-position: 10% 0;
+// }
+// .testimonials__row {
+// 	padding-left:40%;
+// 	max-width:100em;
+// }
+// }
+// .testimonials__wrap.wrap {
+// 	background-color: green;
+// }
+
+
+
+// .name {
+// 	display:block;
+// }
+
+// .testimonials__row {
+// 	p:before{
+// 		   content: '\f10d';
+//     font-family: FontAwesome;
+//     display: inline-block;
+//     margin-left:-1.8em;
+//     font-size:1.2em;
+//     margin-right:0.8em;
+// opacity:0.5;
+// 	}
+// 	p:after {
+// 		content: '\f10d';
+//     font-family: FontAwesome;
+//     display: inline-block;
+//     font-size:1.2em;
+// opacity:0.5;
+// margin:0 0 0 1.5em;
+// 	}
+
+// }
+
+// 	.lo {
+// 		display:inline-block;
+// 		width:50%;
+// 		margin:0 auto;
+// 	}
+
+// 	.name {
+// 		text-align:right;
+// 		margin-right:7em;
+// 		max-width:100%;
+// 	}
+
+
+
+
+// }
+

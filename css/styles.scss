@@ -8,12 +8,12 @@ $blue2:#07638a;
 
 //Fonts
 
-$lato: 'Lato', sans-serif;
+$open: 'Open Sans', sans-serif;
 $kaushan: 'Kaushan Script', cursive;
 
 
 body {
-    font-family: $lato;
+font-family: $open;
     line-height: 1.5em;
     font-size: 1em;
     width: 100%;
@@ -24,8 +24,10 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
-    line-height: 1.2em;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight:600;
+    line-height: 1.5em;
     margin: 0;
 }
 
@@ -34,7 +36,7 @@ h2 {
      line-height:1.5em;
      text-transform:uppercase;
      // padding:0.5em 0em 0.5em 0.8em;
-     padding: 1em 0;
+     padding: 1.5em 0;
 }
 h2:before {
     content: '\f054';
@@ -46,16 +48,16 @@ h2:before {
 }
 
 h3 {   
-    font-size: 1.1em;
+    font-size: 1.17em;
      line-height:1.5em;
      font-weight:600;
-     // padding: 0em 1em;
+    
 
 }
 
 h4 {
     padding:0 0.8em;
-    font-size:1.2em;
+    font-size:1.12em;
     font-weight:600;
     margin: 1em 0 0.7em;
 }
@@ -70,6 +72,11 @@ img {
 }
 svg {
     height:1%;
+}
+
+ul {
+    padding:0;
+    margin:0;
 }
 .alt-image {
     display: none;
@@ -160,7 +167,16 @@ ul {
      color:$blue;
  font-weight:600;
 }
-@import 'welcome-page.scss';
+// .block {
+//     width:80%;
+// }
+// @media (min-width: 1800px) {
+//     .container {
+// width: 1300px;
+// max-width: 100%;
+//     }
+// }
+// @import 'welcome-page.scss';
 @import 'header.scss';
 @import 'main-page.scss';
 

@@ -1,219 +1,143 @@
-//Mobile
-
 .slide {
     width: 100%;
-    background: url('../img/bg-MOB_port__welcome-block.jpg') no-repeat;
+    background: url('../img/0021.jpg') no-repeat;
     background-size: cover;
-    background-position: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 34em;
+}
+
+.slide__wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slide__border-box {
+    width: 90%;
+    background-color: rgba(black, 0.15);
+    margin: 0 auto;
+    margin-top: 7em;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    margin-bottom: 1em;
 }
 
 .slide__content {
-    background-color: white;
-    opacity:0.2;
+    color: white;
+    padding: 1em;
 }
 
 .slide__title {
-    max-width: 50%;
-    font-weight: 600;
+    text-align: center;
 }
-
 .slide__motto {
-    color: $blue;
+    text-align: center;
     font-family: $kaushan;
+    // text-shadow:1px 1px  1px black;
     font-size: 1.5em;
-    max-width: 70%;
-    padding: 0.9em 0;
-    line-height: 1.2em;
-}
-
-.slide__subtitle {
-    display: none;
-}
-
-.slide__subtitle--TAB {
-    display: none;
-}
-
-.slide__text {
-    display: none;
+    padding: 1em 0;
 }
 
 .slide__btn-learn-more {
-    display: none;
+    margin: 0.5em 0 1em;
 }
 
-
-//Mob - landscape
-
-@media (min-width: 450px) {
-    .slide {
-        background: url('../img/bg-MOB_land__welcome-block.jpg') no-repeat;
-        background-size: cover;
-        background-position: 70% 0;
+@media (min-width: 740px) {
+    .slide__border-box {
+        position: relative;
+        margin-top: 10em;
     }
-
     .slide__content {
-        padding-top: 7em;
-        padding-bottom: 1em;
-    }
-    .slide__title {
-        max-width: 70%;
-    }
-    .slide__motto {
-        max-width: 100%;
+        padding: 5em;
     }
 
-    .slide__subtitle {
-        display: block;
-        padding-bottom: 0.9em;
-        font-weight: 600;
+    .slide__border-box::before,.slide__border-box::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 
-    .slide__btn-learn-more {
-        display: inline-block;
-        display: block;
+    .draw {
+        -webkit-transition: color 0.5s;
+                transition: color 0.5s;
+    }
+    .draw::before,.draw::after {
+        border: 0.2em solid transparent;
+        width: 0;
+        height: 0;
+    }
+    .draw::before {
+        top: 0;
+        left: 0;
+    }
+    .draw::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .draw.active::before,.draw.active::after {
+        width: 100%;
+        height: 100%;
+    }
+    .draw.active::before {
+        border-top-color: white;
+        border-right-color: white;
+        -webkit-transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
+                transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
+    }
+    .draw.active::after {
+        border-bottom-color: white;
+        border-left-color: white;
+        -webkit-transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.5s;
+                transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.5s;
     }
 }
-//Tablets
 
-@media (min-width: 700px) {
-    .slide__subtitle {
-        display: none;
-    }
-
+@media (min-width: 772px) and (orientation: landscape) {
     .slide {
         background: url('../img/bg-TAB__welcome-block.jpg') no-repeat;
         background-size: cover;
-        background-position: 68% 0;
+        background-position: 75% 0;
     }
-
-    .slide__content {
-        padding-top: 8em;
-        padding-left: 2em;
-        padding-bottom: 2em;
-    }
-
-    .slide__subtitle--TAB {
-        display: block;
-        max-width: 55%;
-        padding: 0 0 0.9em;
-        font-size: 1.2em;
-        line-height: 1.5em;
-        text-align: justify;
-        font-weight: 600;
+    .slide__border-box {
+        background-color: rgba($blue, 0.05);
+        border: 0;
+        width: 60%;
+        margin-left: 4em;
     }
     .slide__content {
-        padding-top: 11.5em;
-    }
-}
-
-//Laptop
-
-@media (min-width: 900px) {
-    .slide__text {
-        display: block;
-        max-width: 50%;
-        text-align: justify;
-        font-size: 1em;
-        padding-bottom: 0.9em;
-    }
-    .slide__subtitle--TAB {
-        max-width: 60%;
-    }
-}
-
-@media (min-width: 1100px) {
-    .slide__content {
-        padding-top: 12em;
-        padding-left: 3em;
-        padding-bottom: 2em;
+        padding: 3em;
+        color: $text-color;
     }
     .slide__title {
-        font-size: 3.5em;
+        text-align: left;
     }
-    .slide__subtitle--TAB {
-        max-width: 55%;
-        padding: 0.9em 0 0em;
+
+    .slide__motto {
+        color: $blue;
+        text-align: left;
+        text-shadow: none;
     }
 }
 
-//PC
-@media (min-width: 1500px) {
-    .slide {
-        background: url('../img/bg-PC__welcome-block.jpg') no-repeat;
-        background-size: cover;
+@media (min-width: 1200px) and (orientation: landscape) {
+    .slide__content {
+        padding: 4em;
+    }
+}
+@media (min-width: 1650px) and (orientation: landscape) {
+    .slide__border-box {
+        width: 50%;
+        margin-left: 10em;
     }
     .slide__content {
-        padding-top: 14em;
-        padding-bottom: 4em;
-        padding-left: 7em;
-    }
-    .slide__subtitle--TAB {
-        max-width: 45%;
-    }
-
-    .slide__text {
-        max-width: 45%;
+        padding: 8em;
     }
 }
-
-.main_head {
-    // min-height: 620px;
-    position: relative;
-    background-color: $blue2;
-    background-attachment:fixed;
-    background: url('../img/bg-MOB_port__welcome-block.jpg') no-repeat;
-      background-size: cover;
-      height:20em;
-}
-
-.cont {
-    position: absolute;
-height:6em;
-    top: 0;
-    bottom: 0;
-
-}
-
-.col-12 {
-    text-align:center;
-}
-
-.top_wrapper {
-    display: table;
-    width: 100%;
-    height: 100%;
-    position:absolute;
-padding-top: 8em;
-    top:0;
-    left:0;
-
-}
-.top_descr {
-   display:table-row;
-}
-
-.top_center {
-    display:table-cell;
-    vertical-align:middle;
-
-}
-
-.top-text{
-    display:inline-block;
-  background-color: blue;
-  z-index:1500;
-}
-.ole {
-   // border:3px solid white;
-
-   // // margin:0 auto;
-   padding-left:2em;
-}
-
-@media (min-width: 1200px) {
-    .main_head {
-        background: url('../img/bg-PC__welcome-block.jpg') no-repeat;
-        background-size: cover;
-    }
-    }

@@ -5,22 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--build:js js/vendor.js-->
-    <!--bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
-    <script src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>
-    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
-    <script src="bower_components/jquery-drawsvg/public/jquery.drawsvg.js"></script>
-    <script src="bower_components/Modernizr/modernizr.custom.js"></script>
-    <script src="bower_components/tether/dist/js/tether.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
-    <!--endbower-->
-    <!--endbuild-->
-    <!--build:js js/main.js-->
-    <script type="text/javascript" src="js/script.js"></script>
-    <!--endbuild-->
   </head>
   <body>
     <header class="header">
@@ -42,7 +26,7 @@
           <div class="mobile-nav__content row">
             <div data-wow-offset="0" data-wow-duration="1s" class="mobile-nav__menu-button wow slideInLeft">
               <div role="button" class="hamburger-button"><span class="hamburger-item"></span><span class="hamburger-item"></span><span class="hamburger-item"></span></div>
-            </div><img src="img/logo.svg" alt="" class="svg--img mobile-nav__logo">
+            </div><img src="img/logo.svg" alt="Bourne Osteopath Clinic Logo" class="svg--img mobile-nav__logo">
             <div data-wow-duration="1s" class="mobile-nav__contacts-button wow slideInRight">
               <div role="button" class="contacts-button"><span class="contacts-item"></span><span class="contacts-item"></span><span class="contacts-item"></span></div>
             </div>
@@ -85,7 +69,7 @@
         </div>
         <div class="tab-nav__row">
           <div class="tab-nav__content row align-items-center justify-content-around">
-            <div class="tab-nav__logo-box"><img src="img/logo.svg" class="tab-nav__logo"></div>
+            <div class="tab-nav__logo-box"><img src="img/logo.svg" alt="Bourne Osteopath Clinic Logo" class="tab-nav__logo"></div>
             <div class="tab-nav__menu">
               <nav class="tab-menu">
                 <div class="dropdown tab-nav__item dropdown-box"><a href="#" class="dropbtn link"> Information</a>
@@ -99,40 +83,32 @@
               </nav>
             </div>
             <div class="tab-nav__button">
-              <button data-wow-delay="1s" data-wow-duration="2s" class="button btn-appointment wow fadeInRight">appointment </button>
+              <button class="button btn-appointment">appointment </button>
             </div>
           </div>
         </div>
       </div>
     </header>
     <main class="main-page">
-      <div data-stellar-background-ratio="0.5" class="main_head">
-        <div class="top_wrapper">
-          <div class="top_descr">
-            <div class="top_center">
-              <div class="top_text">
-                <div class="ole"> 
-                  <h1 class="slide__title">Bourne Osteopath Clinic</h1>
-                  <div class="slide__motto">Qualitive healthcare without the wait!</div>
-                  <div class="slide__subtitle"> Musculoskeletal disorders treatment without the use of drugs or surgery.</div>
-                  <h3 class="slide__subtitle--TAB">Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h3>
-                  <p class="slide__text">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
-                  <button class="btn-learn-more slide__btn-learn-more button development">Learn More</button>
-                </div>
-              </div>
+      <div data-stellar-background-ratio="0.3" class="slide">
+        <div class="slide__wrap">
+          <div class="slide__border-box draw">
+            <div class="slide__content">
+              <h1 class="slide__title">Bourne Osteopath Clinic</h1>
+              <div class="slide__motto">Qualitive healthcare without the wait!</div>
+              <h3>Diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery.</h3>
+              <p class="slide__text">In Bourne, all treatments are in a medical centre, providing the perfect safe, caring environment, giving necessary peace of mind to you, the patient.</p>
+              <button class="btn-learn-more slide__btn-learn-more button">Learn More</button>
             </div>
           </div>
         </div>
       </div>
       <section class="about-us">
-        <div class="container">
+        <div class="wrapper-fluid">
           <h2>about us</h2>
-        </div>
-        <div data-wow-duration="2s" class="about-us__content container-fluid wow fadeInUp">
-          <div class="row">
-            <div class="about-us__clinic col-12 col-md-6"><span>All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders </span><span class="marked-text">without the use of drugs or surgery.</span><br><span>In Bourne, all treatments are in a medical centre, providing </span><span class="marked-text">the perfect safe, caring environment, </span><span>giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. </span><br><span>The clinic is open to everyone.</span>
-            </div>
-            <div class="about-us__doctor col-12 col-md-6">
+          <div class="row js-class row-md">
+            <div class="about-us__clinic col-12 col-lg-6"><span>All consultations at The Bourne Osteopath Clinic focus on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders </span><span class="marked-text">without the use of drugs or surgery.</span><br><span>In Bourne, all treatments are in a medical centre, providing </span><span class="marked-text">the perfect safe, caring environment, </span><span>giving necessary peace of mind to you, the patient. Treatments are available Monday to Saturday with free parking. </span><br><span>The clinic is open to everyone.</span></div>
+            <div class="about-us__doctor col-12 col-lg-6">
               <div class="row align-items-center">
                 <div class="col-6 doctor__photo"><img src="img/jo.jpg"></div>
                 <div class="col-6"><a href="#" class="doctor__name marked-text">Mr Jo Sunner</a><br><span class="doctor__title">BSc(ost.) DO. MMSM. Registered Osteopath</span>
@@ -152,172 +128,114 @@
         </div>
       </section>
       <section class="benefits">
-        <div class="container">
+        <div class="wrapper-fluid">
           <h2>our benefits</h2>
         </div>
-        <div class="bene">
-          <div class="benefits__wrap">
-            <div class="benefits__content-1 row no-gutters justify-content-between">
-              <div data-wow-duration="1.5s" class="benefits__item col-12 col-md-6 wow fadeIn">
-                <div class="benefits__header row align-items-center">
-                  <div class="benefits__icon benefits__icon-1"></div>
-                  <div class="benefits__title">
-                    <h3>Since 1993</h3>
-                  </div>
-                </div>
-                <div class="benefits__text">
-                  <p>Bourne Osteopath Clinic is the longest established clinic in the area</p>
+        <div class="wrap">
+          <div class="benefits__content-1 row no-gutters justify-content-between">
+            <div data-wow-duration="1.5s" class="benefits__item col-12 col-md-6 wow fadeIn">
+              <div class="benefits__header row align-items-center">
+                <div class="benefits__icon benefits__icon-1"></div>
+                <div class="benefits__title">
+                  <h3>Since 1993</h3>
                 </div>
               </div>
-              <div data-wow-duration="1.5s" data-wow-delay="1s" class="benefits__item col-12 col-md-6 wow fadeIn">
-                <div class="benefits__header row align-items-center">
-                  <div class="benefits__icon benefits__icon-2"></div>
-                  <div class="benefits__title">
-                    <h3>Expert Advice</h3>
-                  </div>
-                </div>
-                <div class="benefits__text">
-                  <p>Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions </p>
-                </div>
+              <div class="benefits__text">
+                <p>Bourne Osteopath Clinic is the longest established clinic in the area</p>
               </div>
             </div>
-            <div class="benefits__content-2 row no-gutters justify-content-between">
-              <div data-wow-duration="1.5s" data-wow-delay="2s" class="benefits__item col-12 col-md-6 wow fadeIn">
-                <div class="benefits__header row align-items-center">
-                  <div class="benefits__icon benefits__icon-3"></div>
-                  <div class="benefits__title">
-                    <h3>Award Winning</h3>
-                  </div>
-                </div>
-                <div class="benefits__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium.</p>
+            <div data-wow-duration="1.5s" data-wow-delay="1s" class="benefits__item col-12 col-md-6 wow fadeIn">
+              <div class="benefits__header row align-items-center">
+                <div class="benefits__icon benefits__icon-2"></div>
+                <div class="benefits__title">
+                  <h3>Expert Advice</h3>
                 </div>
               </div>
-              <div data-wow-duration="1.5s" data-wow-delay="3s" class="benefits__item col-12 col-md-6 wow fadeIn">
-                <div class="benefits__header row align-items-center">
-                  <div class="benefits__icon benefits__icon-4"></div>
-                  <div class="benefits__title">
-                    <h3>5-star service</h3>
-                  </div>
+              <div class="benefits__text">
+                <p>Our Osteopaths are experts in their field and they provide effective approaches to a wide range of musculoskeletal conditions </p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__content-2 row no-gutters justify-content-between">
+            <div data-wow-duration="1.5s" data-wow-delay="2s" class="benefits__item col-12 col-md-6 wow fadeIn">
+              <div class="benefits__header row align-items-center">
+                <div class="benefits__icon benefits__icon-3"></div>
+                <div class="benefits__title">
+                  <h3>Award Winning</h3>
                 </div>
-                <div class="benefits__text">
-                  <p>Bourne Osteopath Clinic was rated 5 stars by our patience</p>
+              </div>
+              <div class="benefits__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellat libero, excepturi at eveniet praesentium.</p>
+              </div>
+            </div>
+            <div data-wow-duration="1.5s" data-wow-delay="3s" class="benefits__item col-12 col-md-6 wow fadeIn">
+              <div class="benefits__header row align-items-center">
+                <div class="benefits__icon benefits__icon-4"></div>
+                <div class="benefits__title">
+                  <h3>5-star service</h3>
                 </div>
+              </div>
+              <div class="benefits__text">
+                <p>Bourne Osteopath Clinic was rated 5 stars by our patience</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="services__main-page">
-        <div class="container">
+      <section class="services">
+        <div class="wrapper-fluid">
           <h2>our services</h2>
         </div>
-        <h4 class="bh">Musculoskeletal disorders that may cause:</h4>
-        <div class="row no-gutters services-row__services__main-page">
-          <div class="services-block__services__main-page">
-            <div class="services-list__services__main-page">
-              <ul>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Migraine Headache Treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>injury rehabilitation</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>pain relief therapy</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>shoulder pain treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>sciatica treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>trapped nerves treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>arthritic pain treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>muscle pain treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>repetitive strain injury treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>joint pain treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Foot Pain</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>back treatment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pins & Needles in Fingers & Legs</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Stiff Neck & Shoulders</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Muscle Spasms</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pain Managment</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Painfull knee</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pain on coughing or sneezing</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Painful Coccyx (Tail bone)</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Arthritic Pain</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>Pain when sitting or standing</span></li>
-                <li class="services-item"><i aria-hidden="true" class="fa fa-check"> </i><span>sports injury clinics</span></li>
-                <button class="button btn-learn-more btn-learn-more--grey services__btn-learn-more">learn more</button>
-              </ul>
-            </div>
-          </div>
-          <div class="image__services__main-page align-self-center"></div>
-        </div>
-      </section>
-      <section class="news__main-page">
-        <div class="container">
-          <h2>news and events</h2>
-        </div>
-        <div class="news__wrap">
-          <div class="news__row row">
-            <div class="news__item col-12 col-md-4">
-              <div class="news__date">
-                <p>March 17, 2017</p>
-              </div>
-              <div class="news__header">
-                <h4> Lorem ipsum dolor sit amet</h4>
-              </div>
-              <div class="news__photo"><img src="../img/post1.jpg"></div>
-              <div class="news__short-text">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorem, placeat sunt, similique iure perspiciatis iste rem nihil impedit eveniet libero nobis fuga nisi animi!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque sint eveniet fuga esse dolorum ab.</p>
-              </div>
-              <div class="news__button">
-                <button class="button btn-learn-more">learn more</button>
-              </div>
-            </div>
-            <div class="news__item col-12 col-md-4">
-              <div class="news__date">
-                <p>March 17, 2017</p>
-              </div>
-              <div class="news__header">
-                <h4> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sequi.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, temporibus.</h4>
-              </div>
-              <div class="news__photo"><img src="../img/jo.jpg"></div>
-              <div class="news__short-text">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorem, placeat sunt, similique iure perspiciatis iste rem nihil impedit eveniet libero nobis fuga nisi animi!</p>
-              </div>
-              <div class="news__button">
-                <button class="button btn-learn-more">learn more</button>
-              </div>
-            </div>
-            <div class="news__item col-12 col-md-4">
-              <div class="news__date">
-                <p>March 17, 2017</p>
-              </div>
-              <div class="news__header">
-                <h4> Lorem ipsum dolor sit amet</h4>
-              </div>
-              <div class="news__photo"><img src="../img/doctor-points-to-model-spine.jpg"></div>
-              <div class="news__short-text">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorem, placeat sunt, similique iure perspiciatis iste rem nihil impedit eveniet libero nobis fuga nisi animi!</p>
-              </div>
-              <div class="news__button">
-                <button class="button btn-learn-more">learn more</button>
+        <div class="services__bg">
+          <div data-stellar-background-ratio="0.6" class="wrap services__img">
+            <div class="services__content">
+              <div class="services__text">
+                <ul>
+                  <li>Migraine Headache Treatment</li>
+                  <li>injury rehabilitation</li>
+                  <li>pain relief therapy</li>
+                  <li>shoulder pain treatment</li>
+                  <li>sciatica treatment</li>
+                  <li>trapped nerves treatment</li>
+                  <li>arthritic pain treatment</li>
+                  <li>muscle pain treatment</li>
+                  <li>repetitive strain injury treatment</li>
+                  <li>joint pain treatment</li>
+                  <li>Foot Pain</li>
+                  <li>back treatment</li>
+                  <li>Pins & Needles in Fingers & Legs</li>
+                  <li>Stiff Neck & Shoulders</li>
+                  <li>Muscle Spasms</li>
+                  <li>Pain Managment</li>
+                  <li>Painfull knee</li>
+                  <li>Pain on coughing or sneezing</li>
+                  <li>Painful Coccyx (Tail bone)</li>
+                  <li>Arthritic Pain</li>
+                  <li>Pain when sitting or standing</li>
+                  <li>sports injury clinics</li>
+                  <button class="button btn-learn-more btn-learn-more--grey services__btn-learn-more">learn more</button>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="testimonialas">
-        <div class="row no-gutters">
-          <div data-wow-duration="2s" class="ko wow fadeInUp">
-            <div class="text">
-              <h2>patients say</h2><i aria-hidden="true" class="fa fa-quote-left  fa-pull-left"> </i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga odit, voluptatum est pariatur ab iure laborum nisi. Similique pariatur, illum unde ipsum sunt fugiat repudiandae.</p><i aria-hidden="true" class="fa fa-quote-right fa-pull-right"> </i>
-              <p class="pt">R Blake, patient</p>
-            </div>
+      <div class="wrapper-fluid">
+        <h2>patients say</h2>
+      </div>
+      <div class="imh"></div>
+      <div class="wrapper-fluid">
+        <div class="flex">
+          <div class="ilo"><img src="img/137623.svg"></div>
+          <div class="it2"> 
+            <p class="rt">Jo made me feel at ease, treated with care, passion and professionalism, feel comfortable to continue to use the practice and know I can be seen without the wait.</p>
+            <p class="ws">Jonathan lklkj, patient</p>
           </div>
+          <div class="ilo ilo2"><img src="img/137624.svg"></div>
         </div>
-      </section>
-      <section class="banner">
-        <p data-wow-duration="2s" class="banner-title wow fadeIn">Do you want to Get a free consultation?</p>
-        <p class="text-banner">We are always ready to welcome you in our clinic!</p>
-        <button data-wow-duration="1.5s" data-wow-delay="1s" class="banner-button development wow fadeInUp"> Book an appointment</button>
-      </section>
+      </div>
     </main>
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:300,400,600" rel="stylesheet">
     <!--build:css css/vendor.css-->
     <!--bower:css-->
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
@@ -329,6 +247,22 @@
     <!--endbuild-->
     <!--build:css css/styles.css-->
     <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <!--build:js js/vendor.js-->
+    <!--bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/wow/dist/wow.js"></script>
+    <script src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>
+    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="bower_components/jquery-drawsvg/public/jquery.drawsvg.js"></script>
+    <script src="bower_components/Modernizr/modernizr.custom.js"></script>
+    <script src="bower_components/tether/dist/js/tether.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+    <!--endbower-->
+    <!--endbuild-->
+    <!--build:js js/main.js-->
+    <script src="js/script.js"></script>
     <!--endbuild-->
   </body>
 </html>

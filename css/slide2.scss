@@ -1,0 +1,351 @@
+//Mobile
+
+// .slide {
+//     width: 100%;
+//     background: url('../img/bg-MOB_port__welcome-block.jpg') no-repeat;
+//     background-size: cover;
+//     background-position: 10% 0;
+// }
+
+// .slide__content {
+//     background-color: white;
+//     opacity:0.2;
+// }
+
+// .slide__title {
+//     max-width: 50%;
+//     font-weight: 600;
+// }
+
+// .slide__motto {
+//     color: $blue;
+//     font-family: $kaushan;
+//     font-size: 1.5em;
+//     max-width: 70%;
+//     padding: 0.9em 0;
+//     line-height: 1.2em;
+// }
+
+// .slide__subtitle {
+//     display: none;
+// }
+
+// .slide__subtitle--TAB {
+//     display: none;
+// }
+
+// .slide__text {
+//     display: none;
+// }
+
+// .slide__btn-learn-more {
+//     display: none;
+// }
+
+
+// //Mob - landscape
+
+// @media (min-width: 450px) {
+//     .slide {
+//         background: url('../img/bg-MOB_land__welcome-block.jpg') no-repeat;
+//         background-size: cover;
+//         background-position: 70% 0;
+//     }
+
+//     .slide__content {
+//         padding-top: 7em;
+//         padding-bottom: 1em;
+//     }
+//     .slide__title {
+//         max-width: 70%;
+//     }
+//     .slide__motto {
+//         max-width: 100%;
+//     }
+
+//     .slide__subtitle {
+//         display: block;
+//         padding-bottom: 0.9em;
+//         font-weight: 600;
+//     }
+
+//     .slide__btn-learn-more {
+//         display: inline-block;
+//         display: block;
+//     }
+// }
+// //Tablets
+
+// @media (min-width: 700px) {
+//     .slide__subtitle {
+//         display: none;
+//     }
+
+//     .slide {
+//         background: url('../img/bg-TAB__welcome-block.jpg') no-repeat;
+//         background-size: cover;
+//         background-position: 68% 0;
+//     }
+
+//     .slide__content {
+//         padding-top: 8em;
+//         padding-left: 2em;
+//         padding-bottom: 2em;
+//     }
+
+//     .slide__subtitle--TAB {
+//         display: block;
+//         max-width: 55%;
+//         padding: 0 0 0.9em;
+//         font-size: 1.2em;
+//         line-height: 1.5em;
+//         text-align: justify;
+//         font-weight: 600;
+//     }
+//     .slide__content {
+//         padding-top: 11.5em;
+//     }
+// }
+
+// //Laptop
+
+// @media (min-width: 900px) {
+//     .slide__text {
+//         display: block;
+//         max-width: 50%;
+//         text-align: justify;
+//         font-size: 1em;
+//         padding-bottom: 0.9em;
+//     }
+//     .slide__subtitle--TAB {
+//         max-width: 60%;
+//     }
+// }
+
+// @media (min-width: 1100px) {
+//     .slide__content {
+//         padding-top: 12em;
+//         padding-left: 3em;
+//         padding-bottom: 2em;
+//     }
+//     .slide__title {
+//         font-size: 3.5em;
+//     }
+//     .slide__subtitle--TAB {
+//         max-width: 55%;
+//         padding: 0.9em 0 0em;
+//     }
+// }
+
+// //PC
+// @media (min-width: 1500px) {
+//     .slide {
+//         background: url('../img/bg-PC__welcome-block.jpg') no-repeat;
+//         background-size: cover;
+//     }
+//     .slide__content {
+//         padding-top: 14em;
+//         padding-bottom: 4em;
+//         padding-left: 7em;
+//     }
+//     .slide__subtitle--TAB {
+//         max-width: 45%;
+//     }
+
+//     .slide__text {
+//         max-width: 45%;
+//     }
+// }
+
+.slide {
+    // min-height: 620px;
+    position: relative;
+    background-color: grey;
+    background-attachment: fixed;
+    background: url('../img/070.jpg') no-repeat;
+    min-height: 38em;
+ background-size: cover;
+}
+.slide__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:white;
+    // color:#2f2e2e;
+}
+.slide__row {
+    display: table-row;
+}
+
+.slide__cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top:5em;
+}
+
+.slide__content-wrapper {
+    display: inline-block;
+    z-index: 1500;
+    width:100%;
+    margin: 0 auto;
+}
+.slide__content {
+    // border:3px solid white;
+
+    margin:0 auto;
+    padding: 0 1em;
+     max-width:100%;
+}
+
+
+.slide__title {
+    font-weight: 600;
+    text-transform:uppercase;
+text-align:center;
+}
+
+.slide__motto {
+    font-weight:600;
+      font-size: 1.5em;
+     line-height:1.5em;
+     padding:1.2em 0 0.5em;
+font-family:$kaushan;
+     text-align:center;
+ // color:$blue;
+ text-shadow:1px 1px  1px black;
+
+
+}
+.slide__subtitle--TAB {
+    line-height:1.5em;
+    padding:0.5em 0;
+}
+.slide__btn-learn-more {
+    margin:0.8em 0;
+
+
+}
+
+@media (min-width: 700px) {
+
+ .slide__wrapper {
+       max-width:50%;  
+    }
+
+    .slide {
+    background-attachment: fixed;
+    background: url('../img/df.jpg') no-repeat;
+ background-size: cover;
+}
+
+.slide__content {
+    color:$text-color;
+    }
+
+    .slide__cell  {
+        padding-top:0;
+    }
+
+}
+
+
+// .slide__subtitle {
+//     display: none;
+// }
+
+// .slide__subtitle--TAB {
+//     display: none;
+// }
+
+// .slide__text {
+//     display: none;
+// }
+
+// .slide__btn-learn-more {
+//     display: none;
+// }
+
+
+// @media (min-width: 350px) {
+
+//     .slide__title {
+//         max-width: 70%;
+//     }
+//     .slide__motto {
+//         max-width: 100%;
+//     }
+
+//     .slide__subtitle {
+//         display: block;
+//         padding-bottom: 0.9em;
+//         font-weight: 600;
+//     }
+
+//     .slide__btn-learn-more {
+//         display: inline-block;
+//         display: block;
+//     }
+// }
+
+
+
+// @media (min-width: 700px) {
+//     .slide__subtitle {
+//         display: none;
+//     }
+
+
+//     .slide__subtitle--TAB {
+//         display: block;
+//         max-width: 55%;
+//         padding: 0 0 0.9em;
+//         font-size: 1.2em;
+//         line-height: 1.5em;
+//         text-align: justify;
+//         font-weight: 600;
+//     }
+// }
+
+// //Laptop
+
+// @media (min-width: 900px) {
+//     .slide__text {
+//         display: block;
+//         max-width: 50%;
+//         text-align: justify;
+//         font-size: 1em;
+//         padding-bottom: 0.9em;
+//     }
+//     .slide__subtitle--TAB {
+//         max-width: 60%;
+//     }
+// }
+
+// @media (min-width: 1100px) {
+//     .slide__title {
+//         font-size: 3.5em;
+//     }
+//     .slide__subtitle--TAB {
+//         max-width: 55%;
+//         padding: 0.9em 0 0em;
+//     }
+// }
+@media (min-width: 1200px) {
+    .slide {
+        background: url('../img/bg-PC__welcome-block.jpg') no-repeat;
+        background-size: cover;
+    }
+}
+// @media (min-width: 1500px) {
+
+//     .slide__subtitle--TAB {
+//         max-width: 45%;
+//     }
+
+//     .slide__text {
+//         max-width: 45%;
+//     }
+// }

@@ -1,92 +1,76 @@
-.btn-learn-more--grey {
-	border:1px solid white;
-	background-color: transparent;
+.services__bg {
+    background-color: $blue;
+}
+
+.services__content {
+    color: white;
+    line-height: 1.8em;
+    padding: 2em 0;
+    text-transform: capitalize;
+    vertical-align: middle;
+    background-color: $blue;
+    color: white;
+}
+
+.services__content {
+    li:before {
+        content: '\f00c';
+        font-family: FontAwesome;
+        display: inline-block;
+        padding-right: 0.3em;
+    }
+}
+.services__text {
+    width: 90%;
+    margin: 0 0 0 auto;
 }
 
 .services__btn-learn-more {
-	margin-left:1em;
-margin-top:2em;
+    margin: 2em 1em 0em;
 }
 
-.services-block__services__main-page {
-	background-color: $blue;
-	color:white;
-	width:100%;
-		line-height:1.5em;
-	padding:1% 0em;
-	width:100%;
-	text-transform:capitalize;
-	vertical-align: middle;
-
-}
-.services-list__services__main-page {
-	padding:1em 0;
+.btn-learn-more--grey {
+    border: 1px solid white;
+    background-color: transparent;
 }
 
-.services-item {
-	i {
-		display: inline-block;
-		padding-right:0.3em;
-	}
+@media (min-width: 540px) {
+    .services__text {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
-.title__services__main-page {
+@media (min-width: 580px) {
+    .services__text {
+        width: 100%;
+    }
 
-	font-weight:600;
-	font-size:1.2em;
-}
-
-
-.image__services__main-page.align-self-center {
-	display:none;
-}
-.title-TAB__services__main-page {
-	display:none;
-}
-
-@media (min-width: 460px) {
-.services-list__services__main-page {
-	  -webkit-column-count:2;  
-    -moz-column-count:2;  
-    column-count:2;  
-
-}
-.services-item {
-	i {
-		display: none;
-	}
-}
-.title-TAB__services__main-page {
-	display:block;
-	padding-top:3em;
-}
-.title__services__main-page {
-	display:none;
-}
+    .services__content {
+        -webkit-column-count: 2;
+           -moz-column-count: 2;
+                column-count: 2;
+    }
+    .services__btn-learn-more {
+        margin: 2em 0em 0em;
+    }
 }
 
-@media (min-width: 1000px) {
-.services-block__services__main-page {
-	width:60%;
-	height:25em;
+@media (min-width: 800px) {
+    .services__img {
+        width: 90%;
+        margin: 0 0 0 auto;
+    }
 }
-.image__services__main-page.align-self-center {
-	display:block;
-	width:40%;
-	height:25em;
-	background: url('../img/1.jpg') no-repeat;
-background-size: cover;
-
-background-position:10% 50%;
-
+@media (min-width: 1200px) {
+    .services__content {
+        width: 60%;
+    }
+    .services__img {
+        background: url('../img/doctor-points-to-model-spine2.jpg') no-repeat;
+        background-position: right center;
+        background-size: 100%;
+        width: 95%;
+        margin: 0 0 0 auto;
+    }
 }
-.bh {
-	padding-left:5%;
-}
-
-.services-list__services__main-page {
-	width:90%;
-	margin:0 auto;
-}
-}
-
