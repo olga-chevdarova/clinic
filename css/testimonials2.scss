@@ -1,0 +1,110 @@
+// .testimonials__bg {
+//     width: 100%;
+//     background: url('../img/seni.jpg') no-repeat;
+//     background-size: cover;
+//     min-height: 40em;
+//     background-position: center center;
+// }
+.testimonials {
+	background-color: $grey;
+}
+.testimonials__item{
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey;
+}
+
+.testimonials__arrow {
+    height: auto;
+    // background-color: green;
+    img {
+        width: 2.7em;
+    }
+}
+
+.testimonials__content {
+    // background-color: grey;
+    width: 80%;
+}
+
+.testimonials__text {
+    width: 90%;
+    margin: 0 auto;
+    font-style: italic;
+    // background-color: yellow;
+}
+
+.testimonials__patient {
+    text-align: right;
+    display: inline-block;
+    padding: 1em 0;
+    width: 90%;
+    margin: 0 auto;
+    font-family: $kaushan;
+}
+
+.lol {
+	background-color: white;
+}
+
+.wrapp {
+    background-color: $grey;
+}
+.blue {
+    background-color: blue;
+    width: 100%;
+    min-height: 8em;
+}
+
+
+@media (min-width: 900px) {
+	.testimonials__bg {
+		display:none;
+	}
+.testimonials__wrap {
+	    background: url('../img/senior-couple.png') no-repeat ;
+    background-position:top left;
+    justify-content: flex-end;
+    background-szie:contain;
+    min-height:15em;
+}
+.testimonials__content {
+	width:50%;
+}
+.testimonials__bg--PC {
+	margin-right:1em;
+}
+}
+
+ @media (min-width: 1200px) {
+.testimonials__bg--PC {
+	margin-right:4em;
+}
+.testimonials__content {
+	width:60%;
+}
+// .testimonials__wrap  {
+// 	 justify-content: center;
+// }
+ 
+
+ }
+
+ .testimonials__bg {
+ 	background: $grey url('../img/senior-couple.png') no-repeat;
+    background-size: cover;
+background-position:center;
+    height:15em;
+ }
+
+ .rol {
+ 	display:flex;
+ 	flex-direction:column;
+ 	background-color: $grey;
+ }
+
+ .no-margin-bottom {
+ 	margin-bottom:0;
+ }

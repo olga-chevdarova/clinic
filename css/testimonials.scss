@@ -1,3 +1,7 @@
+.testimonials {
+    background-color: $grey;
+}
+
 .testimonials__bg {
     width: 100%;
     background: url('../img/seni.jpg') no-repeat;
@@ -9,9 +13,10 @@
 .testimonials__wrap {
     display: flex;
     // background-color: pink;
-    min-height: 8em;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .testimonials__arrow {
@@ -23,9 +28,8 @@
 }
 
 .testimonials__item {
-    // background-color: grey;
     width: 80%;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .testimonials__text {
@@ -38,21 +42,77 @@
 .testimonials__patient {
     text-align: right;
     display: inline-block;
-    padding: 1em 0;
+    padding-top: 1em;
     width: 90%;
     margin: 0 auto;
     font-family: $kaushan;
 }
 
+.testimonials__bg--PC {
+    display: none;
+}
 
-.io {
-    margin-bottom: 10em;
+
+@media (min-width: 240px) and (orientation: landscape) {
+    .testimonials__bg {
+        display: none;
+    }
+
+    .testimonials__bg--PC {
+        display: block;
+        background: url('../img/serni2.jpg') no-repeat;
+        background-size: cover;
+        height: 10em;
+        background-position: top center;
+    }
 }
-.wrapp {
-    background-color: $grey;
+
+@media (min-width: 740px) {
+    .testimonials__wrap {
+        width: 100%;
+    }
+    .testimonials__item {
+        width: 90%;
+    }
+    .testimonials__text {
+        width: 100%;
+        padding: 2em 2em;
+    }
 }
-.blue {
-    background-color: blue;
-    width: 100%;
-    min-height: 8em;
+
+@media (min-width: 900px) {
+    .testimonials__bg,.testimonials__bg--PC {
+        display: none;
+    }
+    .testimonials__row {
+        display: flex;
+        justify-content: flex-end;
+        background: url('../img/senior-couple.png') no-repeat;
+        background-position: 0 0;
+    }
+    .testimonials__wrap {
+        width: 60%;
+        margin: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .testimonials__row {
+        width: 85%;
+        background-position: 10% 0;
+    }
+    .testimonials__wrap {
+        justify-content: flex-end;
+        // background-color:yellow;
+    }
+}
+
+@media (min-width: 1600px) {
+    .testimonials__row {
+        width: 80%;
+        background-position: 15% 0;
+    }
+
+    .testimonials__wrap {
+        width: 60%;
+    }
 }
