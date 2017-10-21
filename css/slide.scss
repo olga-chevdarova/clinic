@@ -1,143 +1,105 @@
-.slide {
-    width: 100%;
-    background: url('../img/0021.jpg') no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 34em;
-}
-
-.slide__wrap {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.slide__border-box {
+  .block__content {
     width: 90%;
-    background-color: rgba(black, 0.15);
     margin: 0 auto;
-    margin-top: 7em;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    border-right: 2px solid white;
-    border-left: 2px solid white;
-    margin-bottom: 1em;
+    -webkit-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
 }
 
-.slide__content {
+
+@media (min-width: 1500px) {
+    .block__content {
+        width: 100%;
+        max-width: 1400px;
+    }
+}
+
+.welcome-slide {
+    width: 100%;
+    background: url('/img/image6.jpg') no-repeat;
+    -webkit-background-size: cover;
+    min-height: 25em;
+}
+
+
+.welcome-slide__wrap {
+    position: relative;
+    z-index: 200;
+}
+
+.welcome-slide__content {
     color: white;
-    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 3em 0;
 }
 
-.slide__title {
-    text-align: center;
+.welcome-slide__name {
+    font-size: 2.2em;
+    line-height: 1.5em;
+    font-weight: 600;
 }
-.slide__motto {
-    text-align: center;
-    font-family: $kaushan;
-    // text-shadow:1px 1px  1px black;
-    font-size: 1.5em;
-    padding: 1em 0;
+
+.welcome-slide__motto {
+    font-size: 2.2em;
+    line-height: 1.5em;
 }
+
 
 .slide__btn-learn-more {
     margin: 0.5em 0 1em;
 }
+.btn-learn-more {
+    padding: 0.5em 1em;
+}
 
-@media (min-width: 740px) {
-    .slide__border-box {
+.welcome-slide__text {
+    letter-spacing: 0.05em;
+    margin: 1.5em 0;
+}
+
+.welcome-slide__button {
+    margin: 1.5em 0;
+}
+
+
+@media (min-width: 700px) {
+    .welcome-slide {
+        background: url('/img/987.jpg') no-repeat;
+        background-size: cover;
+        background-position: 70% 0;
         position: relative;
-        margin-top: 10em;
-    }
-    .slide__content {
-        padding: 5em;
     }
 
-    .slide__border-box::before,.slide__border-box::after {
-        box-sizing: inherit;
-        content: '';
+    .welcome-slide__gradient {
         position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    .draw {
-        -webkit-transition: color 0.5s;
-                transition: color 0.5s;
-    }
-    .draw::before,.draw::after {
-        border: 0.2em solid transparent;
-        width: 0;
-        height: 0;
-    }
-    .draw::before {
-        top: 0;
+        z-index: 100;
+        background: linear-gradient(to right, #242d40, transparent);
         left: 0;
-    }
-    .draw::after {
-        bottom: 0;
         right: 0;
+        bottom: 0;
+        top: 0;
+        width: 70%;
+    }
+    .welcome-slide__wrap {
+        padding: 5em 0;
     }
 
-    .draw.active::before,.draw.active::after {
-        width: 100%;
-        height: 100%;
-    }
-    .draw.active::before {
-        border-top-color: white;
-        border-right-color: white;
-        -webkit-transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
-                transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
-    }
-    .draw.active::after {
-        border-bottom-color: white;
-        border-left-color: white;
-        -webkit-transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.5s;
-                transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.5s;
+    .welcome-slide__content {
+        max-width: 50%;
     }
 }
 
-@media (min-width: 772px) and (orientation: landscape) {
-    .slide {
-        background: url('../img/bg-TAB__welcome-block.jpg') no-repeat;
+@media (min-width: 1200px) {
+    .welcome-slide__content {
+        max-width: 60%;
+    }
+}
+@media (min-width: 1400px) {
+    .welcome-slide {
+        background: url('/img/bg-PC__welcome-block.jpg') no-repeat;
         background-size: cover;
         background-position: 75% 0;
-    }
-    .slide__border-box {
-        background-color: rgba($blue, 0.05);
-        border: 0;
-        width: 60%;
-        margin-left: 4em;
-    }
-    .slide__content {
-        padding: 3em;
-        color: $text-color;
-    }
-    .slide__title {
-        text-align: left;
-    }
-
-    .slide__motto {
-        color: $blue;
-        text-align: left;
-        text-shadow: none;
-    }
-}
-
-@media (min-width: 1200px) and (orientation: landscape) {
-    .slide__content {
-        padding: 4em;
-    }
-}
-@media (min-width: 1650px) and (orientation: landscape) {
-    .slide__border-box {
-        width: 50%;
-        margin-left: 10em;
-    }
-    .slide__content {
-        padding: 8em;
+        position: relative;
     }
 }

@@ -1,78 +1,89 @@
-// .title__footer {
-// 	padding: 0 0.8em 0.5em 0;
-// 	border-bottom:2px solid $blue;
-// }
-// .contacts__footer {
-// 	max-width:50%;
-// }
-// .hours__footer {
-// 	max-width:50%;
-// }
-
-// .kldg {
-// 	font-size:1.2em;
-// 	font-weight:600;
-// 	display:inline-block;
-// 	padding:0.3em;
-// }
-
-// .lala {
-// 	width:100%;
-// 	.mobile-contacts__content {
-// 		font-size:0.8em;
-// 	}
-// }
-
-// .kol {
-// 	display:none;
-// }
-// @media (min-width: 500px) {
-// 	.mobile-contacts__content {
-// 		width:70%;
-// 		display:inline-block;
-// 	}
-// 	.kol {
-// 		width:20%;
-// 		height:auto;
-// 		display:inline-block;
-		
-// 	}
-// }
-
-.footer__content {
-	.mobile-contacts__adress, .mobile-contacts__hours, .mobile-contacts__phones {
-	font-size:1em;
-}
-}
-.footer__map {
-	display:none;
-}
-.footer__logo {
-	display:none;
-}
-@media (min-width: 960px) {
-	.footer__adress {
-		width:30%;
-	}
-	.footer__adress {
-		.col-2 {
-			text-align:right;
-		}
-	}
-	.footer__logo {
-		width:30%;
-		display:block;
-text-align:center;
-		img {
-			height:100%;
-			width:auto;
-			padding:2em;
-
-		}
-	}
-.footer__map {
-	display:block;
-	text-align:center;
+.footer {
+    color: #6f6e6e;
+    a {
+        color: #6f6e6e;
+    }
+    i {
+        color: $blue;
+        margin: 0 0.5em;
+    }
 }
 
+.footer__address,.footer-hours__row {
+    display: flex;
+}
+.footer__hours,.footer__address {
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.footer-hours__content {
+    th {
+        padding-right: 1em;
+    }
+}
+
+.footer__rights {
+    display: none;
+}
+
+.footer__rights--MOB {
+    opacity: 0.8;
+    padding: 1em 1em 0;
+}
+
+@media (min-width: 500px) {
+    .footer__row {
+        display: flex;
+        width: 100%;
+    }
+    .footer__rights {
+        width: 50%;
+    }
+
+    .no-flexwrap .footer__address {
+        padding-right: 1.5em;
+    }
+    .footer__address {
+        width: 50%;
+    }
+}
+@media (min-width: 974px) {
+    .footer__rights {
+        display: block;
+        width: 33%;
+        opacity: 0.8;
+        order: -1;
+    }
+    .footer__address {
+        width: 33%;
+    }
+    .footer__hours {
+        width: 33%;
+    }
+    .footer__row {
+        display: flex;
+        justify-content:  space-between;
+    }
+    .footer__rights--MOB {
+        display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .footer__rights {
+        width: 33%;
+    }
+
+    .footer__address {
+        width: 33%;
+    }
+
+    .footer__hours {
+        width: 33%;
+    }
+}
+@media (min-width: 1600px) {
+    .footer__rights, .footer__address, .footer__hours {
+        width: auto;
+    }
 }

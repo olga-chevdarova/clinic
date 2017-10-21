@@ -4,16 +4,21 @@ $text-color: #292b2c;
 $white: hsl(0, 0%, 100%);
 $grey:#F2F2F2;
 $blue2:#07638a;
-
-
+$blue3:#435b74;
 //Fonts
 
 $open: 'Open Sans', sans-serif;
 $kaushan: 'Kaushan Script', cursive;
+.wow { visibility: hidden; }
 
+.header__info-panel {
+    position: absolute;
+    background-color: blue;
+    top:50px;
+}
 
 body {
-font-family: $open;
+font-family: 'PT Sans', sans-serif;
     line-height: 1.5em;
     font-size: 1em;
     width: 100%;
@@ -37,6 +42,7 @@ h2 {
      text-transform:uppercase;
      // padding:0.5em 0em 0.5em 0.8em;
      padding: 1.5em 0;
+     font-weight:600;
 }
 h2:before {
     content: '\f054';
@@ -136,7 +142,7 @@ ul {
     -webkit-appearance: none;
     border: 0;
     font-size: 1em;
-    text-transform: uppercase;
+    text-transform: capitalize;
     cursor: pointer;
 }
 
@@ -144,22 +150,23 @@ ul {
     border-radius: 0.3em;
     background-color: $blue;
     color: $white;
-    padding: 0.7em 1em;
     font-size:1em;
+        margin:0.5em;
+    padding:0.6em 1em;
+     border-radius: 0.5em;
 
 }
 
-    .btn-learn-more {
-        -webkit-appearance: none;
-        border-radius: 0.3em;
-        border: 0;
-        background-color: $blue;
-        color: $white;
-        font-weight: 300;
-        font-size: 1em;
-        padding: 0.6em 1em;
-        text-transform: uppercase;
-    }
+.btn-learn-more {
+    font-size: 1em;
+
+    padding: .6em 1em; 
+
+    color: white;
+    background-color: transparent;
+border: 1px solid white;
+    -webkit-appearance: none;
+}
 
 .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
 .red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
@@ -177,6 +184,8 @@ ul {
 //     }
 // }
 // @import 'welcome-page.scss';
+@import 'preloader.scss';
 @import 'header.scss';
 @import 'main-page.scss';
-
+@import 'footer.scss';
+@import 'page-services.scss';

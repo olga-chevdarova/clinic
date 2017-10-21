@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bourne Osteopath Clinic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style>.preloader__wrap{position:fixed;z-index:10000;overflow:hidden;width:100%;height:100%;background:-webkit-linear-gradient(left,#199ed8,#07638a);background:-webkit-gradient(linear,left top,right top,from(#199ed8),to(#07638a));background:-o-linear-gradient(left,#199ed8,#07638a);background:linear-gradient(90deg,#199ed8,#07638a);-webkit-box-shadow:inset 0 0 90px rgba(0,0,0,.5);box-shadow:inset 0 0 90px rgba(0,0,0,.5)}.preloader{position:absolute;top:0;right:0;bottom:0;left:0;width:8em;height:13em;margin:auto;border-radius:100%}.preloader__circle{position:absolute;width:100%;height:100%}.preloader__circle .inner{width:100%;height:100%;border:.5em solid rgba(0,216,255,.7);border-top:none;border-right:none;border-radius:100%;-webkit-box-shadow:inset 0 0 10px rgba(0,216,255,.15);box-shadow:inset 0 0 10px rgba(0,216,255,.15);background-clip:padding}@-webkit-keyframes spin{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes spin{from{-webkit-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{from{-webkit-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}.preloader__circle:nth-of-type(0){-webkit-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}.preloader__circle:nth-of-type(0) .inner{-webkit-animation:spin 5s infinite linear;-o-animation:spin 5s infinite linear;animation:spin 5s infinite linear}.preloader__circle:nth-of-type(1){-webkit-transform:rotate(70deg);-ms-transform:rotate(70deg);-o-transform:rotate(70deg);transform:rotate(70deg)}.preloader__circle:nth-of-type(1) .inner{-webkit-animation:spin 5s infinite linear;-o-animation:spin 5s infinite linear;animation:spin 5s infinite linear}.preloader__circle:nth-of-type(2){-webkit-transform:rotate(140deg);-ms-transform:rotate(140deg);-o-transform:rotate(140deg);transform:rotate(140deg)}.preloader,.preloader__circle:nth-of-type(2) .inner{-webkit-animation:spin 5s infinite linear;-o-animation:spin 5s infinite linear;animation:spin 5s infinite linear}</style>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<!--     <script src="http://osteopathclinic.com/wp-content/themes/new/js/modernizr.custom.js"></script> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:300,400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"> -->
+<!--     <link rel="stylesheet" href="http://osteopathclinic.com/wp-content/themes/new/vendor.css">
+<link rel="stylesheet" href="http://osteopathclinic.com/wp-content/themes/new/style.css"> -->
+<!--     <link rel="stylesheet" href="http://osteopathclinic.com/wp-content/themes/new/css/font-awesome.min.css">
+<script src="http://osteopathclinic.com/wp-content/themes/new/js/modernizr.custom.js"></script> -->
+<link rel='dns-prefetch' href='//s.w.org' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/osteopathclinic.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='justifiedGallery-css'  href='http://osteopathclinic.com/wp-content/plugins/flickr-justified-gallery/css/justifiedGallery.min.css?ver=v3.6' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='flickrJustifiedGalleryWPPlugin-css'  href='http://osteopathclinic.com/wp-content/plugins/flickr-justified-gallery/css/flickrJustifiedGalleryWPPlugin.css?ver=v3.6' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='slick-css'  href='http://osteopathclinic.com/wp-content/plugins/wp-carousel-free/assets/css/slick.css?ver=20170501' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='font-awesome-css'  href='http://osteopathclinic.com/wp-content/plugins/wp-carousel-free/assets/css/font-awesome.min.css?ver=20170501' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wp-carousel-free-style-css'  href='http://osteopathclinic.com/wp-content/plugins/wp-carousel-free/assets/css/style.css?ver=20170501' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='vendor_style-css'  href='http://osteopathclinic.com/wp-content/themes/new/vendor.css?ver=4.8.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='main_style-css'  href='http://osteopathclinic.com/wp-content/themes/new/style.css?ver=4.8.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dgwt-jg-style-css'  href='http://osteopathclinic.com/wp-content/plugins/justified-gallery/assets/css/style.min.css?ver=1.2.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dgwt-jg-photoswipe-css'  href='http://osteopathclinic.com/wp-content/plugins/justified-gallery/includes/Lightbox/Photoswipe/assets/photoswipe.css?ver=1.2.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dgwt-jg-photoswipe-skin-css'  href='http://osteopathclinic.com/wp-content/plugins/justified-gallery/includes/Lightbox/Photoswipe/assets/default-skin/default-skin.css?ver=1.2.2' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//osteopathclinic.com/wp-content/cache/wpfc-minified/8b45ad399aa2ddbb6664a99d7781039a/1506940041index.css" media="all"/>
+<script src='//osteopathclinic.com/wp-content/cache/wpfc-minified/7c8b80dc72c47e1cde21c969c26e994e/1506940041index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='http://osteopathclinic.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='http://osteopathclinic.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='http://osteopathclinic.com/wp-content/themes/new/js/vendor.js?ver=4.8.2'></script> -->
+<!-- <script type='text/javascript' src='http://osteopathclinic.com/wp-content/themes/new/js/main.js?ver=4.8.2'></script> -->
+<link rel='https://api.w.org/' href='http://osteopathclinic.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://osteopathclinic.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://osteopathclinic.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.2" />
+<link rel="canonical" href="http://osteopathclinic.com/conditions-treated/" />
+<link rel='shortlink' href='http://osteopathclinic.com/?p=17' />
+<link rel="alternate" type="application/json+oembed" href="http://osteopathclinic.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fosteopathclinic.com%2Fconditions-treated%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://osteopathclinic.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fosteopathclinic.com%2Fconditions-treated%2F&#038;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- versions: WordPress 4.8.2 | Strong Testimonials 2.26.10 -->
+</head>
+<body>
+<div class="preloader__wrap" id="preloader">
+<div class='preloader'>
+<div class='preloader__circle'>
+<div class='inner'></div>
+</div>
+<div class='preloader__circle'>
+<div class='inner'></div>
+</div>
+<div class='preloader__circle'>
+<div class='inner'></div>
+</div>
+<div class='preloader__circle'>
+<div class='inner'></div>
+</div>
+<div class='preloader__circle'>
+<div class='inner'></div>
+</div>
+</div>
+</div>
+<header class="header">
+<div class="header__nav">
+<div class="mobile-nav__row">
+<div class="mobile-nav__content row">
+<div data-wow-offset="0" data-wow-duration="1s" class="mobile-nav__menu-button wow slideInLeft">
+<div role="button" class="hamburger-button"><span class="hamburger-item"></span><span class="hamburger-item"></span><span class="hamburger-item"></span></div>
+</div><img src="http://osteopathclinic.com/wp-content/themes/new/img/logo.svg" alt="" class="svg--img mobile-nav__logo">
+<div data-wow-duration="1s" class="mobile-nav__contacts-button wow slideInRight">
+<div role="button" class="contacts-button"><span class="contacts-item"></span><span class="contacts-item"></span><span class="contacts-item"></span></div>
+</div>
+</div>
+<nav class="mobile-nav__menu">
+<div class="menu-menu-for-pc-container"><ul id="menu-menu-for-pc" class="menu"><li id="menu-item-76" class="nav-item-home-mob menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-76"><a href="http://osteopathclinic.com">Home</a></li>
+<li id="menu-item-75" class="drop--about menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17 current_page_item menu-item-75"><a href="http://osteopathclinic.com/conditions-treated/">Conditions treated</a></li>
+<li id="menu-item-74" class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="http://osteopathclinic.com/gallery/">Gallery</a></li>
+<li id="menu-item-73" class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="http://osteopathclinic.com/testimonials/">Testimonials</a></li>
+<li id="menu-item-434" class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-434"><a href="http://osteopathclinic.com/journal/">Journal</a></li>
+<li id="menu-item-72" class="drop--info menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a href="http://osteopathclinic.com/videos/">Videos</a></li>
+<li id="menu-item-439" class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="http://osteopathclinic.com/exercises/">Exercises</a></li>
+<li id="menu-item-440" class="drop--about development menu-item menu-item-type-post_type menu-item-object-page menu-item-440"><a href="http://osteopathclinic.com/conatacts/">Contacts</a></li>
+</ul></div>           <button class="button mobile-menu__button btn-appointment"  data-toggle="modal" data-target="#exampleModal">appointment request</button>
+</nav>
+<div class="mobile-nav__contacts">
+<div class="mobile-contacts__content">
+<div class="mobile-contacts__adress row">
+<div class="col-2"><i aria-hidden="true" class="fa fa-home fa-2x"></i></div>
+<div class="col-10"><span>28A West St, </span><span>Bourne PE10 9NE</span> <span>(next to post office)</span></div>
+</div>
+<div class="mobile-contacts__hours row">
+<div class="col-2"><i aria-hidden="true" class="fa fa-clock-o fa-2x"></i></div>
+<div class="col-10">
+<div class="row no-gutters">
+<div class="col-6"><span>Mon-Fri</span><br><span>Saturday</span><br><span>Sunday</span></div>
+<div class="col-6"><span>8AM - 8PM</span><br><span>8AM - 1PM</span><br><span>Closed</span></div>
+</div>
+</div>
+</div>
+<div class="mobile-contacts__phones row">
+<div class="col-2"><i aria-hidden="true" class="fa fa-phone fa-2x"></i></div>
+<div class="col-10">
+<div class="mobile-phones__item"><a href="tel:01778 426000" class="link">01778 426000</a></div>
+<div class="mobile-phones__item"><a href="tel:07943 336336" class="link">07943 336336</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="desktop-nav__wrap">
+<div class="desktop-nav__row row align-items-center justify-content-between row-OLD">
+<div class="desktop-nav__menu">
+<div class="row align-items-center ">
+<div class="dropdown menu-item--home dropdown-lnk">
+<a class="drodown-lnk-a" href="http://osteopathclinic.com">home</a>
+</div>
+<div class="dropdown dropdown-box__about dropdown-lnk">
+<a class="dropdown-toggle drodown-lnk-a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+about clinic
+</a>
+<div class="dropdown-menu"><ul id="menu-menu-for-pc-1" class="menu"><li class="nav-item-home-mob menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-76"><a href="http://osteopathclinic.com">Home</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17 current_page_item menu-item-75"><a href="http://osteopathclinic.com/conditions-treated/">Conditions treated</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="http://osteopathclinic.com/gallery/">Gallery</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="http://osteopathclinic.com/testimonials/">Testimonials</a></li>
+<li class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-434"><a href="http://osteopathclinic.com/journal/">Journal</a></li>
+<li class="drop--info menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a href="http://osteopathclinic.com/videos/">Videos</a></li>
+<li class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="http://osteopathclinic.com/exercises/">Exercises</a></li>
+<li class="drop--about development menu-item menu-item-type-post_type menu-item-object-page menu-item-440"><a href="http://osteopathclinic.com/conatacts/">Contacts</a></li>
+</ul></div>          </div>
+<div class="dropdown dropdown-box__info dropdown-lnk">
+<a class="dropdown-toggle drodown-lnk-a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+useful information
+</a>
+<div class="dropdown-menu"><ul id="menu-menu-for-pc-2" class="menu"><li class="nav-item-home-mob menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-76"><a href="http://osteopathclinic.com">Home</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17 current_page_item menu-item-75"><a href="http://osteopathclinic.com/conditions-treated/">Conditions treated</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="http://osteopathclinic.com/gallery/">Gallery</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="http://osteopathclinic.com/testimonials/">Testimonials</a></li>
+<li class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-434"><a href="http://osteopathclinic.com/journal/">Journal</a></li>
+<li class="drop--info menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a href="http://osteopathclinic.com/videos/">Videos</a></li>
+<li class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="http://osteopathclinic.com/exercises/">Exercises</a></li>
+<li class="drop--about development menu-item menu-item-type-post_type menu-item-object-page menu-item-440"><a href="http://osteopathclinic.com/conatacts/">Contacts</a></li>
+</ul></div>          </div>
+<div class="pc-nav__menu">
+<div class="menu-menu-for-pc-container"><ul id="menu-menu-for-pc-3" class="menu"><li class="nav-item-home-mob menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-76"><a href="http://osteopathclinic.com">Home</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17 current_page_item menu-item-75"><a href="http://osteopathclinic.com/conditions-treated/">Conditions treated</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="http://osteopathclinic.com/gallery/">Gallery</a></li>
+<li class="drop--about menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="http://osteopathclinic.com/testimonials/">Testimonials</a></li>
+<li class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-434"><a href="http://osteopathclinic.com/journal/">Journal</a></li>
+<li class="drop--info menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a href="http://osteopathclinic.com/videos/">Videos</a></li>
+<li class="drop--info development menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="http://osteopathclinic.com/exercises/">Exercises</a></li>
+<li class="drop--about development menu-item menu-item-type-post_type menu-item-object-page menu-item-440"><a href="http://osteopathclinic.com/conatacts/">Contacts</a></li>
+</ul></div>          </div> 
+</div>
+</div>
+<div class="info-panel__social info-panel__block">
+<div class="btn-group">
+<a href="linkedin.com" class="top-menu__item link" title="linkedin account link">
+<i aria-hidden="true" class="fa top-menu__icon fa-linkedin"></i>
+</a>
+<a href="facebook.com" class="top-menu__item link" title="facebook account link">
+<i aria-hidden="true" class="fa top-menu__icon fa-facebook"></i>
+</a>
+<a href="google.com" class="top-menu__item link" title="google account link">
+<i aria-hidden="true" class="fa top-menu__icon fa-google"></i>
+</a>
+</div>
+</div> 
+<div class="desktop-nav__button">
+<button  class="button btn-appointment"  data-toggle="modal" data-target="#exampleModal">appointment </button>
+</div>
+</div>
+</div>
+</div>
+<div class="header__info-panel">
+<div class="row align-items-center justify-content-between header-info-panel__content">
+<img src="http://osteopathclinic.com/wp-content/themes/new/img/logo.svg" alt="" class="svg--img mobile-nav__logo">
+<div class="info-panel__address info-panel__block">
+<div class="row align-items-center">
+<div class="info-panel__icon ">
+<i class="fa fa-home" aria-hidden="true"></i>
+</div>
+<div class="info-panel__content">
+<span class=" bold">28A West St</span> <br>
+<span class=" bold">Bourne PE10 9NE</span> <br>
+<span>(next to post office)</span>
+</div>
+</div>  
+</div>
+<div class="info-panel__hours info-panel__block ">
+<div class="row align-items-center">
+<div class="info-panel__icon">
+<i class="fa fa-clock-o" aria-hidden="true"></i>
+</div>
+<div class="info-panel__content">
+<div class="row">
+<div><span>Mon-Fri</span><br><span>Saturday</span><br><span>Sunday</span></div>
+<div  class="info-panel__hours-days"><span>8AM - 8PM</span><br><span>8AM - 1PM</span><br><span>Closed</span></div>
+</div>
+</div>
+</div> 
+</div>
+<div class="info-panel__phones info-panel__block ">
+<i class="fa fa-phone" aria-hidden="true"></i><a href="tel:01778 426000" class="link">01778 426000</a> <br>
+<i class="fa fa-phone" aria-hidden="true"></i><a href="tel:07943 336336" class="link">07943 336336</a>
+</div>
+<div class="info-panel__social info-panel__block">
+<div class="btn-group">
+<a href="linkedin.com" class="top-menu__item link" title="linkedin account link">
+<i aria-hidden="true" class="fa top-menu__icon fa-linkedin"></i>
+</a>
+<a href="facebook.com" class="top-menu__item link" title="facebook account link">
+<i aria-hidden="true" class="fa top-menu__icon fa-facebook"></i>
+</a>
+<a href="google.com" class="top-menu__item link" title="google account link">
+<i aria-hidden="true" class="fa top-menu__icon fa-google"></i>
+</a>
+</div>
+</div> 
+</div>
+</div>
+<div id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+<div role="document" class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 id="exampleModalLabel" class="modal-title">Appointment Form</h5>
+<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+</div>
+<div class="modal-body"><style type='text/css'></style><script type="text/javascript">
+var ea_ajaxurl = 'http://osteopathclinic.com/wp-admin/admin-ajax.php';
+</script>
+<script type="text/template" id="ea-bootstrap-main">
+<div class="ea-bootstrap" style="max-width: <%= settings.width %>;">
+<form class="form-horizontal">
+<% if (settings.layout_cols === '2') { %>
+<div class="col-md-6" style="padding-top: 25px;">
+<% } %>
+<div class="step form-group">
+<div class="block"></div>
+<label class="ea-label col-sm-4 control-label">
+Location                    </label>
+<div class="col-sm-8">
+<select name="location" data-c="location" class="filter form-control">
+<option value='1' selected='selected'>Bourne Osteopath Clinic</option>                        </select>
+</div>
+</div>
+<div class="step form-group">
+<div class="block"></div>
+<label class="ea-label col-sm-4 control-label">
+Service                    </label>
+<div class="col-sm-8">
+<select name="service" data-c="service" class="filter form-control"
+data-currency="$">
+<option value='1' selected='selected' data-price='0.00'>Consultation</option>                        </select>
+</div>
+</div>
+<div class="step form-group">
+<div class="block"></div>
+<label class="ea-label col-sm-4 control-label">
+Doctor                    </label>
+<div class="col-sm-8">
+<select name="worker" data-c="worker" class="filter form-control">
+<option value='1' selected='selected'>Mr Jo Sunner</option>                        </select>
+</div>
+</div>
+<div class="step calendar" class="filter">
+<div class="block"></div>
+<div class="date"></div>
+</div>
+<div class="step" class="filter">
+<div class="block"></div>
+<div class="time"></div>
+</div>
+<% if (settings.layout_cols === '2') { %>
+</div>
+<div class="step final col-md-6">
+<% } else { %>
+<div class="step final">
+<% } %>
+<div class="block"></div>
+<h3><%= settings['trans.personal-informations'] %></h3>
+<small><%= settings['trans.fields'] %></small>
+<% _.each(settings.MetaFields, function(item,key,list) { %>
+<% if (item.visible == "0") { return; } %>
+<div class="form-group">
+<label class="col-sm-4 control-label"><%= item.label %> <% if (item.required == "1") { %>*<% }
+%> : </label>
+<div class="col-sm-8">
+<% if(item.type === 'INPUT') { %>
+<input class="form-control custom-field" maxlength="499" type="text" name="<%= item.slug %>"
+<% if (item.required == "1") { %>data-rule-required="true" data-msg-required="<%=
+settings['trans.field-required'] %>"<% } %> <% if (item.validation == "email") {
+%>data-rule-email="true" data-msg-email="<%= settings['trans.error-email'] %>"<% } %>>
+<% } else if(item.type === 'SELECT') { %>
+<select class="form-control custom-field" name="<%= item.slug %>" <% if (item.required ==
+"1") { %>aria-required="true" <% if (item.required == "1") { %>data-rule-required="true"<% }
+%> data-msg-required="<%= settings['trans.field-required'] %>"<% } %>>
+<% _.each(item.mixed.split(','),function(i,k,l) { %>
+<% if (i == "-") { %>
+<option value="">-</option>
+<% } else { %>
+<option value="<%= i %>"><%= i %></option>
+<% }});%>
+</select>
+<% } else if(item.type === 'TEXTAREA') { %>
+<textarea class="form-control custom-field" rows="3" maxlength="499" style="height: auto;"
+name="<%= item.slug %>" <% if (item.required == "1") { %>data-rule-required="true"
+data-msg-required="<%= settings['trans.field-required'] %>"<% } %>></textarea>
+<% } %>
+</div>
+</div>
+<% });%>
+<h3 id="booking-overview-header"><%= settings['trans.booking-overview'] %></h3>
+<div id="booking-overview"></div>
+<% if (settings['show.iagree'] == '1') { %>
+<div class="form-group">
+<label class="col-sm-4 control-label">&nbsp;</label>
+<div class="col-sm-8">
+<div class="checkbox">
+<label>
+<input id="ea-iagree" name="iagree" type="checkbox" data-rule-required="true"
+data-msg-required="<%= settings['trans.field-iagree'] %>">
+<%= settings['trans.iagree'] %>
+</label>
+</div>
+</div>
+</div>
+<% } %>
+<div class="form-group">
+<div class="col-sm-offset-4 col-sm-8 ea-actions-group" style="display: inline-flex;">
+<button class="ea-btn ea-submit btn btn-primary"><%= settings['trans.submit'] %></button>                            <button class="ea-btn ea-cancel btn btn-default"><%= settings['trans.cancel'] %></button>
+</div>
+</div>
+</div>
+<% if (settings.layout_cols === '2') { %>
+</div>
+<% } %>
+</form>
+</div>
+<div id="ea-loader"></div>
+</script><script type="text/template" id="ea-appointments-overview">
+<small><%= settings['trans.overview-message'] %></small>
+<table>
+<tbody>
+<% if(settings['rtl'] == '1') { %>
+<% if(data.location.indexOf('_') !== 0) { %>
+<tr class="row-location">
+<td class="ea-label"><%= settings['trans.location'] %></td>
+<td class="value"><%= data.location %></td>
+</tr>
+<% } %>
+<% if(data.service.indexOf('_') !== 0) { %>
+<tr class="row-service">
+<td class="ea-label"><%= settings['trans.service'] %></td>
+<td class="value"><%= data.service%></td>
+</tr>
+<% } %>
+<% if(data.worker.indexOf('_') !== 0) { %>
+<tr class="row-worker">
+<td class="ea-label"><%= settings['trans.worker'] %></td>
+<td class="value"><%= data.worker %></td>
+</tr>
+<% } %>
+<% if (settings['price.hide'] !== '1') { %>
+<tr class="row-price">
+<td class="ea-label"><%= settings['trans.price'] %></td>
+<td class="value"><%= data.price %> <%= settings['trans.currency'] %></td>
+</tr>
+<% } %>
+<tr class="row-datetime">
+<td class="ea-label"><%= settings['trans.date-time'] %></td>
+<td class="value"><%= data.date %> <%= data.time %></td>
+</tr>
+<% } else { %>
+<% if(data.location.indexOf('_') !== 0) { %>
+<tr class="row-location">
+<td class="ea-label"><%= settings['trans.location'] %></td>
+<td class="value"><%= data.location %></td>
+</tr>
+<% } %>
+<% if(data.service.indexOf('_') !== 0) { %>
+<tr class="row-service">
+<td class="ea-label"><%= settings['trans.service'] %></td>
+<td class="value"><%= data.service%></td>
+</tr>
+<% } %>
+<% if(data.worker.indexOf('_') !== 0) { %>
+<tr class="row-worker">
+<td class="ea-label"><%= settings['trans.worker'] %></td>
+<td class="value"><%= data.worker %></td>
+</tr>
+<% } %>
+<% if (settings['price.hide'] !== '1') { %>
+<tr class="row-price">
+<td class="ea-label"><%= settings['trans.price'] %></td>
+<% if (settings['currency.before'] == '1') { %>
+<td class="value"><%= settings['trans.currency'] %><%= data.price %></td>
+<% } else { %>
+<td class="value"><%= data.price %><%= settings['trans.currency'] %></td>
+<% } %>
+</tr>
+<% } %>
+<tr class="row-datetime">
+<td class="ea-label"><%= settings['trans.date-time'] %></td>
+<td class="value"><%= data.date_time %></td>
+</tr>
+<% } %>
+</tbody>
+</table>
+<div id="ea-total-amount" style="display: none;" data-total="<%= data.price %>"></div>
+</script>
+<div class="ea-bootstrap bootstrap"></div></div>
+</div>
+</div>
+</div>
+<button id="button-top" class="button">
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</button>
+</header>	<div data-stellar-background-ratio="0.3" class="page__bg page-services__bg"></div>
+<div class="wrapper-fluid">
+<h2>Conditions treated</h2>
+<div class="page-services__row row js-class">
+<div class="page-services__content page__content col-xl-8">
+<div id="accordion" role="tablist" aria-multiselectable="true">
+<div class="card">
+<div id='heading1'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="collapsed">Migraine </a></h5>
+</div>
+<div id='collapse1' role="tabpanel" aria-labelledby="heading1" class="collapse">
+<div class="card-block">
+<p>Migraine is a complex condition with a wide variety of symptoms.  For many people the main feature is a painful headache.  Other symptoms include disturbed vision, sensitivity to light, sound and smells, feeling sick and vomiting.  Migraine attacks can be very frightening and may result in you having to lie still for several hours.</p>
+<p>The symptoms will vary from person to person and individuals may have different symptoms during different attacks.  Your attacks may differ in length and frequency.  Migraine attacks usually last from 4 to 72 hours and most people are free from symptoms between attacks.  Migraine headaches can have an enormous impact on your work, family and social lives.  The most important symptoms to relieve are the tight neck and shoulder muscle spasms.   </p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading2'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2" class="collapsed">Injury rehabilitation </a></h5>
+</div>
+<div id='collapse2' role="tabpanel" aria-labelledby="heading2" class="collapse">
+<div class="card-block">
+<p>In Sports Injury Rehabilitation we treat a range of conditions including acute sports injuries, strains, sprains, muscle, tendon and ligament repairs, tendonitis, hand injuries, shoulder dislocation, foot or ankle dysfunction and surgery rehabilitation.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading3'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3" class="collapsed">Pain relief </a></h5>
+</div>
+<div id='collapse3' role="tabpanel" aria-labelledby="heading3" class="collapse">
+<div class="card-block">
+<p>Physical therapy is perhaps the most mainstream of all non-surgical treatments for back and neck pain.  Unlike other conservative treatments (medication, injections, etc.), physical therapy can also help prevent and/or lessen future recurrences of back or neck pain.  You can get pain relief from incorporating physical therapy, and gentle manipulation in your recovery.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading4'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4" class="collapsed">Shoulder pain treatment </a></h5>
+</div>
+<div id='collapse4' role="tabpanel" aria-labelledby="heading4" class="collapse">
+<div class="card-block">
+<p>Most shoulder problems will benefit from both soft tissue mobilisation and gentle manipulation.  We will assess your condition and put together a personal treatment programme.</p>
+<p>Our aim is to improve symptoms and restore function.  The approach will depend on whether you have a short-term (acute) problem or a long-standing (chronic) condition.  Physical treatment will benefit almost everyone.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading5'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5" class="collapsed">Sciatica treatment </a></h5>
+</div>
+<div id='collapse5' role="tabpanel" aria-labelledby="heading5" class="collapse">
+<div class="card-block">
+<p>The sciatic nerve is the longest nerve in the body, going from the pelvis, through the buttocks, down the legs to the feet.<br />
+The most sciatica symptoms include:</p>
+<p>• Strong, sometimes shooting pains in the limbs and lower back; pain can start in the back and work its way down the buttocks and thighs<br />
+• Numbness and tingling in the limbs<br />
+• Trouble moving or exercising<br />
+• Feeling stiff and unable to flex the feet<br />
+• Pain when sleeping<br />
+• Throbbing and inflammation around the thighs or lower back when sitting or standing for a period of time.</p>
+<p>Gentle mobilisation and spinal manipulation can be helpful in restoring movement, reducing muscle spasm and eliminating pain.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading6'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6" class="collapsed">Arthritic pain treatment </a></h5>
+</div>
+<div id='collapse6' role="tabpanel" aria-labelledby="heading6" class="collapse">
+<div class="card-block">
+<p>If pain is the most common and troublesome symptom of arthritis, fatigue runs a close second.  Often the two are closely related.  Dealing with pain day to day can wear you down and cause fatigue.  Fatigue in turn, can worsen pain and make it more difficult to manage.</p>
+<p>All the experts emphasise that chronic pain is a complex disease requiring an integrated, interdisciplinary approach.  They routinely use various combinations of drug-based, gentle mobilisation and manipulation and as a last resort joint interventional approach.  Most of our patients simply want to remain mobile, and pain free!</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading7'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7" class="collapsed">Muscle pain treatment </a></h5>
+</div>
+<div id='collapse7' role="tabpanel" aria-labelledby="heading7" class="collapse">
+<div class="card-block">
+<p>Symptoms of generalised aches and pain depend upon the underlying cause.  Symptoms may include muscle aches, muscle tenderness, and muscle cramps.  Those with generalised aches and pains may also experience joint pains, joint stiffness, neck pain, and back pain.  One of the important things is to eliminate anything that may require further investigation.  We provide treatments for muscle pain relief as required, depending on the exact symptoms.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading8'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8" class="collapsed">Repetitive strain treatments </a></h5>
+</div>
+<div id='collapse8' role="tabpanel" aria-labelledby="heading8" class="collapse">
+<div class="card-block">
+<p>Repetitive strain injury (RSI) is a general term used to describe the pain felt in muscles, nerves and tendons caused by repetitive movement and overuse.<br />
+The symptoms of RSI can range from mild to severe and usually develop gradually. </p>
+<p>They often include:<br />
+•     Pain, aching or tenderness<br />
+•     Stiffness<br />
+•     Throbbing<br />
+•     Tingling or numbness<br />
+•     Weakness<br />
+•     Cramp</p>
+<p>At first, you might only notice symptoms when you&#8217;re carrying out a particular repetitive task.<br />
+Without treatment, the symptoms of RSI may eventually become constant and cause longer periods of pain.  You may also get swelling in the affected area, which can last for several months.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading9'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9" class="collapsed">Joint pain treatments </a></h5>
+</div>
+<div id='collapse9' role="tabpanel" aria-labelledby="heading9" class="collapse">
+<div class="card-block">
+<p>Symptoms and signs associated with joint pain can include:</p>
+<p>•     Joint redness<br />
+•     Joint swelling,<br />
+•     Joint tenderness,<br />
+•     Joint warmth,<br />
+•     Limping<br />
+•     Locking of the joint,<br />
+•     Loss of range of motion of the joint,<br />
+•     Stiffness,<br />
+•     Weakness</p>
+<p>A variety of treatments, such as strength treatments, range of motion, mobilisation and soft tissue manipulation, can help with both pain and physical function.  Strengthening can also help to improve function joints and offer some benefits for pain.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading10'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10" class="collapsed">Back pain treatments </a></h5>
+</div>
+<div id='collapse10' role="tabpanel" aria-labelledby="heading10" class="collapse">
+<div class="card-block">
+<p>We provide treatments with our hands to move, massage and apply careful manipulation to the muscles, bones and joints in and around your spine to restore movement and relieve pain.<br />
+Most back pain:</p>
+<p>•     Tends to get better or worse depending on your position; for example, it may feel better when sitting or lying down<br />
+•     Typically feels worse when moving; however it&#8217;s not a good idea to avoid moving your back completely, as this can make things worse<br />
+•     Can develop suddenly or gradually<br />
+•     Might sometimes be the result of poor posture or lifting something awkwardly, but often occurs for no apparent reason<br />
+•     May be due to a minor injury such as sprain (pulled ligament) or strain (pulled muscle).<br />
+•     Can be associated with feeling stressed or run down.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading11'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11" class="collapsed">Sports injury treatments </a></h5>
+</div>
+<div id='collapse11' role="tabpanel" aria-labelledby="heading11" class="collapse">
+<div class="card-block">
+<p>‘Hands on treatment’ is what we are all about, not reams of paperwork, or a one size fits all approach.</p>
+<p>Whether you’ve hurt your back, twisted your ankle or have a more serious injury, our sports injury treatments will get you back on your feet quicker.  In fact we are the longest established clinic in the area.  We have a wealth of experience and it’s backed-up by the latest techniques and diagnostic methods that we can use to ensure they get you better for good.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading12'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12" class="collapsed">Neck and Shoulder pain </a></h5>
+</div>
+<div id='collapse12' role="tabpanel" aria-labelledby="heading12" class="collapse">
+<div class="card-block">
+<p>The most common cause of shoulder pain and neck pain is injury to the soft tissues, including the muscles, tendons, and ligaments within these structures. &#8230; Degenerative arthritis of the spine in the neck (cervical spine) can pinch nerves that can cause neck pain, shoulder pain and finally pain, tingling or numbness in the fingers!</p>
+<p>Pain located in the neck is a common medical condition. Neck pain can come from a number of disorders and diseases and can involve any of the tissues in the neck and respond to mobilisation of tissue and gentle manipulation.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading13'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13" class="collapsed">Muscle Spasm </a></h5>
+</div>
+<div id='collapse13' role="tabpanel" aria-labelledby="heading13" class="collapse">
+<div class="card-block">
+<p>Muscle spasms in your back can be so painful that they may have you headed for the emergency room. If you experience a back muscle spasm, make sure to stop and listen to your body. Either your back is telling you not to do that activity ever again, or it&#8217;s warning you that there&#8217;s a more serious underlying issue in your spine.</p>
+<p>If your spasm has occurred as a result of an overuse injury or muscle strain, these measures will get you through the relatively small amount of time it will take for the muscle to heal and go back to normal.</p>
+<p>On the other hand, if your spasm is occurring in response to an underlying spine or disc dysfunction, the osteopathic treatments will help treat the pain, but the underlying cause of the problem will still need to be addressed.<br />
+Whatever the cause of your back muscle spasm, after the acute pain has resolved you will want to consider manipulation and physical movement , as usually a controlled, progressive exercise program that is tailored to fit your needs will give you the best chance of avoiding a future flareup of pain!</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading14'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14" class="collapsed">&#8220;Pins and needles&#8221; in fingers and legs </a></h5>
+</div>
+<div id='collapse14' role="tabpanel" aria-labelledby="heading14" class="collapse">
+<div class="card-block">
+<p>One of the most common times people get that familiar feeling of pins and needles is when their arms or legs “fall asleep.” This sensation usually occurs because you’ve inadvertently put pressure on a nerve. ( this is also known as paresthesia). It resolves once you change your position to remove the pressure from the affected nerve.</p>
+<p>Chronic paresthesia ( pins and needles) may cause a stabbing pain. That may lead to clumsiness of the affected limb. When paresthesia occurs in your legs and feet, it can make it difficult to walk.</p>
+<p>Treatment depends on the cause of your paresthesia. It may be possible to treat your condition by eliminating the cause in some cases or with gentle manipulation.</p>
+<p>You may have a case of chronic paresthesia if those strange sensations don’t go away or they come back far too often. It can complicate your daily life if the symptoms are severe. That’s why it’s so important to try to find the cause.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading15'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15" class="collapsed">Tail bone pain ( coccyxdynia) </a></h5>
+</div>
+<div id='collapse15' role="tabpanel" aria-labelledby="heading15" class="collapse">
+<div class="card-block">
+<p>Your tailbone might have started hurting after something as simple as sitting on a hard bench or other uncomfortable surface for a long period of time. Falls and other traumas can bruise, dislocate, or break your tailbone.</p>
+<p>Pain from an injured tailbone can range from mild to intense. The pain can get worse when you sit down or stand up from a chair, or when you lean back while sitting. You can also feel soreness when you use the bathroom.  Women may feel discomfort in that area during their period. Sometimes the pain can shoot all the way down your legs. Standing or walking should relieve the pressure on your tailbone and ease discomfort.</p>
+<p>Treatments include mobilisation techniques and exercises to strengthen the muscles that support your tailbone. You can also try a technique called coccygeal manipulation.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading16'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false" aria-controls="collapse16" class="collapsed">Pain on coughing and sneezing </a></h5>
+</div>
+<div id='collapse16' role="tabpanel" aria-labelledby="heading16" class="collapse">
+<div class="card-block">
+<p>You’ve probably had this happen to you before: You spent all day moving boxes or performing an intense physical task then your back began to hurt whenever you coughed. Did you ever wonder why that happened or how you could prevent it?</p>
+<p>The bones in your spinal column are held in place by a complex collection of muscles and ligaments. Activities that strain these muscles can cause tiny tears in the tissue, resulting in less stability in the back muscles. When this happens, the condition is called lower back strain, and a symptom of this condition is pain in the back, shoulders, chest, buttocks, and other parts of the body.</p>
+<p>Lower back strain can feel bad even when seemingly unrelated parts of the body are in use. This is because the muscles in the lower back are connected to nerves that stretch throughout the entire body. In addition to painful coughing, lower back strain can cause the following symptoms:</p>
+<p>• Pain in the upper legs and groin area<br />
+• Pain while stretching, yawning, or sneezing<br />
+• Muscle spasms</p>
+<p>Lower back strain tends to be temporary and often goes away on its own. However, some of the symptoms of lower back strain are similar to symptoms of more serious conditions. Even if you’re sure that your problems are caused by lower back strain, it’s a good idea to see get sensible professional advice and treatment options available for you.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading17'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false" aria-controls="collapse17" class="collapsed">Pain on standing and sitting </a></h5>
+</div>
+<div id='collapse17' role="tabpanel" aria-labelledby="heading17" class="collapse">
+<div class="card-block">
+<p>The most common symptom from sciatica is pain. &#8230; Sciatica can also cause knee pain, hip pain, and foot pain. The pain is usually worse with both prolonged sittingand standing. Frequently, the pain is made worse by standing from a low sittingposition, such as standing up after sitting on a toilet seat.</p>
+<p>Slumping or slouching on its own may not cause low back pain, but after the back has been strained or injured, bad posture can make pain worse. &#8220;Good posture&#8221; generally means your ears, shoulders, and hips are in a straight line. If this posture causes pain, you may have another condition such as a problem with a disc or bones in your back. Gentle Manipulation can be very beneficial in the recovery of this painful condition.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div id='heading18'  role="tab" class="card-header">
+<h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false" aria-controls="collapse18" class="collapsed">Foot pain </a></h5>
+</div>
+<div id='collapse18' role="tabpanel" aria-labelledby="heading18" class="collapse">
+<div class="card-block">
+<p>The foot is a complex anatomical structure that may be affected by disease within the body or the foot itself.</p>
+<p>The arches of foot are the primary structures that control the amount of ground force transmitted into the body.</p>
+<p>When pain due to foot pain interferes with your normal activities, you should seek medical advice.</p>
+<p>Treatment of foot pain will depend on the cause of the pain and may involve medication, strengthening, stretching, and possibly the use of manipulation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lk col-xl-4"> 
+<div class="page-services__banner">
+<p>Whatever the cause, the pain is usually quite restricting.</p>
+<p>Treatment should be sought ASAP</p><i aria-hidden="true" class="fa fa-phone"></i><a href="tel:01778 426000" class="top-menu__link link">01778 426000</a><br><i aria-hidden="true" class="fa fa-mobile "></i><a href="tel:07943 336336" class="top-menu__link link">07943 336336</a><br>
+<button data-toggle="modal" data-target="#exampleModal" class="button btn-appointment"> appointment </button>
+</div>
+</div>
+</div>
+</div>
+   <footer class="footer">
+<div class="wrapper-fluid">
+<div class="footer__row wow fadeIn" data-wow-duration="1.5s"  data-wow-delay="0.5s" >
+<div class="footer__address"><i aria-hidden="true" class="fa fa-map fa-2x"></i>
+<a href="">Pulse Practice, West Street, Bourne, PE109NE</a>
+</div>
+<div class="footer__hours">
+<div class="footer-hours__row"><i aria-hidden="true" class="fa fa-clock-o fa-2x"></i>
+<table class="footer-hours__content">
+<tr>
+<th>Mon-Fri</th>
+<th>8AM - 8PM</th>
+</tr>
+<tr>
+<th>Saturday</th>
+<th>8AM - 1PM</th>
+</tr>
+<tr>
+<th>Sunday</th>
+<th>Closed</th>
+</tr>
+</table>
+</div>
+</div>
+<div class="footer__rights">
+<p>&copy; 2017  Bourne Osteopath Clinic &raquo; Page__conditions-treated. All Rights Reserved.</p>
+</div>
+</div>
+<div class="footer__rights--MOB">
+<p>&copy; 2017  Bourne Osteopath Clinic &raquo; Page__conditions-treated. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<!--     <script src="http://osteopathclinic.com/wp-content/themes/new/js/jquery.min.js"></script> -->
+<!--     <script src="http://osteopathclinic.com/wp-content/themes/new/js/vendor.js"></script>
+<script src="http://osteopathclinic.com/wp-content/themes/new/js/main.js"></script> -->
+<!-- <link rel='stylesheet' id='ea-bootstrap-css'  href='http://osteopathclinic.com/wp-content/plugins/easy-appointments/components/bootstrap/ea-css/bootstrap.css?ver=4.8.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ea-admin-awesome-css-css'  href='http://osteopathclinic.com/wp-content/plugins/easy-appointments/css/font-awesome.css?ver=4.8.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ea-frontend-bootstrap-css'  href='http://osteopathclinic.com/wp-content/plugins/easy-appointments/css/eafront-bootstrap.css?ver=4.8.2' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//osteopathclinic.com/wp-content/cache/wpfc-minified/e9089ef2df9350daa8752e12384f7987/1506958430index.css" media="all"/>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/flickr-justified-gallery/js/jquery.justifiedGallery.min.js?ver=v3.6'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/flickr-justified-gallery/js/flickrJustifiedGalleryWPPlugin.js?ver=v3.4.0'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/justified-gallery/assets/js/jquery.justifiedGallery.min.js?ver=1.2.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/justified-gallery/includes/Lightbox/Photoswipe/assets/jquery.mousewheel.min.js?ver=1.2.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/justified-gallery/includes/Lightbox/Photoswipe/assets/photoswipe-ui-default.min.js?ver=1.2.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/justified-gallery/includes/Lightbox/Photoswipe/assets/photoswipe.min.js?ver=1.2.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/justified-gallery/includes/Lightbox/Photoswipe/assets/jquery.photoswipe.js?ver=1.2.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/wp-carousel-free/assets/js/slick.min.js?ver=20170501'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-includes/js/wp-embed.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/easy-appointments/components/bootstrap/js/bootstrap.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/easy-appointments/js/libs/moment.min.js?ver=4.8.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ea_settings = {"mail.pending":"<p>pending<\/p>","mail.reservation":"reservation","mail.canceled":"canceled","mail.confirmed":"confirmed","mail.admin":"","trans.service":"Service","trans.location":"Location","trans.worker":"Doctor","trans.done_message":"Your request has been sent. Thank you!","time_format":"HH:mm","trans.currency":"$","pending.email":"olnewlife@gmail.com","price.hide":"1","datepicker":"en-GB","send.user.email":"1","show.iagree":"0","cancel.scroll":"service","multiple.work":"1","compatibility.mode":"0","pending.subject.email":"New Reservation #id#","send.from.email":"","css.off":"0","submit.redirect":"https:\/\/osteopathclinic.com","pending.subject.visitor.email":"Reservation #id#","block.time":"360","max.appointments":"2","pre.reservation":"0","default.status":"pending","send.worker.email":"1","currency.before":"0","check":"a93cf782e4","width":"800px","scroll_off":"true","layout_cols":"2","start_of_week":"1","rtl":"0","default_date":"+1d","trans.please-select-new-date":"Please select another day","trans.personal-informations":"Personal information","trans.field-required":"This field is required.","trans.error-email":"Please enter a valid email address","trans.error-name":"Please enter at least 3 characters.","trans.error-phone":"Please enter at least 3 digits.","trans.fields":"Fields with * are required","trans.email":"Email","trans.name":"Name","trans.phone":"Phone","trans.comment":"Comment","trans.overview-message":"Please check your appointment details below and confirm:","trans.booking-overview":"Booking overview","trans.date-time":"Date & time","trans.submit":"Submit","trans.cancel":"Cancel","trans.price":"Price","trans.iagree":"I agree with terms and conditions","trans.field-iagree":"You must agree with terms and conditions","trans.nonce-expired":"Form validation code expired. Please refresh page in order to continue.","trans.internal-error":"Internal error. Please try again later.","date_format":"DD.MM.YYYY","default_datetime_format":"YYYY-MM-DD HH:mm","MetaFields":[{"id":"1","type":"INPUT","slug":"email","label":"EMail","mixed":"","default_value":"","visible":"1","required":"1","validation":"email","position":"1"},{"id":"2","type":"INPUT","slug":"name","label":"Name","mixed":"","default_value":"","visible":"1","required":"1","validation":"minlength-3","position":"2"},{"id":"3","type":"INPUT","slug":"phone","label":"Phone","mixed":"","default_value":"","visible":"1","required":"1","validation":"minlength-3","position":"3"},{"id":"4","type":"TEXTAREA","slug":"description","label":"Description","mixed":"","default_value":"","visible":"1","required":"0","validation":null,"position":"4"}]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://osteopathclinic.com/wp-content/plugins/easy-appointments/js/frontend-bootstrap.js?ver=4.8.2'></script>
+<script type="text/javascript">(function($){$(document).ready(function(){var $gallery=$('.dgwt-jg-gallery'),$item=$('.dgwt-jg-item');if($gallery.length>0&&$item.length>0){$item.children('img').each(function(){if(typeof $(this).attr('srcset')!=='undefined'){$(this).attr('data-jg-srcset',$(this).attr('srcset'));$(this).removeAttr('srcset')}});$gallery.justifiedGallery({lastRow:'nojustify',captions:!1,margins:30,rowHeight:200,maxRowHeight:-1,thumbnailPath:function(currentPath,width,height,image){if(typeof $(image).data('jg-srcset')==='undefined'){return currentPath}var srcset=$(image).data('jg-srcset');if($(image).length>0&&srcset.length>0){var path,sizes=[],sizesTemp=[],urls=srcset.split(",");if(urls.length>0){for(i=0;i<urls.length;i++){var url,sizeW,item=urls[i].trim().split(" ");if(typeof item[0]!='undefined'&&typeof item[1]!='undefined'){var sizeW=item[1].replace('w','');sizesTemp[sizeW]={width:item[1].replace('w',''),url:item[0]}}}for(i=0;i<sizesTemp.length;i++){if(sizesTemp[i]){sizes.push(sizesTemp[i])}}}for(i=0;i<sizes.length;i++){if(sizes[i].width>=width){return sizes[i].url}}return currentPath}else{return currentPath}}}).on('jg.complete',function(e){$item.each(function(){$(this).on('mouseenter mouseleave',function(e){var $this=$(this),width=$this.width(),height=$this.height();var x=(e.pageX-$this.offset().left-(width/2))*(width>height?(height/width):1),y=(e.pageY-$this.offset().top-(height/2))*(height>width?(width/height):1);var dir_num=Math.round((((Math.atan2(y,x)*(180/Math.PI))+180)/90)+3)%4,directions=['top','right','bottom','left'];if(e.type==='mouseenter'){$this.removeClass(function(index,css){return(css.match(/(^|\s)hover-out-\S+/g)||[]).join(' ')});$this.addClass('hover-in-'+directions[dir_num])}if(e.type==='mouseleave'){$this.removeClass(function(index,css){return(css.match(/(^|\s)hover-in-\S+/g)||[]).join(' ')});$this.addClass('hover-out-'+directions[dir_num])}})})})}})}(jQuery))</script><script type="text/javascript">(function($){$(document).ready(function(){var $gallery=$('.dgwt-jg-gallery'),$item=$('.dgwt-jg-item');if($gallery.length>0&&$item.length>0){$gallery.photoswipe({shareButtons:[{id:'facebook',label:'Share on Facebook',url:'https://www.facebook.com/sharer/sharer.php?u={{image_url}}'},{id:'twitter',label:'Tweet',url:'https://twitter.com/intent/tweet?&url={{url}}'},{id:'pinterest',label:'Pin it',url:'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}'},{id:'download',label:'Download image',url:'{{raw_image_url}}',download:!0}]})}})}(jQuery))</script>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="pswp__bg"></div>
+<div class="pswp__scroll-wrap">
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div><div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class="pswp__preloader"><div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"> </button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"> </button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div><!-- wp_footer called -->
+</body>
+</html><!-- WP Fastest Cache file was created in 0.17190718650818 seconds, on 03-10-17 22:02:01 -->

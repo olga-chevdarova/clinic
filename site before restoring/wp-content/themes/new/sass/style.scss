@@ -1,0 +1,170 @@
+/*
+Theme Name: Bourne Osteopath Clinic
+Theme URI: http://osteopathclinic.com
+Author: Olga Chevdarova
+Version: 1.0
+*/
+
+//Colors
+$blue: #199ed8;
+$text-color: #292b2c;
+$white: hsl(0, 0%, 100%);
+$grey:#F2F2F2;
+$blue2:#07638a;
+
+
+//Fonts
+
+$lato: 'Lato', sans-serif;
+$kaushan: 'Kaushan Script', cursive;
+
+
+body {
+    font-family: $lato;
+    line-height: 1.5em;
+    font-size: 1em;
+    width: 100%;
+    min-width: 20em;
+    color: $text-color;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+     line-height:1.5em;
+     text-transform:uppercase;
+     // padding:0.5em 0em 0.5em 0.8em;
+     padding: 1em 0;
+}
+h2:before {
+    content: '\f054';
+    font-family: FontAwesome;
+    display: inline-block;
+    color: $blue;
+    padding:0 0.5em;
+
+}
+
+h3 {   
+    font-size: 1.1em;
+     line-height:1.5em;
+     font-weight:600;
+     // padding: 0em 1em;
+
+}
+
+h4 {
+    padding:0 0.8em;
+    font-size:1.2em;
+    font-weight:600;
+    margin: 1em 0 0.7em;
+}
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+svg {
+    height:1%;
+}
+.alt-image {
+    display: none;
+}
+
+.non-visible {
+    opacity:0;
+}
+
+
+.svg-item {
+    width: 100%;
+    height: auto;
+}
+
+
+a , a:focus, a:visited, a:hover, a:active {
+    outline: none;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+    color:$blue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.row {
+    margin: 0;
+}
+
+/* .darker {
+    background-color:$text-color;
+    opacity:0;
+    position: fixed;
+    z-index: 150;
+    width: 100%;
+    height: 100vh;
+    display:none;
+} */
+#wrap {
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0.5;
+}
+
+#wrap-trans {
+     position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+}
+.button {
+    -webkit-appearance: none;
+    border: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-appointment {
+    border-radius: 0.3em;
+    background-color: $blue;
+    color: $white;
+    padding: 0.7em 1em;
+    font-size:1em;
+
+}
+
+    .btn-learn-more {
+        -webkit-appearance: none;
+        border-radius: 0.3em;
+        border: 0;
+        background-color: $blue;
+        color: $white;
+        font-weight: 300;
+        font-size: 1em;
+        padding: 0.6em 1em;
+        text-transform: uppercase;
+    }
+
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+.red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#f00; }
+.marked-text {
+     color:$blue;
+ font-weight:600;
+}
+@import 'welcome-page.scss';

@@ -1,0 +1,44 @@
+{
+  "name": "clinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olga-chevdarova/clinic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olga-chevdarova/clinic/issues"
+  },
+  "homepage": "https://github.com/olga-chevdarova/clinic#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-connect": "^5.0.0",
+    "gulp-google-webfonts": "0.0.14",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-uncss": "^1.0.6",
+    "gulp-useref": "^3.1.2",
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^1.2.2",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp-htmlmin": "^3.0.0"
+  }
+}

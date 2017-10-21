@@ -1,0 +1,513 @@
+0000.000 (0) Opened log file at time: Wed, 13 Sep 2017 09:17:47 +0000 on http://osteopathclinic.com
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.7 WP: 4.8.1 PHP: 5.6.31 (cgi-fcgi, Linux cpanel35.uk2.net 2.6.32-673.26.1.lve1.4.29.el6.x86_64 #1 SMP Tue Jun 20 13:27:00 EDT 2017 x86_64) MySQL: 5.6.37 WPLANG: en_GB Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 10.9M | 12.3M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 1079218.1 MB
+0000.004 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.019 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.020 (0) Set semaphore last lock (fd) time to 2017-09-13 09:17:47
+0000.021 (0) Semaphore lock (fd) complete
+0000.024 (0) Backup run: resumption=0, nonce=9531d1f70b38, begun at=1505294267 (0s ago), job type=backup
+0000.026 (0) Scheduling a resumption (1) after 300 seconds (1505294567) in case this run gets aborted
+0000.052 (0) Checking if we have a zip executable available
+0000.060 (0) Testing: /usr/bin/zip
+0000.061 (0) PHP event: code E_WARNING: escapeshellarg() has been disabled for security reasons (line 1448, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.062 (0) PHP event: code E_WARNING: popen() has been disabled for security reasons (line 1453, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.062 (0) Error: popen failed
+0000.064 (0) Creation of backups of directories: beginning
+0000.066 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.164 (0) Total entities for the zip file: 409 directories, 2340 files (0 skipped as non-modified), 38 MB
+0000.176 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.195 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.214 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.234 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.252 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.263 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18 MB, 2340 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0004.784 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 600 files added (on-disk size: 6543.1 KB)
+0004.794 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 700 files added (on-disk size: 6543.1 KB)
+0004.805 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 800 files added (on-disk size: 6543.1 KB)
+0004.817 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 900 files added (on-disk size: 6543.1 KB)
+0004.831 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1000 files added (on-disk size: 6543.1 KB)
+0004.832 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.9 MB, 2340 files batched, 501 (1002) added so far); re-opening (prior size: 6543.1 KB)
+0012.371 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1100 files added (on-disk size: 7504.7 KB)
+0012.435 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1200 files added (on-disk size: 7504.7 KB)
+0012.461 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1300 files added (on-disk size: 7504.7 KB)
+0012.484 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1400 files added (on-disk size: 7504.7 KB)
+0012.517 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1500 files added (on-disk size: 7504.7 KB)
+0012.526 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.1 MB, 2340 files batched, 501 (1503) added so far); re-opening (prior size: 7504.7 KB)
+0020.528 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1600 files added (on-disk size: 8955.4 KB)
+0020.563 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1700 files added (on-disk size: 8955.4 KB)
+0020.620 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1800 files added (on-disk size: 8955.4 KB)
+0020.670 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 1900 files added (on-disk size: 8955.4 KB)
+0020.717 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 2000 files added (on-disk size: 8955.4 KB)
+0020.723 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.3 MB, 2340 files batched, 501 (2004) added so far); re-opening (prior size: 8955.4 KB)
+0037.343 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 2100 files added (on-disk size: 15865.4 KB)
+0037.366 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 2200 files added (on-disk size: 15865.4 KB)
+0037.404 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip.tmp: 2300 files added (on-disk size: 15865.4 KB)
+0054.773 (0) Created plugins zip (0) - 17698.7 KB in 54.7 s (323.5 KB/s) (sha1: ba6b1fb29b854de4ba752ca64dd38827f772dcbd, sha256: 9b9615e8a2fed1531e83a0ac36ef4ac1109cfcbf8ebca3b5cc6847a2629f96ad)
+0054.782 (0) Beginning creation of dump of themes (split every: 400 MB)
+0054.787 (0) Total entities for the zip file: 23 directories, 115 files (0 skipped as non-modified), 8.5 MB
+0054.791 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0060.265 (0) Created themes zip (0) - 5882.3 KB in 5.5 s (1073.1 KB/s) (sha1: 6c664d85d1d90eab8fa5045c9f4c408484dd5f4b, sha256: 8f4a0008fe12043f2ab6c5f7688d9d05753d8b3a5764864839123ca06ef75c29)
+0060.268 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0060.268 (0) Looking for candidates to back up in: /home/osteopa2/public_html/wp-content/uploads
+0060.269 (0) finding files: cache: adding to list (1)
+0060.269 (0) finding files: knee-and-back-pain-150x150.jpg: adding to list (2)
+0060.270 (0) finding files: video-gallery: adding to list (3)
+0060.271 (0) finding files: Osteopath-in-London-Sports-Injury-150x150.jpg: adding to list (4)
+0060.271 (0) finding files: knee-and-back-pain-300x294.jpg: adding to list (5)
+0060.272 (0) finding files: Osteopath-in-London-Sports-Injury-400x400.jpg: adding to list (6)
+0060.272 (0) finding files: knee-and-back-pain-1024x1004.jpg: adding to list (7)
+0060.273 (0) finding files: Osteopath-in-London-Sports-Injury.jpg: adding to list (8)
+0060.274 (0) finding files: jo-150x150.jpg: adding to list (9)
+0060.274 (0) finding files: jo.jpg: adding to list (10)
+0060.275 (0) finding files: logo.svg: adding to list (11)
+0060.275 (0) finding files: Osteopath-in-London-Sports-Injury-1024x683.jpg: adding to list (12)
+0060.276 (0) finding files: summer-healthy-fitness-athlete-lifestyle_1150-966-400x400.jpg: adding to list (13)
+0060.277 (0) finding files: knee-and-back-pain-768x753.jpg: adding to list (14)
+0060.277 (0) finding files: summer-healthy-fitness-athlete-lifestyle_1150-966-150x150.jpg: adding to list (15)
+0060.278 (0) finding files: AAPL: adding to list (16)
+0060.285 (0) finding files: Osteopath-in-London-Sports-Injury-768x512.jpg: adding to list (17)
+0060.286 (0) finding files: knee-and-back-pain.jpg: adding to list (18)
+0060.286 (0) finding files: Osteopath-in-London-Sports-Injury-300x200.jpg: adding to list (19)
+0060.287 (0) finding files: summer-healthy-fitness-athlete-lifestyle_1150-966.jpg: adding to list (20)
+0060.287 (0) finding files: summer-healthy-fitness-athlete-lifestyle_1150-966-300x200.jpg: adding to list (21)
+0060.288 (0) finding files: jo-300x300.jpg: adding to list (22)
+0060.289 (0) finding files: knee-and-back-pain-400x400.jpg: adding to list (23)
+0060.289 (0) finding files: 2017: adding to list (24)
+0060.290 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0060.296 (0) Total entities for the zip file: 26 directories, 197 files (0 skipped as non-modified), 74.7 MB
+0060.300 (0) Zip: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0060.305 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (33.4 MB, 197 files batched, 166 (166) added so far); re-opening (prior size: 0 KB)
+0094.222 (0) A useful amount of data was added after this amount of zip processing: 34.9 s (normalised: 26.1 s, rate: 980.8 KB/s)
+0094.226 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (33 MB, 197 files batched, 23 (189) added so far); re-opening (prior size: 33766.5 KB)
+0158.875 (0) PHP event: code E_WARNING: Error while sending QUERY packet. PID=576617 (line 1877, wp-includes/wp-db.php)
+0158.885 (0) A useful amount of data was added after this amount of zip processing: 65.5 s (normalised: 49.6 s, rate: 515.7 KB/s)
+0231.868 (0) PHP event: code E_WARNING: Error while sending QUERY packet. PID=576617 (line 1877, wp-includes/wp-db.php)
+0234.148 (0) Created uploads zip (0) - 75038.6 KB in 173.9 s (431.6 KB/s) (sha1: 08f33f2f101b272382fef5117d856b210404bfb6, sha256: 2d819184c043a1da9d372c0e2537bd51e0370170650b5debf99502ff7ecc8787)
+0234.158 (0) Beginning backup of other directories found in the content directory (index: 0)
+0234.159 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0234.159 (0) Looking for candidates to back up in: /home/osteopa2/public_html/wp-content
+0234.162 (0) finding files: uploads: skipping: this is the uploads directory
+0234.162 (0) finding files: languages: adding to list (1)
+0234.166 (0) finding files: upgrade: skipping: excluded by options
+0234.167 (0) finding files: updraft: skipping: this is the updraft directory
+0234.168 (0) finding files: themes: skipping: this is the themes directory
+0234.168 (0) finding files: plugins: skipping: this is the plugins directory
+0234.169 (0) finding files: index.php: adding to list (2)
+0234.172 (0) Total entities for the zip file: 3 directories, 37 files (0 skipped as non-modified), 4 MB
+0234.781 (0) Created others zip (0) - 1029.2 KB in 0.6 s (1684.1 KB/s) (sha1: 0fd7347d19de1ca5adfcc612548ab67a03b33db6, sha256: 3400984c319be36fc1891f293e5ee5bae53433f49ad314c53ae8d7a0b7688413)
+0234.815 (0) Saving backup status to database (elements: 8)
+0234.817 (0) Beginning creation of database dump (WordPress DB)
+0234.819 (0) Testing: /usr/bin/mysqldump
+0234.820 (0) PHP event: code E_WARNING: escapeshellarg() has been disabled for security reasons (line 1370, wp-content/plugins/updraftplus/class-updraftplus.php)
+0234.820 (0) PHP event: code E_WARNING: escapeshellarg() has been disabled for security reasons (line 1375, wp-content/plugins/updraftplus/class-updraftplus.php)
+0234.821 (0) PHP event: code E_WARNING: escapeshellarg() has been disabled for security reasons (line 1375, wp-content/plugins/updraftplus/class-updraftplus.php)
+0234.821 (0) PHP event: code E_WARNING: escapeshellarg() has been disabled for security reasons (line 1375, wp-content/plugins/updraftplus/class-updraftplus.php)
+0234.821 (0) PHP event: code E_WARNING: popen() has been disabled for security reasons (line 1377, wp-content/plugins/updraftplus/class-updraftplus.php)
+0234.822 (0) Error: popen failed
+0234.829 (0) Table wp_options: Total expected rows (approximate): 438
+0234.889 (0) Table wp_options: Total rows added: 439 in 0.06 seconds
+0234.896 (0) Table wp_options: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_options.table.gz - 236.4 KB)
+0234.900 (0) Table wp_users: Total expected rows (approximate): 0
+0234.902 (0) Table wp_users: Total rows added: 1 in 0.00 seconds
+0234.902 (0) Table wp_users: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_users.table.gz - 0.6 KB)
+0234.905 (0) Table wp_usermeta: Total expected rows (approximate): 26
+0234.908 (0) Table wp_usermeta: Total rows added: 26 in 0.00 seconds
+0234.909 (0) Table wp_usermeta: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_usermeta.table.gz - 1.6 KB)
+0234.911 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0234.913 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0234.914 (0) Table wp_commentmeta: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0234.917 (0) Table wp_comments: Total expected rows (approximate): 0
+0234.919 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0234.920 (0) Table wp_comments: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_comments.table.gz - 0.8 KB)
+0234.923 (0) Table wp_links: Total expected rows (approximate): 0
+0234.925 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0234.926 (0) Table wp_links: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_links.table.gz - 0.4 KB)
+0234.929 (0) Table wp_postmeta: Total expected rows (approximate): 587
+0234.942 (0) Table wp_postmeta: Total rows added: 587 in 0.01 seconds
+0234.943 (0) Table wp_postmeta: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_postmeta.table.gz - 11.6 KB)
+0234.947 (0) Table wp_posts: Total expected rows (approximate): 189
+0234.971 (0) Table wp_posts: Total rows added: 189 in 0.02 seconds
+0234.973 (0) Table wp_posts: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_posts.table.gz - 16.5 KB)
+0234.976 (0) Table wp_term_relationships: Total expected rows (approximate): 66
+0234.978 (0) Table wp_term_relationships: Total rows added: 66 in 0.00 seconds
+0234.978 (0) Table wp_term_relationships: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_term_relationships.table.gz - 0.5 KB)
+0234.981 (0) Table wp_term_taxonomy: Total expected rows (approximate): 12
+0234.983 (0) Table wp_term_taxonomy: Total rows added: 12 in 0.00 seconds
+0234.983 (0) Table wp_term_taxonomy: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_term_taxonomy.table.gz - 0.6 KB)
+0234.986 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0234.988 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0234.989 (0) Table wp_termmeta: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_termmeta.table.gz - 0.4 KB)
+0234.992 (0) Table wp_terms: Total expected rows (approximate): 12
+0234.994 (0) Table wp_terms: Total rows added: 12 in 0.00 seconds
+0234.994 (0) Table wp_terms: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_terms.table.gz - 0.6 KB)
+0234.997 (0) Table wp_ab_appointments: Total expected rows (approximate): 0
+0234.999 (0) Table wp_ab_appointments: Total rows added: 0 in 0.00 seconds
+0234.999 (0) Table wp_ab_appointments: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_appointments.table.gz - 0.5 KB)
+0235.003 (0) Table wp_ab_categories: Total expected rows (approximate): 0
+0235.004 (0) Table wp_ab_categories: Total rows added: 0 in 0.00 seconds
+0235.005 (0) Table wp_ab_categories: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_categories.table.gz - 0.3 KB)
+0235.018 (0) Table wp_ab_coupon_services: Total expected rows (approximate): 0
+0235.020 (0) Table wp_ab_coupon_services: Total rows added: 0 in 0.00 seconds
+0235.021 (0) Table wp_ab_coupon_services: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_coupon_services.table.gz - 0.4 KB)
+0235.023 (0) Table wp_ab_coupons: Total expected rows (approximate): 0
+0235.024 (0) Table wp_ab_coupons: Total rows added: 0 in 0.00 seconds
+0235.025 (0) Table wp_ab_coupons: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_coupons.table.gz - 0.3 KB)
+0235.042 (0) Table wp_ab_customer_appointments: Total expected rows (approximate): 0
+0235.043 (0) Table wp_ab_customer_appointments: Total rows added: 0 in 0.00 seconds
+0235.044 (0) Table wp_ab_customer_appointments: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_customer_appointments.table.gz - 0.6 KB)
+0235.051 (0) Table wp_ab_customers: Total expected rows (approximate): 0
+0235.052 (0) Table wp_ab_customers: Total rows added: 0 in 0.00 seconds
+0235.053 (0) Table wp_ab_customers: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_customers.table.gz - 0.3 KB)
+0235.055 (0) Table wp_ab_holidays: Total expected rows (approximate): 0
+0235.057 (0) Table wp_ab_holidays: Total rows added: 0 in 0.00 seconds
+0235.058 (0) Table wp_ab_holidays: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_holidays.table.gz - 0.4 KB)
+0235.061 (0) Table wp_ab_notifications: Total expected rows (approximate): 28
+0235.064 (0) Table wp_ab_notifications: Total rows added: 28 in 0.00 seconds
+0235.065 (0) Table wp_ab_notifications: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_notifications.table.gz - 1.7 KB)
+0235.068 (0) Table wp_ab_payments: Total expected rows (approximate): 0
+0235.070 (0) Table wp_ab_payments: Total rows added: 0 in 0.00 seconds
+0235.071 (0) Table wp_ab_payments: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_payments.table.gz - 0.4 KB)
+0235.074 (0) Table wp_ab_schedule_item_breaks: Total expected rows (approximate): 0
+0235.076 (0) Table wp_ab_schedule_item_breaks: Total rows added: 0 in 0.00 seconds
+0235.077 (0) Table wp_ab_schedule_item_breaks: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_schedule_item_breaks.table.gz - 0.4 KB)
+0235.080 (0) Table wp_ab_sent_notifications: Total expected rows (approximate): 0
+0235.081 (0) Table wp_ab_sent_notifications: Total rows added: 0 in 0.00 seconds
+0235.082 (0) Table wp_ab_sent_notifications: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_sent_notifications.table.gz - 0.4 KB)
+0235.085 (0) Table wp_ab_series: Total expected rows (approximate): 0
+0235.086 (0) Table wp_ab_series: Total rows added: 0 in 0.00 seconds
+0235.087 (0) Table wp_ab_series: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_series.table.gz - 0.3 KB)
+0235.089 (0) Table wp_ab_services: Total expected rows (approximate): 2
+0235.091 (0) Table wp_ab_services: Total rows added: 2 in 0.00 seconds
+0235.092 (0) Table wp_ab_services: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_services.table.gz - 0.6 KB)
+0235.095 (0) Table wp_ab_staff: Total expected rows (approximate): 0
+0235.096 (0) Table wp_ab_staff: Total rows added: 1 in 0.00 seconds
+0235.097 (0) Table wp_ab_staff: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_staff.table.gz - 0.5 KB)
+0235.099 (0) Table wp_ab_staff_schedule_items: Total expected rows (approximate): 7
+0235.101 (0) Table wp_ab_staff_schedule_items: Total rows added: 7 in 0.00 seconds
+0235.102 (0) Table wp_ab_staff_schedule_items: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_staff_schedule_items.table.gz - 0.5 KB)
+0235.104 (0) Table wp_ab_staff_services: Total expected rows (approximate): 2
+0235.106 (0) Table wp_ab_staff_services: Total rows added: 2 in 0.00 seconds
+0235.106 (0) Table wp_ab_staff_services: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_staff_services.table.gz - 0.5 KB)
+0235.109 (0) Table wp_cvg_gallery: Total expected rows (approximate): 0
+0235.111 (0) Table wp_cvg_gallery: Total rows added: 1 in 0.00 seconds
+0235.111 (0) Table wp_cvg_gallery: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_cvg_gallery.table.gz - 0.4 KB)
+0235.114 (0) Table wp_cvg_videos: Total expected rows (approximate): 0
+0235.116 (0) Table wp_cvg_videos: Total rows added: 0 in 0.00 seconds
+0235.116 (0) Table wp_cvg_videos: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_cvg_videos.table.gz - 0.4 KB)
+0235.120 (0) Table wp_ea_appointments: Total expected rows (approximate): 1
+0235.121 (0) Table wp_ea_appointments: Total rows added: 2 in 0.00 seconds
+0235.122 (0) Table wp_ea_appointments: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_appointments.table.gz - 0.7 KB)
+0235.125 (0) Table wp_ea_connections: Total expected rows (approximate): 2
+0235.126 (0) Table wp_ea_connections: Total rows added: 2 in 0.00 seconds
+0235.127 (0) Table wp_ea_connections: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_connections.table.gz - 0.6 KB)
+0235.130 (0) Table wp_ea_error_logs: Total expected rows (approximate): 0
+0235.131 (0) Table wp_ea_error_logs: Total rows added: 0 in 0.00 seconds
+0235.132 (0) Table wp_ea_error_logs: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_error_logs.table.gz - 0.3 KB)
+0235.135 (0) Table wp_ea_fields: Total expected rows (approximate): 8
+0235.136 (0) Table wp_ea_fields: Total rows added: 8 in 0.00 seconds
+0235.137 (0) Table wp_ea_fields: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_fields.table.gz - 0.5 KB)
+0235.140 (0) Table wp_ea_locations: Total expected rows (approximate): 0
+0235.141 (0) Table wp_ea_locations: Total rows added: 1 in 0.00 seconds
+0235.142 (0) Table wp_ea_locations: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_locations.table.gz - 0.4 KB)
+0235.145 (0) Table wp_ea_meta_fields: Total expected rows (approximate): 4
+0235.146 (0) Table wp_ea_meta_fields: Total rows added: 4 in 0.00 seconds
+0235.147 (0) Table wp_ea_meta_fields: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_meta_fields.table.gz - 0.5 KB)
+0235.150 (0) Table wp_ea_options: Total expected rows (approximate): 31
+0235.151 (0) Table wp_ea_options: Total rows added: 31 in 0.00 seconds
+0235.152 (0) Table wp_ea_options: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_options.table.gz - 0.8 KB)
+0235.155 (0) Table wp_ea_services: Total expected rows (approximate): 0
+0235.156 (0) Table wp_ea_services: Total rows added: 1 in 0.00 seconds
+0235.157 (0) Table wp_ea_services: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_services.table.gz - 0.4 KB)
+0235.160 (0) Table wp_ea_staff: Total expected rows (approximate): 0
+0235.161 (0) Table wp_ea_staff: Total rows added: 1 in 0.00 seconds
+0235.162 (0) Table wp_ea_staff: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_staff.table.gz - 0.4 KB)
+0235.165 (0) Table wp_huge_it_video_params: Total expected rows (approximate): 44
+0235.168 (0) Table wp_huge_it_video_params: Total rows added: 44 in 0.00 seconds
+0235.169 (0) Table wp_huge_it_video_params: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_huge_it_video_params.table.gz - 1.2 KB)
+0235.171 (0) Table wp_huge_it_video_players: Total expected rows (approximate): 2
+0235.173 (0) Table wp_huge_it_video_players: Total rows added: 2 in 0.00 seconds
+0235.174 (0) Table wp_huge_it_video_players: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_huge_it_video_players.table.gz - 0.5 KB)
+0235.176 (0) Table wp_huge_it_videos: Total expected rows (approximate): 8
+0235.178 (0) Table wp_huge_it_videos: Total rows added: 8 in 0.00 seconds
+0235.179 (0) Table wp_huge_it_videos: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_huge_it_videos.table.gz - 1 KB)
+0235.181 (0) Table wp_totalsoft_fonts: Total expected rows (approximate): 125
+0235.184 (0) Table wp_totalsoft_fonts: Total rows added: 125 in 0.00 seconds
+0235.185 (0) Table wp_totalsoft_fonts: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_fonts.table.gz - 1.4 KB)
+0235.188 (0) Table wp_totalsoft_galleryv_ctpg: Total expected rows (approximate): 2
+0235.191 (0) Table wp_totalsoft_galleryv_ctpg: Total rows added: 2 in 0.00 seconds
+0235.192 (0) Table wp_totalsoft_galleryv_ctpg: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_ctpg.table.gz - 1 KB)
+0235.195 (0) Table wp_totalsoft_galleryv_dbt: Total expected rows (approximate): 14
+0235.197 (0) Table wp_totalsoft_galleryv_dbt: Total rows added: 14 in 0.00 seconds
+0235.197 (0) Table wp_totalsoft_galleryv_dbt: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_dbt.table.gz - 0.5 KB)
+0235.200 (0) Table wp_totalsoft_galleryv_fg: Total expected rows (approximate): 2
+0235.204 (0) Table wp_totalsoft_galleryv_fg: Total rows added: 2 in 0.00 seconds
+0235.205 (0) Table wp_totalsoft_galleryv_fg: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_fg.table.gz - 1 KB)
+0235.208 (0) Table wp_totalsoft_galleryv_gvg: Total expected rows (approximate): 2
+0235.211 (0) Table wp_totalsoft_galleryv_gvg: Total rows added: 2 in 0.00 seconds
+0235.212 (0) Table wp_totalsoft_galleryv_gvg: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_gvg.table.gz - 0.9 KB)
+0235.215 (0) Table wp_totalsoft_galleryv_hlg: Total expected rows (approximate): 2
+0235.218 (0) Table wp_totalsoft_galleryv_hlg: Total rows added: 2 in 0.00 seconds
+0235.219 (0) Table wp_totalsoft_galleryv_hlg: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_hlg.table.gz - 0.9 KB)
+0235.222 (0) Table wp_totalsoft_galleryv_id: Total expected rows (approximate): 0
+0235.223 (0) Table wp_totalsoft_galleryv_id: Total rows added: 0 in 0.00 seconds
+0235.224 (0) Table wp_totalsoft_galleryv_id: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_id.table.gz - 0.3 KB)
+0235.227 (0) Table wp_totalsoft_galleryv_lvg: Total expected rows (approximate): 2
+0235.230 (0) Table wp_totalsoft_galleryv_lvg: Total rows added: 2 in 0.00 seconds
+0235.231 (0) Table wp_totalsoft_galleryv_lvg: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_lvg.table.gz - 1.1 KB)
+0235.234 (0) Table wp_totalsoft_galleryv_manager: Total expected rows (approximate): 0
+0235.235 (0) Table wp_totalsoft_galleryv_manager: Total rows added: 0 in 0.00 seconds
+0235.236 (0) Table wp_totalsoft_galleryv_manager: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_manager.table.gz - 0.4 KB)
+0235.239 (0) Table wp_totalsoft_galleryv_sg: Total expected rows (approximate): 2
+0235.242 (0) Table wp_totalsoft_galleryv_sg: Total rows added: 2 in 0.00 seconds
+0235.243 (0) Table wp_totalsoft_galleryv_sg: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_sg.table.gz - 0.9 KB)
+0235.246 (0) Table wp_totalsoft_galleryv_ttvg: Total expected rows (approximate): 2
+0235.249 (0) Table wp_totalsoft_galleryv_ttvg: Total rows added: 2 in 0.00 seconds
+0235.250 (0) Table wp_totalsoft_galleryv_ttvg: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_ttvg.table.gz - 0.9 KB)
+0235.252 (0) Table wp_totalsoft_galleryv_videos: Total expected rows (approximate): 0
+0235.254 (0) Table wp_totalsoft_galleryv_videos: Total rows added: 0 in 0.00 seconds
+0235.254 (0) Table wp_totalsoft_galleryv_videos: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_videos.table.gz - 0.4 KB)
+0235.257 (0) Table wp_wpmm_subscribers: Total expected rows (approximate): 0
+0235.258 (0) Table wp_wpmm_subscribers: Total rows added: 0 in 0.00 seconds
+0235.259 (0) Table wp_wpmm_subscribers: finishing file (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_wpmm_subscribers.table.gz - 0.3 KB)
+0235.262 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_options.table.gz (1/55): adding to final database dump
+0235.313 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_users.table.gz (2/55): adding to final database dump
+0235.409 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_usermeta.table.gz (3/55): adding to final database dump
+0235.411 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_commentmeta.table.gz (4/55): adding to final database dump
+0235.411 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_comments.table.gz (5/55): adding to final database dump
+0235.413 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_links.table.gz (6/55): adding to final database dump
+0235.413 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_postmeta.table.gz (7/55): adding to final database dump
+0235.420 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_posts.table.gz (8/55): adding to final database dump
+0235.426 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_term_relationships.table.gz (9/55): adding to final database dump
+0235.427 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_term_taxonomy.table.gz (10/55): adding to final database dump
+0235.428 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_termmeta.table.gz (11/55): adding to final database dump
+0235.429 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_terms.table.gz (12/55): adding to final database dump
+0235.430 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_appointments.table.gz (13/55): adding to final database dump
+0235.430 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_categories.table.gz (14/55): adding to final database dump
+0235.431 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_coupon_services.table.gz (15/55): adding to final database dump
+0235.432 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_coupons.table.gz (16/55): adding to final database dump
+0235.433 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_customer_appointments.table.gz (17/55): adding to final database dump
+0235.434 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_customers.table.gz (18/55): adding to final database dump
+0235.435 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_holidays.table.gz (19/55): adding to final database dump
+0235.435 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_notifications.table.gz (20/55): adding to final database dump
+0235.437 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_payments.table.gz (21/55): adding to final database dump
+0235.437 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_schedule_item_breaks.table.gz (22/55): adding to final database dump
+0235.438 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_sent_notifications.table.gz (23/55): adding to final database dump
+0235.439 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_series.table.gz (24/55): adding to final database dump
+0235.440 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_services.table.gz (25/55): adding to final database dump
+0235.441 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_staff.table.gz (26/55): adding to final database dump
+0235.441 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_staff_schedule_items.table.gz (27/55): adding to final database dump
+0235.442 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ab_staff_services.table.gz (28/55): adding to final database dump
+0235.443 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_cvg_gallery.table.gz (29/55): adding to final database dump
+0235.444 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_cvg_videos.table.gz (30/55): adding to final database dump
+0235.444 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_appointments.table.gz (31/55): adding to final database dump
+0235.445 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_connections.table.gz (32/55): adding to final database dump
+0235.446 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_error_logs.table.gz (33/55): adding to final database dump
+0235.447 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_fields.table.gz (34/55): adding to final database dump
+0235.448 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_locations.table.gz (35/55): adding to final database dump
+0235.448 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_meta_fields.table.gz (36/55): adding to final database dump
+0235.449 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_options.table.gz (37/55): adding to final database dump
+0235.450 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_services.table.gz (38/55): adding to final database dump
+0235.451 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_ea_staff.table.gz (39/55): adding to final database dump
+0235.452 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_huge_it_video_params.table.gz (40/55): adding to final database dump
+0235.453 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_huge_it_video_players.table.gz (41/55): adding to final database dump
+0235.454 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_huge_it_videos.table.gz (42/55): adding to final database dump
+0235.455 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_fonts.table.gz (43/55): adding to final database dump
+0235.456 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_ctpg.table.gz (44/55): adding to final database dump
+0235.457 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_dbt.table.gz (45/55): adding to final database dump
+0235.459 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_fg.table.gz (46/55): adding to final database dump
+0235.460 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_gvg.table.gz (47/55): adding to final database dump
+0235.461 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_hlg.table.gz (48/55): adding to final database dump
+0235.462 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_id.table.gz (49/55): adding to final database dump
+0235.463 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_lvg.table.gz (50/55): adding to final database dump
+0235.464 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_manager.table.gz (51/55): adding to final database dump
+0235.465 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_sg.table.gz (52/55): adding to final database dump
+0235.466 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_ttvg.table.gz (53/55): adding to final database dump
+0235.467 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_totalsoft_galleryv_videos.table.gz (54/55): adding to final database dump
+0235.468 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db-table-wp_wpmm_subscribers.table.gz (55/55): adding to final database dump
+0235.469 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db.gz: finished writing out complete database file (256 KB)
+0235.477 (0) Total database tables backed up: 55 (backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db.gz, size: 288109, sha256)
+0235.482 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0235.483 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0235.484 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0235.485 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-others.zip: others: This file has not yet been successfully uploaded: will queue
+0235.485 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db.gz: db: This file has not yet been successfully uploaded: will queue
+0235.486 (0) Saving backup history. Total backup size: 97.6 MB
+0235.488 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0235.490 (0) Cloud backup selection (1/1): googledrive (last)
+0235.491 (0) Beginning dispatch of backup to remote (googledrive)
+0236.150 (0) Google Drive: creating path: /UpdraftPlus
+0237.138 (0) Google Drive quota usage: used=749 MB, total=15360 MB, available=14611 MB
+0237.139 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip: Attempting to upload to Google Drive (into folder id: 0Bw_t4IN3LFJVZHBfM0U0S0RFbVE)
+0237.563 (0) Googledrive chunked upload: 5.8 % uploaded (1048576)
+0237.727 (0) Googledrive chunked upload: 11.6 % uploaded (2097152)
+0237.860 (0) Googledrive chunked upload: 17.4 % uploaded (3145728)
+0238.036 (0) Googledrive chunked upload: 23.1 % uploaded (4194304)
+0238.220 (0) Googledrive chunked upload: 28.9 % uploaded (5242880)
+0238.384 (0) Googledrive chunked upload: 34.7 % uploaded (6291456)
+0238.739 (0) Googledrive chunked upload: 40.5 % uploaded (7340032)
+0238.898 (0) Googledrive chunked upload: 46.3 % uploaded (8388608)
+0239.050 (0) Googledrive chunked upload: 52.1 % uploaded (9437184)
+0239.227 (0) Googledrive chunked upload: 57.9 % uploaded (10485760)
+0239.375 (0) Googledrive chunked upload: 63.6 % uploaded (11534336)
+0239.534 (0) Googledrive chunked upload: 69.4 % uploaded (12582912)
+0239.671 (0) Googledrive chunked upload: 75.2 % uploaded (13631488)
+0239.824 (0) Googledrive chunked upload: 81 % uploaded (14680064)
+0239.956 (0) Googledrive chunked upload: 86.8 % uploaded (15728640)
+0240.088 (0) Googledrive chunked upload: 92.6 % uploaded (16777216)
+0240.250 (0) Googledrive chunked upload: 98.4 % uploaded (17825792)
+0241.150 (0) Googledrive chunked upload: 100 % uploaded (17825792)
+0241.166 (0) OK: Archive backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip uploaded to Google Drive in 4.02 seconds
+0241.168 (0) Recording as successfully uploaded: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip (987bd0fe9d06c0e707f4fc8773379e2c)
+0241.176 (0) Deleting local file: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-plugins.zip: OK
+0241.424 (0) Google Drive quota usage: used=766.3 MB, total=15360 MB, available=14593.7 MB
+0241.425 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-themes.zip: Attempting to upload to Google Drive (into folder id: 0Bw_t4IN3LFJVZHBfM0U0S0RFbVE)
+0241.742 (0) Googledrive chunked upload: 17.4 % uploaded (1048576)
+0241.959 (0) Googledrive chunked upload: 34.8 % uploaded (2097152)
+0242.182 (0) Googledrive chunked upload: 52.2 % uploaded (3145728)
+0242.313 (0) Googledrive chunked upload: 69.6 % uploaded (4194304)
+0242.448 (0) Googledrive chunked upload: 87 % uploaded (5242880)
+0243.336 (0) Googledrive chunked upload: 100 % uploaded (5242880)
+0243.339 (0) OK: Archive backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-themes.zip uploaded to Google Drive in 1.91 seconds
+0243.340 (0) Recording as successfully uploaded: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-themes.zip (b6ad07117c3e2c90fefcb0ef9cc56c06)
+0243.344 (0) Deleting local file: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-themes.zip: OK
+0243.588 (0) Google Drive quota usage: used=772.1 MB, total=15360 MB, available=14587.9 MB
+0243.589 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-uploads.zip: Attempting to upload to Google Drive (into folder id: 0Bw_t4IN3LFJVZHBfM0U0S0RFbVE)
+0243.921 (0) Googledrive chunked upload: 1.4 % uploaded (1048576)
+0244.077 (0) Googledrive chunked upload: 2.7 % uploaded (2097152)
+0244.355 (0) Googledrive chunked upload: 4.1 % uploaded (3145728)
+0244.531 (0) Googledrive chunked upload: 5.5 % uploaded (4194304)
+0244.652 (0) Googledrive chunked upload: 6.8 % uploaded (5242880)
+0244.791 (0) Googledrive chunked upload: 8.2 % uploaded (6291456)
+0244.922 (0) Googledrive chunked upload: 9.6 % uploaded (7340032)
+0245.069 (0) Googledrive chunked upload: 10.9 % uploaded (8388608)
+0245.199 (0) Googledrive chunked upload: 12.3 % uploaded (9437184)
+0245.345 (0) Googledrive chunked upload: 13.6 % uploaded (10485760)
+0245.472 (0) Googledrive chunked upload: 15 % uploaded (11534336)
+0245.606 (0) Googledrive chunked upload: 16.4 % uploaded (12582912)
+0245.730 (0) Googledrive chunked upload: 17.7 % uploaded (13631488)
+0245.861 (0) Googledrive chunked upload: 19.1 % uploaded (14680064)
+0246.031 (0) Googledrive chunked upload: 20.5 % uploaded (15728640)
+0246.230 (0) Googledrive chunked upload: 21.8 % uploaded (16777216)
+0246.348 (0) Googledrive chunked upload: 23.2 % uploaded (17825792)
+0246.464 (0) Googledrive chunked upload: 24.6 % uploaded (18874368)
+0246.606 (0) Googledrive chunked upload: 25.9 % uploaded (19922944)
+0246.741 (0) Googledrive chunked upload: 27.3 % uploaded (20971520)
+0246.877 (0) Googledrive chunked upload: 28.7 % uploaded (22020096)
+0247.065 (0) Googledrive chunked upload: 30 % uploaded (23068672)
+0247.193 (0) Googledrive chunked upload: 31.4 % uploaded (24117248)
+0247.324 (0) Googledrive chunked upload: 32.8 % uploaded (25165824)
+0247.600 (0) Googledrive chunked upload: 34.1 % uploaded (26214400)
+0247.742 (0) Googledrive chunked upload: 35.5 % uploaded (27262976)
+0247.965 (0) Googledrive chunked upload: 36.8 % uploaded (28311552)
+0248.088 (0) Googledrive chunked upload: 38.2 % uploaded (29360128)
+0248.240 (0) Googledrive chunked upload: 39.6 % uploaded (30408704)
+0248.391 (0) Googledrive chunked upload: 40.9 % uploaded (31457280)
+0248.518 (0) Googledrive chunked upload: 42.3 % uploaded (32505856)
+0248.641 (0) Googledrive chunked upload: 43.7 % uploaded (33554432)
+0248.770 (0) Googledrive chunked upload: 45 % uploaded (34603008)
+0248.901 (0) Googledrive chunked upload: 46.4 % uploaded (35651584)
+0249.049 (0) Googledrive chunked upload: 47.8 % uploaded (36700160)
+0249.170 (0) Googledrive chunked upload: 49.1 % uploaded (37748736)
+0249.294 (0) Googledrive chunked upload: 50.5 % uploaded (38797312)
+0249.488 (0) Googledrive chunked upload: 51.9 % uploaded (39845888)
+0249.638 (0) Googledrive chunked upload: 53.2 % uploaded (40894464)
+0249.789 (0) Googledrive chunked upload: 54.6 % uploaded (41943040)
+0249.928 (0) Googledrive chunked upload: 55.9 % uploaded (42991616)
+0250.112 (0) Googledrive chunked upload: 57.3 % uploaded (44040192)
+0250.277 (0) Googledrive chunked upload: 58.7 % uploaded (45088768)
+0250.442 (0) Googledrive chunked upload: 60 % uploaded (46137344)
+0250.584 (0) Googledrive chunked upload: 61.4 % uploaded (47185920)
+0250.717 (0) Googledrive chunked upload: 62.8 % uploaded (48234496)
+0250.856 (0) Googledrive chunked upload: 64.1 % uploaded (49283072)
+0251.018 (0) Googledrive chunked upload: 65.5 % uploaded (50331648)
+0251.227 (0) Googledrive chunked upload: 66.9 % uploaded (51380224)
+0251.375 (0) Googledrive chunked upload: 68.2 % uploaded (52428800)
+0251.502 (0) Googledrive chunked upload: 69.6 % uploaded (53477376)
+0251.635 (0) Googledrive chunked upload: 71 % uploaded (54525952)
+0251.772 (0) Googledrive chunked upload: 72.3 % uploaded (55574528)
+0251.961 (0) Googledrive chunked upload: 73.7 % uploaded (56623104)
+0252.131 (0) Googledrive chunked upload: 75.1 % uploaded (57671680)
+0252.318 (0) Googledrive chunked upload: 76.4 % uploaded (58720256)
+0252.455 (0) Googledrive chunked upload: 77.8 % uploaded (59768832)
+0252.592 (0) Googledrive chunked upload: 79.1 % uploaded (60817408)
+0252.755 (0) Googledrive chunked upload: 80.5 % uploaded (61865984)
+0252.910 (0) Googledrive chunked upload: 81.9 % uploaded (62914560)
+0253.047 (0) Googledrive chunked upload: 83.2 % uploaded (63963136)
+0253.195 (0) Googledrive chunked upload: 84.6 % uploaded (65011712)
+0253.366 (0) Googledrive chunked upload: 86 % uploaded (66060288)
+0253.523 (0) Googledrive chunked upload: 87.3 % uploaded (67108864)
+0253.653 (0) Googledrive chunked upload: 88.7 % uploaded (68157440)
+0253.800 (0) Googledrive chunked upload: 90.1 % uploaded (69206016)
+0253.940 (0) Googledrive chunked upload: 91.4 % uploaded (70254592)
+0254.090 (0) Googledrive chunked upload: 92.8 % uploaded (71303168)
+0254.275 (0) Googledrive chunked upload: 94.2 % uploaded (72351744)
+0254.459 (0) The scheduled resumption is within 45 seconds - will reschedule
+0254.472 (0) Rescheduling resumption 1: moving to 345 seconds from now (1505294867)
+0254.477 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 45 = 345
+0254.478 (0) Googledrive chunked upload: 95.5 % uploaded (73400320)
+0254.658 (0) Googledrive chunked upload: 96.9 % uploaded (74448896)
+0254.813 (0) Googledrive chunked upload: 98.3 % uploaded (75497472)
+0254.968 (0) Googledrive chunked upload: 99.6 % uploaded (76546048)
+0256.436 (0) Googledrive chunked upload: 100 % uploaded (76546048)
+0256.439 (0) OK: Archive backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-uploads.zip uploaded to Google Drive in 12.85 seconds
+0256.441 (0) Recording as successfully uploaded: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-uploads.zip (9d351ff81f437433c3a9abeb2e58578a)
+0256.456 (0) Deleting local file: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-uploads.zip: OK
+0256.678 (0) Google Drive quota usage: used=845.4 MB, total=15360 MB, available=14514.6 MB
+0256.679 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-others.zip: Attempting to upload to Google Drive (into folder id: 0Bw_t4IN3LFJVZHBfM0U0S0RFbVE)
+0257.079 (0) Googledrive chunked upload: 99.5 % uploaded (1048576)
+0258.049 (0) Googledrive chunked upload: 100 % uploaded (1048576)
+0258.065 (0) OK: Archive backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-others.zip uploaded to Google Drive in 1.39 seconds
+0258.073 (0) Recording as successfully uploaded: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-others.zip (776600cd28a801b8141b9c9812e92548)
+0258.077 (0) Deleting local file: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-others.zip: OK
+0258.334 (0) Google Drive quota usage: used=846.4 MB, total=15360 MB, available=14513.6 MB
+0258.335 (0) backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db.gz: Attempting to upload to Google Drive (into folder id: 0Bw_t4IN3LFJVZHBfM0U0S0RFbVE)
+0259.409 (0) Googledrive chunked upload: 100 % uploaded
+0259.412 (0) OK: Archive backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db.gz uploaded to Google Drive in 1.08 seconds
+0259.414 (0) Recording as successfully uploaded: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db.gz (3116fa5e4ea4a0334e86ad5a243fee77)
+0259.416 (0) Deleting local file: backup_2017-09-13-1217_Bourne_Osteopath_Clinic_9531d1f70b38-db.gz: OK
+0259.418 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0259.419 (0) Number of backup sets in history: 3; groups (db): 1
+0259.420 (0) Examining (for databases) backup set with group_id=0, nonce=9531d1f70b38, datestamp=1505294267 (Sep 13 2017 09:17:47)
+0259.421 (0) This backup set is the backup set just made, so will not be deleted.
+0259.421 (0) Examining (for databases) backup set with group_id=0, nonce=16a1a3a40977, datestamp=1505291811 (Sep 13 2017 08:36:51)
+0259.421 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0259.422 (0) Examining (for databases) backup set with group_id=0, nonce=5f81eef209e5, datestamp=1505291362 (Sep 13 2017 08:29:22)
+0259.422 (0) 1505291362: db: this set includes a database (backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-db.gz); db count is now 2
+0259.422 (0) 1505291362: db: over retain limit (2); will delete this database
+0259.422 (0) Delete file: backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-db.gz, service=googledrive
+0259.422 (0) Deleting local copy (backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-db.gz)
+0259.714 (0) backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-db.gz: Deletion failed: file was not found
+0259.716 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0259.716 (0) Number of backup sets in history: 3; groups (files): 1
+0259.717 (0) Examining (for files) backup set with nonce=9531d1f70b38, datestamp=1505294267 (Sep 13 2017 09:17:47)
+0259.717 (0) This backup set is the backup set just made, so will not be deleted.
+0259.718 (0) This backup set is the backup set just made, so will not be deleted.
+0259.718 (0) This backup set is the backup set just made, so will not be deleted.
+0259.718 (0) This backup set is the backup set just made, so will not be deleted.
+0259.718 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0259.719 (0) Examining (for files) backup set with nonce=16a1a3a40977, datestamp=1505291811 (Sep 13 2017 08:36:51)
+0259.719 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0259.719 (0) Examining (for files) backup set with nonce=5f81eef209e5, datestamp=1505291362 (Sep 13 2017 08:29:22)
+0259.719 (0) plugins: over retain limit (2); will delete this file entity
+0259.719 (0) themes: over retain limit (2); will delete this file entity
+0259.719 (0) uploads: over retain limit (2); will delete this file entity
+0259.719 (0) others: over retain limit (2); will delete this file entity
+0259.719 (0) Delete file: backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-plugins.zip, service=googledrive
+0259.720 (0) Delete file: backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-themes.zip, service=googledrive
+0259.720 (0) Delete file: backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-uploads.zip, service=googledrive
+0259.721 (0) Deleting local copy (backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-uploads.zip)
+0259.734 (0) Delete file: backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-others.zip, service=googledrive
+0259.735 (0) Deleting local copy (backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-others.zip)
+0259.979 (0) backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-plugins.zip: Deletion failed: file was not found
+0259.980 (0) backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-themes.zip: Deletion failed: file was not found
+0259.981 (0) backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-uploads.zip: Deletion failed: file was not found
+0259.981 (0) backup_2017-09-13-1129_Bourne_Osteopath_Clinic_5f81eef209e5-others.zip: Deletion failed: file was not found
+0259.983 (0) This backup set is now empty; will remove from history
+0259.984 (0) Deleting log file (log.5f81eef209e5.txt)
+0259.984 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0259.987 (0) Resume backup (9531d1f70b38, 0): finish run
+0259.989 (0) Decremented the semaphore (fd) by 1
+0259.990 (0) Semaphore (fd) unlocked
+0259.990 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0259.993 (0) No email will/can be sent - the user has not configured an email address.
+0259.994 (0) The backup apparently succeeded and is now complete

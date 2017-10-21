@@ -1,0 +1,177 @@
+header.header
+	.header--mob__row
+		.header--mob__content.row
+			.header--mob__menu-button(class="wow slideInLeft" data-wow-offset="0"  data-wow-duration="1s" )
+				.hamburger-button(role="button")
+					span.hamburger-item
+					span.hamburger-item
+					span.hamburger-item
+			img.svg--img.header--mob__logo(src="img/logo.svg", alt="Bourne Osteopath Clinic Logo")
+			.header--mob__contacts-button(class="wow slideInRight" data-wow-duration="1s" )
+				.contacts-button(role="button")
+					span.contacts-item
+					span.contacts-item
+					span.contacts-item
+		nav.header--mob__menu
+			ul
+				li
+					a(href='#') about us
+				li
+					a(href='#') conditions treated
+				li
+					a(href='#') gallery
+				li
+					a(href='#') testimonials
+				li
+					a(href='#') videos
+				li
+					a(href='#') contacts
+			button.button.mobile-menu__button.btn-appointment(data-toggle="modal" data-target="#exampleModal") appointment request
+		div.header--mob__contacts
+			.mobile-contacts__content
+				.mobile-contacts__adress.row
+					.col-2
+						i(class="fa fa-home fa-2x" aria-hidden="true")
+					.col-10
+						a#adress.link Pulse Practice, West Street, Bourne, PE109NE
+				.mobile-contacts__hours.row
+					.col-2
+						i(class="fa fa-clock-o fa-2x" aria-hidden="true")
+					.col-10
+						.row.no-gutters
+							.col-6
+								span Mon-Fri
+								br
+								span Saturday
+								br
+								span Sunday
+							.col-6
+								span 8AM - 8PM
+								br
+								span 8AM - 1PM
+								br
+								span Closed
+				.mobile-contacts__phones.row
+					.col-2
+						i(class="fa fa-phone fa-2x" aria-hidden="true")
+					.col-10
+						.mobile-phones__item
+							a.link(href="tel:01778426000") 01778 426000
+						.mobile-phones__item
+							a.link(href="tel:07943336336") 07943 336336
+	.header--desktop
+		.header--tab
+			.header--tab__row.row.align-items-center.wrapper-fluid.justify-content-between
+				.dropdown.dropdownAboutClinic
+					a#dropdownAboutClinic.dropdown-toggle( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						| About clinic
+					.dropdown-menu(aria-labelledby='dropdownAboutClinic')
+						a.dropdown-item(href='#') Action
+						a.dropdown-item(href='#') Another action
+						a.dropdown-item(href='#') Something else here
+				.dropdown.dropdownInformation
+					a#dropdownInformation.dropdown-toggle( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						| About clinic
+					.dropdown-menu(aria-labelledby='dropdownInformation')
+						a.dropdown-item(href='#') Action
+						a.dropdown-item(href='#') Another action
+						a.dropdown-item(href='#') Something else here
+.header__info-panel
+	div  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente voluptates unde, optio id nulla esse eligendi facilis nisi. Esse sit incidunt tenetur repellendus quaerat? Rem, saepe? Autem, tempore, nulla.
+				//- nav.header--tab__nav
+				//- 	ul
+				//- 		li
+				//- 			a(href='#' ) Home
+
+				//- 		li
+				//- 			.dropdown
+				//- 				button.button.dropdown-toggle( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+				//- 					| About clinic
+				//- 				.dropdown-menu(aria-labelledby='dropdownMenuButton')
+				//- 					a.dropdown-item(href='#') Conditions Treated
+				//- 					a.dropdown-item(href='#') Gallery
+				//- 					a.dropdown-item(href='#') Testimonials
+				//- 					a.dropdown-item(href='#') Contacts
+				//- 		li
+				//- 			.dropdown
+				//- 				a.dropdown-toggle( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+				//- 					| Useful information
+				//- 				.dropdown-menu(aria-labelledby='dropdownMenuButton')
+				//- 					a.dropdown-item(href='#') Journal
+				//- 					a.dropdown-item(href='#') Videos
+				//- 					a.dropdown-item(href='#') Exersises
+				//- .tab-nav__button
+				//- 	button.button.btn-appointment(data-toggle="modal" data-target="#exampleModal")  appointment
+
+
+			//- .row.align-items-center.wrapper-fluid.justify-content-between.ljkjhkj
+			//- 	nav.new-menu-nav
+			//- 		ul.new-menu
+			//- 			li
+			//- 				a(href='#' ) Home
+			//- 			li
+			//- 				a(href='#' ) Home
+			//- 			li
+			//- 				a(href='#' ) Home
+			//- 			li
+			//- 				a(href='#' ) Home
+			//- 	.tab-nav__button
+			//- 		button.button.btn-appointment(data-toggle="modal" data-target="#exampleModal")  appointment
+	//- .header__top-menu
+	//- 	.top-menu__content.row.align-items-center.justify-content-between
+	//- 		.top-menu__social-icons-block
+	//- 			.btn-group
+	//- 				a.top-menu__item.link(href="#")
+	//- 					i(class="fa fa-google top-menu__icon" aria-hidden="true")
+	//- 				a.top-menu__item.link(href="#")
+	//- 					i(class="fa fa-facebook top-menu__icon" aria-hidden="true")
+	//- 				a.top-menu__item.link(href="#")
+	//- 					i(class="fa fa-twitter top-menu__icon" aria-hidden="true")
+	//- 		.top-menu__phone-numbers-block
+	//- 			.btn-group
+	//- 				div
+	//- 					a.top-menu__item.link(href="tel:01778-426000")
+	//- 						i(class="fa fa-phone top-menu__icon" aria-hidden="true")
+	//- 					a.top-menu__link.link(href="tel:01778-426000") 01778 426000
+	//- 				div
+	//- 					a.top-menu__item.link(href="tel:07943-336336")
+	//- 						i(class="fa fa-mobile top-menu__icon" aria-hidden="true")
+	//- 					a.top-menu__link.link(href="tel:07943-336336") 07943 336336
+	
+	//- .tab-nav__row
+	//- 	.tab-nav__content.row.align-items-center.justify-content-around
+	//- 		.tab-nav__logo-box
+	//- 			img.tab-nav__logo(src="img/logo.svg" alt="Bourne Osteopath Clinic Logo")
+	//- 		.tab-nav__menu
+	//- 			nav.tab-menu
+	//- 				.dropdown.tab-nav__item.dropdown-box
+	//- 					a.dropbtn.link(href='#')  Information
+	//- 					div(id="myDropdown" class="dropdown-content")
+	//- 						li.dropdown-item
+	//- 							a(href="#").link About us
+	//- 						li.dropdown-item
+	//- 							a(href="#").link gallery
+	//- 						li.dropdown-item
+	//- 							a(href="#").link testimonials
+	//- 						li.dropdown-item
+	//- 							a(href="#").link videos
+	//- 				a.tab-nav__item--PC(href='#')  about us
+	//- 				a(href='#')  conditions treated
+	//- 				a.tab-nav__item--PC(href='#')  gallery
+	//- 				a.tab-nav__item--PC(href='#')  testimonials
+	//- 				a.tab-nav__item--PC(href='#')  videos
+	//- 				a(href='#')  contacts
+	//- 		.tab-nav__button
+	//- 			button.button.btn-appointment(data-toggle="modal" data-target="#exampleModal")  appointment 
+#exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Modal title
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true') ×
+			.modal-body
+				| ...
+			.modal-footer
+				button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+				button.btn.btn-primary(type='button') Save changes

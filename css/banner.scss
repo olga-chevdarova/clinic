@@ -1,25 +1,33 @@
 .banner {
-	background: url('../img/doctor-points-to-model-spine.jpg') no-repeat;
+	background: url('../img/52.jpg') no-repeat;
 	background-size:cover;
 	background-position:20% 40%;
 	position:relative;
-	margin:4em 0;
+	margin:2em 0;
 	text-align:center;
 	padding-bottom:2em;
 	z-index:1;
 	color:white;
+  margin-top:4em;
 }
 
-.banner-title {
-	font-weight:600;
-	font-size:1.5em;
-	line-height:1.5em;
-	padding:2em 0 0;
+.banner__title {
+  h3 {
+      font-weight:600;
+  font-size:1.5em;
+  line-height:1.5em;
+  padding-top:2em;
+  text-transform:uppercase;
+  }
+
 }
 
-.text-banner {
+.banner__text {
 	text-align:center;
-	font-size:1.1em;
+	font-size:1.2em;
+  p {
+margin-bottom:1.5em;
+  }
 }
 
 .banner-button  {

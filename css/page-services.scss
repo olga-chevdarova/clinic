@@ -1,0 +1,66 @@
+.page-services__bg {
+	width: 100%;
+    background: url('../img/doctor-points-to-model-spine.jpg') no-repeat;
+    height:15em;
+	background-size: cover;
+	position:abosulte; 
+}
+
+
+
+.page__title {
+	padding-top:200px;
+}
+
+
+.card {
+	background-color:$grey;
+}
+
+.card-header {
+	background-color: $blue2;
+	a {
+		color:white;
+
+	}
+}
+.page-services__banner {
+	background-color: $grey;
+	height:auto;
+	text-align:center;
+	padding:2em 1em;
+
+margin:2em 0 4em;
+
+i {
+	color:$blue;
+	margin:0.2em;
+	font-size:1.2em;
+}
+i:nth-of-type(2) {
+	margin:0.2em 0.4em;
+	padding-bottom:1em;
+}
+
+p:nth-of-type(1) {
+	font-size:1em;
+	font-weight:bold;
+}
+p:nth-of-type(2) {
+	font-size:1.2em;
+	font-weight:bold;
+}
+}
+
+@media (min-width: 1200px) {
+.page-services__banner {
+	margin:0;
+}
+
+.page-services__row {
+	margin-bottom:5em;
+}
+
+.row.row-old {
+  display: block; }
+}
